@@ -22,8 +22,8 @@ call vundle#end()
 
 let mapleader = ','
 
-set wildmenu                     " Show list instead of just completing
-set wildmode=list:longest,full   " Command <Tab> completion, list matches, then longest common part, then all.
+set wildmenu                     " show list instead of just completing
+set wildmode=list:longest,full   " command <Tab> completion, list matches, then longest common part, then all.
 
 set mouse=a                      " automatically enable mouse
 set mousehide                    " hide mouse cursor when typing
@@ -34,21 +34,25 @@ map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
 map <C-H> <C-W>h<C-W>_
 
-
 set number                       " show line numbers
 syntax enable                    " ...
+
 set background=dark
 colorscheme solarized
 
-set nowrap                       " Do not wrap long lines
+highlight clear SignColumn       " signColumn(gutter) should match background
+highlight clear LineNr           " current line number row will have same background color in relative mode
+
+set cursorline                   " highlight current line
+
+set showmatch                    " show matching brackets/parenthesis
+set hlsearch                     " highlight search terms
+
+set nowrap                       " do not wrap long lines
 
 " Highlight problematic whitespace
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
-
-set showmatch                    " Show matching brackets/parenthesis
-
-set hlsearch                     " Highlight search terms
 
 filetype plugin indent on        " load plugins and indent files for the current filetyp
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " force markdown filetype for *.md files
@@ -61,4 +65,3 @@ set backspace=indent,eol,start   " moar aggressive backspace
 
 " yank from cursor to end of line
 nnoremap Y y$
-

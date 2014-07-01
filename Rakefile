@@ -11,6 +11,9 @@ end
 
 task "copy_dotfiles" do
 
+  # cleanup old backup files
+  system "rm -rf #{HOME}/.*.old"
+
   current_dir = Dir.getwd
 
   excluded_files = ["Rakefile", ".", ".."]
@@ -21,13 +24,12 @@ task "copy_dotfiles" do
     source_path = "#{current_dir}/#{filename}"
     dest_path =  "#{HOME}/.#{filename}"
 
-    # FIXME: doesnt work if dest_path = ln
-    # (i think).. doesn't work when trying to do the ln below
-    backup!(dest_path) if File.exists?(dest_path)
+    if (File.exists?(dest_path) || File.symlink?(dest_path))
+      backup(dest_path)
+      File.delete(dest_path)
+    end
 
-    # FIXME: make symlinks
-    # `cp #{source_path} #{dest_path}`
-    FileUtils.ln_s source_path, dest_path
+    FileUtils.ln_s(source_path, dest_path)
   end
 
 end
@@ -53,10 +55,8 @@ task "compile_ycm_binaries" do
   system "./install.sh"
 end
 
-def backup!(filepath)
+def backup(filepath)
   backup_filepath = "#{filepath}.old"
-  puts backup_filepath
   FileUtils.copy_entry(filepath, backup_filepath)
-  File.delete(filepath)
 end
 

@@ -1,5 +1,2 @@
-git diff in gutter
-(B) show whitespace
+
 find a way to load different customizations
-(A) delete when Aing
-(A) start deleting on previous line when on first line char

@@ -46,8 +46,7 @@ end
 
 task "install:vundle" do
   system "git clone https://github.com/gmarik/Vundle.vim.git #{HOME}/.vim/bundle/Vundle.vim"
-  # simulate carriage return with puts | (the first run may cause some warnings, as plugins are not installed yet)
-  system "echo \"\n\" | vim +PluginInstall"
+  system 'echo "\n" | vim - +PluginInstall +qall!'
 end
 
 task "compile_ycm_binaries" do

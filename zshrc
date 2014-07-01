@@ -12,13 +12,17 @@ export EDITOR='vim'
 
 alias v="$EDITOR"
 
-alias zshrc="$EDITOR ~/.zshrc"
-alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
+alias zshrc="$EDITOR $HOME/.zshrc"
+alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 
-alias vimrc="$EDITOR ~/.vimrc"
+alias vimrc="$EDITOR $HOME/.vimrc"
+
+alias s="$EDITOR $HOME/notes/spark.md"
 
 export TODO_TXT_PATH="$HOME/Documents/todo/todo.txt"
 export DONE_TXT_PATH="$HOME/Documents/todo/done.txt"
+alias te="$EDITOR $TODO_TXT_PATH"
+
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 plugins=(git autojump pacman vi-mode colored-man)

@@ -14,6 +14,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'        " a better status bar
 set laststatus=2                  " don't wait for a split to appear to be visible
 let g:airline_powerline_fonts=1   " use cool symbols
+Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 
 call vundle#end()
 

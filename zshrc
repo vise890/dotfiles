@@ -35,5 +35,3 @@ bindkey '^R' history-incremental-search-backward
 #### THE PATH #################################################################
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 ###############################################################################
-
-[ -s "/Users/mvisinti/.scm_breeze/scm_breeze.sh" ] && source "/Users/mvisinti/.scm_breeze/scm_breeze.sh"

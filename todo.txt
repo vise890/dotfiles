@@ -1,3 +1,4 @@
 
 find a way to load different customizations
 (A) highlight code in .md files
+source highlight when `less`ing

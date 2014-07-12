@@ -1,4 +1,4 @@
-
-find a way to load different customizations
-(A) highlight code in .md files
+(A) highlight code in .md files @vimrc
+(A) reduce tab size @vimrc
+find a way to load different customizations @vimrc
 source highlight when `less`ing

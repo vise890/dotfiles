@@ -12,6 +12,10 @@ Plugin 'Valloric/YouCompleteMe'   " fast autocompletion
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'   " show git diff in the gutter
 Plugin 'kien/ctrlp.vim'           " fuzzy file search and opening
+
+Plugin 'scrooloose/nerdtree'      " tree explorer
+map <C-n> :NERDTreeToggle<CR>
+
 Plugin 'bling/vim-airline'        " a better status bar
 
 call vundle#end()

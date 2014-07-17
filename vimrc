@@ -17,6 +17,8 @@ Plugin 'scrooloose/nerdtree'      " tree explorer
 map <C-n> :NERDTreeToggle<CR>
 
 Plugin 'bling/vim-airline'        " a better status bar
+set laststatus=2                  " don't wait for a split to appear for airline to be visible
+let g:airline_powerline_fonts=1   " use cool symbols
 
 call vundle#end()
 
@@ -33,9 +35,6 @@ map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
 map <C-H> <C-W>h<C-W>_
-
-set laststatus=2                  " don't wait for a split to appear for airline to be visible
-let g:airline_powerline_fonts=1   " use cool symbols
 
 set wildmenu                     " show list instead of just completing
 set wildmode=list:longest,full   " command <Tab> completion, list matches, then longest common part, then all.

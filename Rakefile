@@ -5,7 +5,6 @@ task :default do
   Rake::Task['install:oh-my-zsh'].invoke
   Rake::Task['install:scm_breeze'].invoke
   Rake::Task['install:vundle'].invoke
-  Rake::Task['compile_ycm_binaries'].invoke
 end
 
 
@@ -46,12 +45,8 @@ end
 
 task "install:vundle" do
   system "git clone https://github.com/gmarik/Vundle.vim.git #{HOME}/.vim/bundle/Vundle.vim"
+  # FIXME: still doesn't work on linux
   system 'echo "\n" | vim - +PluginInstall +qall!'
-end
-
-task "compile_ycm_binaries" do
-  Dir.chdir("#{HOME}/.vim/bundle/YouCompleteMe")
-  system "./install.sh"
 end
 
 def backup(filepath)

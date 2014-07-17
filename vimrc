@@ -8,7 +8,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/syntastic'     " automatic syntax checking / linting
 Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
-Plugin 'Valloric/YouCompleteMe'   " fast autocompletion
+
+Plugin 'Shougo/neocomplete.vim'   " autocompletion
+let g:neocomplete#enable_at_startup = 1
+
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'   " show git diff in the gutter
 Plugin 'kien/ctrlp.vim'           " fuzzy file search and opening

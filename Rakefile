@@ -15,7 +15,7 @@ task "copy_dotfiles" do
 
   current_dir = Dir.getwd
 
-  excluded_files = ["Rakefile", "todo.txt", ".", ".."]
+  excluded_files = ["Rakefile", "todo.txt", "done.txt", ".", ".."]
   dotfiles_to_copy = Dir.entries(".").reject { |e| excluded_files.include? e }
 
   dotfiles_to_copy.each do |filename|

@@ -11,6 +11,8 @@ Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 
 Plugin 'Shougo/neocomplete.vim'   " autocompletion
 let g:neocomplete#enable_at_startup = 1
+" tab completion
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'   " show git diff in the gutter

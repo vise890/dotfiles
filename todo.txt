@@ -3,3 +3,4 @@
 find a way to load different customizations @vimrc
 source highlight when `less`ing
 (A) investigate encoding of vimrc (broken on linux)
+add haskell tooling

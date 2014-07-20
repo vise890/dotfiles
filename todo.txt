@@ -1,6 +1,5 @@
-(A) highlight code in .md files @vimrc
-
-find a way to load different customizations @vimrc
-source highlight when `less`ing
 (A) investigate encoding of vimrc (broken on linux)
-add haskell tooling
+(B) add haskell tooling
+find a way to load different customizations @vimrc
+highlight code in .md files @vimrc
+source highlight when `less`ing

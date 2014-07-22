@@ -24,7 +24,7 @@ export DONE_TXT_PATH="$HOME/Documents/todo/done.txt"
 alias te="$EDITOR $TODO_TXT_PATH"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git autojump rbenv pacman vi-mode colored-man)
+plugins=(git autojump rbenv go golang pacman vi-mode colored-man)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,6 +34,9 @@ bindkey '^R' history-incremental-search-backward
 #### THE PATH #################################################################
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 ###############################################################################
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"

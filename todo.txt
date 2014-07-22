@@ -1,4 +1,3 @@
-(A) investigate encoding of vimrc (broken on linux)
 (B) add haskell tooling
 find a way to load different customizations @vimrc
 highlight code in .md files @vimrc

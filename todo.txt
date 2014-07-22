@@ -1,5 +1,6 @@
+(A) add .cabal bins
 (B) add haskell tooling
+(B) avoid useless duplicated re-addind of scm breeze on each run
 find a way to load different customizations @vimrc
 highlight code in .md files @vimrc
 source highlight when `less`ing
-(B) avoid useless duplicated re-addind of scm breeze on each run

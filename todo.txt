@@ -4,3 +4,4 @@
 find a way to load different customizations @vimrc
 highlight code in .md files @vimrc
 source highlight when `less`ing
+youcompleteme @vimrc

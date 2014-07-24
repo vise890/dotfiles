@@ -19,3 +19,8 @@ git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim 
 # FIXME: still doesn't work on linux
 echo "\n" | vim - +PluginInstall +qall!
 
+# compile vimproc native extensions
+cd $HOME/.vim/bundle/vimproc.vim
+make
+cd
+

@@ -33,11 +33,14 @@ bindkey '^R' history-incremental-search-backward
 
 #### THE PATH #################################################################
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-###############################################################################
 
 # golang stuff
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# add cabal (haskell) bins
+export PATH=$PATH:$HOME/.cabal/bin
+###############################################################################
 
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"

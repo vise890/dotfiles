@@ -1,1 +1,3 @@
 x (A) reduce tab size @vimrc
+x (A) add .cabal bins
+x (B) add haskell tooling

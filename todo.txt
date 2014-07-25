@@ -1,7 +1,7 @@
-
+(A) fix haskell quickfix window
+(A) go to position directly above cursor when wrapping words and pressing jk @vimrc
 (B) avoid useless duplicated re-addind of scm breeze on each run
 find a way to load different customizations @vimrc
 highlight code in .md files @vimrc
 source highlight when `less`ing
 youcompleteme @vimrc
-(A) fix haskell quickfix window

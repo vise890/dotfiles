@@ -2,3 +2,6 @@
 places
 backups/*
 elpa/*
+
+\#*\#
+projectile-bookmarks.eld

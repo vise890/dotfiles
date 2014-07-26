@@ -16,6 +16,7 @@ Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 
 " Haskell
 Plugin 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)
+  autocmd BufWritePost *.hs GhcModCheckAndLintAsync " check and lint on write
 Plugin 'eagletmt/neco-ghc'        " haskell completion plugin
 
 " Interface stuff

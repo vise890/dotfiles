@@ -38,10 +38,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# useful scripts
+# add cabal (haskell) bins
+export PATH=$PATH:$HOME/.cabal/bin
+
+# add useful user scripts
 export PATH=$PATH:$HOME/code/scripts
 ###############################################################################
-
-
+#
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"

@@ -1,4 +1,4 @@
-set nocompatible                  " be iMproved
+set nocompatible                  " be improved
 filetype off                      " required by Vundle
 
 " set the runtime path to include Vundle and initialize
@@ -7,23 +7,27 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/syntastic'     " automatic syntax checking / linting
+Plugin 'Shougo/neocomplete.vim'   " autocompletion
+  let g:neocomplete#enable_at_startup = 1
+  " tab completion
+  inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+Plugin 'Shougo/vimproc.vim'       " interactive command execution (dep for ghc-mod..)
 Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 
-Plugin 'Shougo/neocomplete.vim'   " autocompletion
-let g:neocomplete#enable_at_startup = 1
-" tab completion
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" Haskell
+Plugin 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)
+  autocmd BufWritePost *.hs GhcModCheckAndLintAsync " check and lint on write
+Plugin 'eagletmt/neco-ghc'        " haskell completion plugin
 
+" Interface stuff
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'   " show git diff in the gutter
 Plugin 'kien/ctrlp.vim'           " fuzzy file search and opening
-
 Plugin 'scrooloose/nerdtree'      " tree explorer
-map <C-n> :NERDTreeToggle<CR>
-
+  map <C-n> :NERDTreeToggle<CR>
 Plugin 'bling/vim-airline'        " a better status bar
-set laststatus=2                  " don't wait for a split to appear for airline to be visible
-let g:airline_powerline_fonts=1   " use cool symbols
+  set laststatus=2                  " don't wait for a split to appear for airline to be visible
+  let g:airline_powerline_fonts=1   " use cool symbols
 
 call vundle#end()
 

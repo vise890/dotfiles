@@ -11,6 +11,7 @@ Plugin 'Shougo/neocomplete.vim'   " autocompletion
   let g:neocomplete#enable_at_startup = 1
   " tab completion
   inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+  set completeopt-=preview
 Plugin 'Shougo/vimproc.vim'       " interactive command execution (dep for ghc-mod..)
 Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 

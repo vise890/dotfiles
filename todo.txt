@@ -1,4 +1,3 @@
-
 (A) go to position directly above cursor when wrapping words and pressing jk @vimrc
 (B) avoid useless duplicated re-addind of scm breeze on each run
 find a way to load different customizations @vimrc
@@ -6,4 +5,5 @@ highlight code in .md files @vimrc
 source highlight when `less`ing
 youcompleteme @vimrc
 make bg color persistent @terminator
-(A) add python support to @vimrc
+
+look into antigen as oh-my-zsh sub

@@ -10,10 +10,10 @@ stow --target=$HOME vim zsh ruby haskell
 
 # install oh-my-zsh
 rm -rf $HOME/.bash* # yeeeha!
-git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh || true
+git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh || true
 
 # install scm_breeze
-git clone git://github.com/ndbroadbent/scm_breeze.git $HOME/.scm_breeze || true
+git clone https://github.com/ndbroadbent/scm_breeze.git $HOME/.scm_breeze || true
 $HOME/.scm_breeze/install.sh
 
 # install vundle

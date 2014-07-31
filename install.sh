@@ -6,7 +6,7 @@ IFS=$'\n\t'
 DOTFILES_DIR=`pwd`
 
 echo "==> copy dotfiles"
-stow --target=$HOME vim zsh ruby haskell
+stow --restow --target=$HOME vim zsh ruby haskell
 
 echo "==> install oh-my-zsh"
 rm -rf $HOME/.bash* # yeeeha!
@@ -18,8 +18,7 @@ $HOME/.scm_breeze/install.sh
 
 echo "==> install vundle"
 git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || true
-# FIXME: this still requires user input
-vim +PluginInstall +qall!
+vim -u "~/.vimrc.bundles" +PluginInstall +qall!
 
 echo "==> compile vimproc native extensions"
 cd $HOME/.vim/bundle/vimproc.vim

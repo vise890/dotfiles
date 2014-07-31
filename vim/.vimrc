@@ -1,44 +1,7 @@
+source ~/.vimrc.bundles
+
 set nocompatible                  " be improved
-filetype off                      " required by Vundle
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'scrooloose/syntastic'     " automatic syntax checking / linting
-Plugin 'Shougo/neocomplete.vim'   " autocompletion
-  let g:neocomplete#enable_at_startup = 1
-  " tab completion
-  inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-  set completeopt-=preview
-Plugin 'Shougo/vimproc.vim'       " interactive command execution (dep for ghc-mod..)
-Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
-
-" Haskell
-Plugin 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)
-  autocmd BufWritePost *.hs GhcModCheckAndLintAsync " check and lint on write
-Plugin 'eagletmt/neco-ghc'        " haskell completion plugin
-
-" Interface stuff
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'airblade/vim-gitgutter'   " show git diff in the gutter
-Plugin 'kien/ctrlp.vim'           " fuzzy file search and opening
-Plugin 'scrooloose/nerdtree'      " tree explorer
-  map <C-n> :NERDTreeToggle<CR>
-Plugin 'bling/vim-airline'        " a better status bar
-  set laststatus=2                  " don't wait for a split to appear for airline to be visible
-  let g:airline_powerline_fonts=1   " use cool symbols
-
-call vundle#end()
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 let mapleader = ','
-
-set mouse=a                      " automatically enable mouse
-set mousehide                    " hide mouse cursor when typing
 
 " move around windows more easily
 map <C-J> <C-W>j<C-W>_
@@ -46,23 +9,21 @@ map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
 map <C-H> <C-W>h<C-W>_
 
+set mouse=a                      " automatically enable mouse
+set mousehide                    " hide mouse cursor when typing
+
 set wildmenu                     " show list instead of just completing
 set wildmode=list:longest,full   " command <Tab> completion, list matches, then longest common part, then all.
 
 set number                       " show line numbers
 syntax enable                    " ...
-
 set background=dark
 colorscheme solarized
-
 highlight clear SignColumn       " signColumn(gutter) should match background
 highlight clear LineNr           " current line number row will have same background color in relative mode
-
 set cursorline                   " highlight current line
-
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search terms
-
 set nowrap                       " do not wrap long lines
 
 " Highlight problematic whitespace
@@ -72,7 +33,7 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 filetype plugin indent on        " load plugins and indent files for the current filetyp
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " force markdown filetype for *.md files
 
-" tabs, spaces and indentation and
+" tabs, spaces and indentation
 set expandtab                    " tabs are spaces, not tabs
 set tabstop=2                    " a tab is x spaces
 set softtabstop=2                " insert x spaces when tab is pressed
@@ -84,5 +45,26 @@ set nojoinspaces                 " don't convert spaces to tabs
 
 set backspace=indent,eol,start   " moar aggressive backspace
 
-" yank from cursor to end of line
+" yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" NEOCOMPLETE: autocompletion
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#enable_auto_delimiter = 1
+let g:neocomplete#max_list = 15
+" <TAB>: completion
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+set completeopt-=preview          " don't open preview window all over the place
+
+" GHCMOD: haskell type info and error checking
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync " check and lint on write
+
+" NERDTREE: file browser
+map <C-n> :NERDTreeToggle<CR>
+
+" AIRLINE: status bar
+set laststatus=2                  " don't wait for a split to appear for airline to be visible
+let g:airline_powerline_fonts=1   " use cool symbols

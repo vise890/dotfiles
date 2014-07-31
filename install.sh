@@ -18,8 +18,8 @@ $HOME/.scm_breeze/install.sh
 
 echo "==> install vundle"
 git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || true
-# FIXME: still doesn't work on linux
-echo "\n\n" | vim - +PluginInstall +qall!
+# FIXME: this still requires user input
+vim +PluginInstall +qall!
 
 echo "==> compile vimproc native extensions"
 cd $HOME/.vim/bundle/vimproc.vim

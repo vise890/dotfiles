@@ -15,6 +15,7 @@ alias zshrc="$EDITOR $HOME/.zshrc"
 alias vimrc="$EDITOR $HOME/.vimrc"
 
 alias s="$EDITOR $HOME/notes/spark.md"
+alias sp="$EDITOR $HOME/notes/spark-personal.md"
 
 export TODO_TXT_PATH="$HOME/Documents/todo/todo.txt"
 export DONE_TXT_PATH="$HOME/Documents/todo/done.txt"
@@ -36,7 +37,7 @@ export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
 
 # add cabal (haskell) bins
-export PATH=$PATH:$HOME/.cabal/bin
+export PATH=$HOME/.cabal/bin:$PATH
 
 # add useful user scripts
 export PATH=$PATH:$HOME/code/scripts

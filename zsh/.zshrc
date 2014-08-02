@@ -33,7 +33,7 @@ bindkey '^R' history-incremental-search-backward
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # golang stuff
-export GOPATH=$HOME/code/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # add cabal (haskell) bins

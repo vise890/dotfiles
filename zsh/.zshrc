@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 bindkey '^R' history-incremental-search-backward
 
 #### THE PATH #################################################################
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # golang stuff
 export GOPATH=$HOME/go

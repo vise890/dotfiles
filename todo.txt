@@ -1,4 +1,4 @@
-(A) go to position directly above cursor when wrapping words and pressing jk @vimrc
+
 (B) avoid useless duplicated re-addind of scm breeze on each run
 
 highlight code in .md files @vimrc

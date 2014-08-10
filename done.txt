@@ -4,3 +4,4 @@ x (B) add haskell tooling
 x (A) fix haskell quickfix window
 x (A) add python support to @vimrc
 x find a way to load different customizations @vimrc
+x (A) go to position directly above cursor when wrapping words and pressing jk @vimrc

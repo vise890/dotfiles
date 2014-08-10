@@ -1,9 +1,6 @@
-(A) go to position directly above cursor when wrapping words and pressing jk @vimrc
-(B) avoid useless duplicated re-addind of scm breeze on each run
-
+(A) tmux conf
 highlight code in .md files @vimrc
+look into antigen/prezto as oh-my-zsh sub
+make bg color persistent @terminator
 source highlight when `less`ing
 youcompleteme @vimrc
-make bg color persistent @terminator
-
-look into antigen as oh-my-zsh sub

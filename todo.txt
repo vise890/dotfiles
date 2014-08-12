@@ -1,4 +1,5 @@
 (A) tmux conf
+(B) avoid useless duplicated re-addind of scm breeze on each run
 highlight code in .md files @vimrc
 look into antigen/prezto as oh-my-zsh sub
 make bg color persistent @terminator

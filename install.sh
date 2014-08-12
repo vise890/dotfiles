@@ -6,7 +6,7 @@ IFS=$'\n\t'
 DOTFILES_DIR=`pwd`
 
 echo "==> copy dotfiles"
-stow --restow --target=$HOME vim zsh haskell lein
+stow --restow --target=$HOME vim zsh haskell lein firefox
 
 echo "==> install oh-my-zsh"
 rm -rf $HOME/.bash* # yeeeha!

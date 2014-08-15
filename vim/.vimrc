@@ -48,6 +48,11 @@ set backspace=indent,eol,start   " moar aggressive backspace
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$
 
+" move in a sane way when wrapping
+noremap  <buffer> <silent> k gk
+noremap  <buffer> <silent> j gj
+noremap  <buffer> <silent> 0 g0
+noremap  <buffer> <silent> $ g$
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " NEOCOMPLETE: autocompletion

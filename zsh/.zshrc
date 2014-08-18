@@ -45,3 +45,9 @@ export PATH=$PATH:$HOME/code/scripts
 
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+
+# hack for colors in gnome-terminal
+# FIXME: find a better way
+if [[ "$COLORTERM" == "gnome-terminal" ]]; then
+  export TERM=xterm-256color
+fi

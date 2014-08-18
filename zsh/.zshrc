@@ -13,6 +13,7 @@ alias v="$EDITOR"
 
 alias zshrc="$EDITOR $HOME/.zshrc"
 alias vimrc="$EDITOR $HOME/.vimrc"
+alias vbundles="$EDITOR $HOME/.vimrc.bundles"
 
 alias s="$EDITOR $HOME/notes/spark.md"
 alias sp="$EDITOR $HOME/notes/spark-personal.md"

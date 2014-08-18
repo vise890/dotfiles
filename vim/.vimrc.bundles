@@ -25,5 +25,7 @@ Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 Plugin 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)
 Plugin 'eagletmt/neco-ghc'        " haskell completion plugin
 
+Plugin 'fatih/vim-go'
+
 call vundle#end()
 filetype plugin indent on

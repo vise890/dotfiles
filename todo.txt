@@ -5,3 +5,4 @@ look into antigen/prezto as oh-my-zsh sub
 make bg color persistent @terminator
 source highlight when `less`ing
 youcompleteme @vimrc
+oh-my-zsh=>prezto

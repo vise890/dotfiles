@@ -15,11 +15,12 @@ alias zshrc="$EDITOR $HOME/.zshrc"
 alias vimrc="$EDITOR $HOME/.vimrc"
 alias vbundles="$EDITOR $HOME/.vimrc.bundles"
 
-alias s="$EDITOR $HOME/notes/spark.md"
-alias sp="$EDITOR $HOME/notes/spark-personal.md"
+export ORGPATH="$HOME/org"
 
-export TODO_TXT_PATH="$HOME/Documents/todo/todo.txt"
-export DONE_TXT_PATH="$HOME/Documents/todo/done.txt"
+alias s="$EDITOR $ORGPATH"
+
+export TODO_TXT_PATH="$ORGPATH/todo/todo.txt"
+export DONE_TXT_PATH="$ORGPATH/todo/done.txt"
 alias te="$EDITOR $TODO_TXT_PATH"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)

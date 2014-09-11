@@ -6,3 +6,5 @@ make bg color persistent @terminator
 source highlight when `less`ing
 youcompleteme @vimrc
 oh-my-zsh=>prezto
+configure i3 window manager
+@vimrc move nerdtree to the right

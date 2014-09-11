@@ -21,6 +21,8 @@ Plugin 'Shougo/vimproc.vim'       " interactive command execution (dep for ghc-m
 
 Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 
+Plugin 'fatih/vim-go'             " golang support
+
 " Haskell
 Plugin 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)
 Plugin 'eagletmt/neco-ghc'        " haskell completion plugin

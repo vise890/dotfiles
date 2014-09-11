@@ -17,7 +17,7 @@ alias vbundles="$EDITOR $HOME/.vimrc.bundles"
 
 export ORGPATH="$HOME/org"
 
-alias s="$EDITOR $ORGPATH"
+alias org="cd $ORGPATH && vim ."
 
 export TODO_TXT_PATH="$ORGPATH/todo/todo.txt"
 export DONE_TXT_PATH="$ORGPATH/todo/done.txt"

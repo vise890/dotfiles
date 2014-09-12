@@ -21,7 +21,11 @@ Plugin 'Shougo/vimproc.vim'       " interactive command execution (dep for ghc-m
 
 Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
 
+" golang
 Plugin 'fatih/vim-go'             " golang support
+Plugin 'majutsushi/tagbar'        " tags in a window, ordered by scope
+
+Plugin 'tpope/vim-markdown'       " syntax highlight
 
 " Haskell
 Plugin 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)

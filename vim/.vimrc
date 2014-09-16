@@ -22,14 +22,6 @@ set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search terms
 
-" tabs, spaces and indentation
-set expandtab                    " tabs are spaces, not tabs
-set tabstop=2                    " a tab is x spaces
-set softtabstop=2                " insert x spaces when tab is pressed
-set shiftwidth=2                 " use indents of 2 spaces
-set shiftround                   " round spaces to nearest shiftwidth multiple
-set nojoinspaces                 " don't convert spaces to tabs
-
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " force markdown filetype for *.md files
 
 " yank from cursor to end of line (more consistent with A, C, D, etc.)

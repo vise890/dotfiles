@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'       " sensible vim defaults
+Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, expandtab, etc.)
 
 Plug 'altercation/vim-colors-solarized'
 

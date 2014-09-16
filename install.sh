@@ -17,6 +17,7 @@ git clone https://github.com/ndbroadbent/scm_breeze.git $HOME/.scm_breeze || tru
 $HOME/.scm_breeze/install.sh
 
 echo "==> install vim-plug and plugins"
+rm -rf ~/.vim/plugged/
 mkdir -p ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

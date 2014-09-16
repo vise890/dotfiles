@@ -20,9 +20,7 @@ highlight clear SignColumn       " signColumn(gutter) should match background
 highlight clear LineNr           " current line number row will have same background color in relative mode
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
-set hlsearch                     " highlight search terms
-
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown " force markdown filetype for *.md files
+set hlsearch                     " highlight search results
 
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$
@@ -34,6 +32,7 @@ noremap  <buffer> <silent> k gk
 noremap  <buffer> <silent> j gj
 noremap  <buffer> <silent> 0 g0
 noremap  <buffer> <silent> $ g$
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " NEOCOMPLETE: autocompletion

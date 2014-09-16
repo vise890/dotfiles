@@ -15,7 +15,7 @@ alias v="$EDITOR"
 alias zshrc="$EDITOR $HOME/.zshrc"
 alias tmuxconf="$EDITOR $HOME/.tmux.conf"
 alias vimrc="$EDITOR $HOME/.vimrc"
-alias vbundles="$EDITOR $HOME/.vimrc.bundles"
+alias vplugs="$EDITOR $HOME/.vimrc.plugs"
 #############################################
 
 # ORG stuff #################################

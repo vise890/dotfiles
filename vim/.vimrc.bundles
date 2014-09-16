@@ -19,17 +19,20 @@ Plugin 'scrooloose/syntastic'     " automatic syntax checking / linting
 Plugin 'Shougo/neocomplete.vim'   " autocompletion
 Plugin 'Shougo/vimproc.vim'       " interactive command execution (dep for ghc-mod..)
 
-Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
-
 " golang
 Plugin 'fatih/vim-go'             " golang support
 Plugin 'majutsushi/tagbar'        " tags in a window, ordered by scope
 
-Plugin 'tpope/vim-markdown'       " syntax highlight
 
 " Haskell
 Plugin 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)
 Plugin 'eagletmt/neco-ghc'        " haskell completion plugin
+
+" Assorted filetypes/syntaxes
+Plugin 'elzr/vim-json'            " more kickass JSON syntax highlight
+Plugin 'tpope/vim-markdown'       " syntax highlight
+Plugin 'cespare/vim-toml'         " TOML
+Plugin 'vimez/vim-tmux'           " highlight in tmux.conf
 
 call vundle#end()
 filetype plugin indent on

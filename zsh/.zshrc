@@ -3,9 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+
 COMPLETION_WAITING_DOTS="true"
 
 export EDITOR='vim'
@@ -20,7 +19,6 @@ alias vplugs="$EDITOR $HOME/.vimrc.plugs"
 
 # ORG stuff #################################
 export ORGPATH="$HOME/org"
-
 alias org="cd $ORGPATH && vim ."
 
 export TODO_TXT_PATH="$ORGPATH/todo/todo.txt"
@@ -29,26 +27,26 @@ alias te="$EDITOR $TODO_TXT_PATH"
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(git autojump pacman vi-mode tmux colored-man)
+plugins=(autojump pacman vi-mode colored-man)
 
 source $ZSH/oh-my-zsh.sh
 
 # restore some shortcuts in vi-mode
 bindkey '^R' history-incremental-search-backward
 
-#### THE PATH #################################################################
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+#### THE PATH ###############################
+export PATH=/usr/local/bin:$PATH
 
 # golang stuff
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
 
 # add cabal (haskell) bins
 export PATH=$HOME/.cabal/bin:$PATH
 
 # add useful user scripts
-export PATH=$PATH:$HOME/code/scripts
-###############################################################################
+export PATH=$HOME/code/scripts:$PATH
+#############################################
 
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"

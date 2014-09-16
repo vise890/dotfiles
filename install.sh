@@ -16,14 +16,11 @@ echo "==> install scm_breeze"
 git clone https://github.com/ndbroadbent/scm_breeze.git $HOME/.scm_breeze || true
 $HOME/.scm_breeze/install.sh
 
-echo "==> install vundle"
-git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || true
-vim -u "~/.vimrc.bundles" +PluginInstall +qall!
-
-echo "==> compile vimproc native extensions"
-cd $HOME/.vim/bundle/vimproc.vim
-make
-cd $DOTFILES_DIR
+echo "==> install vim-plug and plugins"
+mkdir -p ~/.vim/autoload
+curl -fLo ~/.vim/autoload/plug.vim \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim -u "~/.vimrc.plugs" +PlugInstall +qall!
 
 # FIXME: massive hack to restore zshrc
 # scm_breeze should be installed manually or (better) nuked completely (since it is a dirty hack)

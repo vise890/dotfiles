@@ -1,0 +1,33 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'altercation/vim-colors-solarized'
+
+Plug 'airblade/vim-gitgutter'   " show git diff in the gutter
+Plug 'bling/vim-airline'        " a better status bar
+
+Plug 'kien/ctrlp.vim'           " fuzzy file search and opening
+
+" NERD tree will be loaded on the first invocation of NERDTreeToggle command
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+Plug 'scrooloose/syntastic'     " automatic syntax checking / linting
+Plug 'Shougo/neocomplete.vim'   " autocompletion
+" Interactive command execution (dep for ghc-mod..)
+Plug 'Shougo/vimproc.vim'       , { 'do': 'make' }
+
+" golang
+Plug 'fatih/vim-go'             " golang support
+Plug 'majutsushi/tagbar'        " tags in a window, ordered by scope
+
+
+" Haskell
+Plug 'eagletmt/ghcmod-vim'      " happy haskell programming (type, errors/warnings, ..)
+Plug 'eagletmt/neco-ghc'        " haskell completion plugin
+
+" Assorted filetypes/syntaxes
+Plug 'elzr/vim-json'            " more kickass JSON syntax highlight
+Plug 'tpope/vim-markdown'       " syntax highlight
+Plug 'cespare/vim-toml'         " TOML
+Plug 'vimez/vim-tmux'           " highlight in tmux.conf
+
+call plug#end()

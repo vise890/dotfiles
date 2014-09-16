@@ -22,7 +22,9 @@ highlight clear LineNr           " current line number row will have same backgr
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search results
-set list                         " show trailing and stuff
+" Highlight problematic whitespace
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$

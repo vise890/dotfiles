@@ -12,11 +12,8 @@ map <C-H> <C-W>h<C-W>_
 set mouse=a                      " automatically enable mouse
 set mousehide                    " hide mouse cursor when typing
 
-set wildmenu                     " show list instead of just completing
-set wildmode=list:longest,full   " command <Tab> completion, list matches, then longest common part, then all.
-
+" UI
 set number                       " show line numbers
-syntax enable                    " ...
 set background=dark
 colorscheme solarized
 highlight clear SignColumn       " signColumn(gutter) should match background
@@ -24,30 +21,22 @@ highlight clear LineNr           " current line number row will have same backgr
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search terms
-set nowrap                       " do not wrap long lines
-
-" Highlight problematic whitespace
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
-
-filetype plugin indent on        " load plugins and indent files for the current filetyp
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown " force markdown filetype for *.md files
 
 " tabs, spaces and indentation
 set expandtab                    " tabs are spaces, not tabs
 set tabstop=2                    " a tab is x spaces
 set softtabstop=2                " insert x spaces when tab is pressed
 set shiftwidth=2                 " use indents of 2 spaces
-set smarttab                     " indent instead of tab at line start
-set autoindent                   " indent at the same level of the previous line
 set shiftround                   " round spaces to nearest shiftwidth multiple
 set nojoinspaces                 " don't convert spaces to tabs
 
-set backspace=indent,eol,start   " moar aggressive backspace
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown " force markdown filetype for *.md files
 
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$
 
+" WRAPPING
+set nowrap                       " do not wrap long lines
 " move in a sane way when wrapping
 noremap  <buffer> <silent> k gk
 noremap  <buffer> <silent> j gj

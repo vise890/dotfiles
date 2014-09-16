@@ -24,7 +24,7 @@ export DONE_TXT_PATH="$ORGPATH/todo/done.txt"
 alias te="$EDITOR $TODO_TXT_PATH"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git autojump pacman vi-mode colored-man)
+plugins=(git autojump pacman vi-mode tmux colored-man)
 
 source $ZSH/oh-my-zsh.sh
 

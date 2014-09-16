@@ -16,11 +16,13 @@ set mousehide                    " hide mouse cursor when typing
 set number                       " show line numbers
 set background=dark
 colorscheme solarized
+
 highlight clear SignColumn       " signColumn(gutter) should match background
 highlight clear LineNr           " current line number row will have same background color in relative mode
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search results
+set list                         " show trailing and stuff
 
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$

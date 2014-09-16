@@ -1,10 +1,7 @@
-(A) tmux conf
 (B) avoid useless duplicated re-addind of scm breeze on each run
+configure i3 window manager
 highlight code in .md files @vimrc
 look into antigen/prezto as oh-my-zsh sub
-make bg color persistent @terminator
+oh-my-zsh=>prezto
 source highlight when `less`ing
 youcompleteme @vimrc
-oh-my-zsh=>prezto
-configure i3 window manager
-@vimrc move nerdtree to the right

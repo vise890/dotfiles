@@ -46,6 +46,9 @@ export PATH=$HOME/.cabal/bin:$PATH
 
 # add useful user scripts
 export PATH=$HOME/code/scripts:$PATH
+
+# Ensure path arrays do not contain duplicates.
+typeset -gU cdpath fpath mailpath path
 #############################################
 
 # initialize scm breeze

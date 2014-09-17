@@ -61,14 +61,15 @@ let g:airline_powerline_fonts=1   " use cool symbols
 " TAGBAR: display tags in a window
 nmap <F8> :TagbarToggle<CR>
 
-" only use certain features when writing in <langs>
+" FIXME: this is all borked
+" only use certain features when writing in <langs>,
 " change colorscheme when using <langs>
-autocmd! BufEnter,BufNewFile *.clj,*.cljs,*.scm,*.js colo lucius
-autocmd! BufLeave *.clj,*.cljs,*.scm,*.js colo solarized
-if (&filetype == 'clojure') || (&filetype == 'scheme') || (&filetype == 'javascript')
-  " ranbow parentheses only for <langs>
-  au VimEnter * RainbowParenthesesToggle
-  au Syntax * RainbowParenthesesLoadRound
-  au Syntax * RainbowParenthesesLoadSquare
-  au Syntax * RainbowParenthesesLoadBraces
-endif
+" autocmd! BufEnter,BufNewFile *.clj,*.cljs,*.scm,*.js colorscheme gruvbox
+" autocmd! BufLeave *.clj,*.cljs,*.scm,*.js colorscheme solarized
+" if (&filetype == 'clojure') || (&filetype == 'scheme') || (&filetype == 'javascript')
+"   " ranbow parentheses only for <langs>
+"   au VimEnter * RainbowParenthesesActivate
+"   au Syntax * RainbowParenthesesLoadRound
+"   au Syntax * RainbowParenthesesLoadSquare
+"   au Syntax * RainbowParenthesesLoadBraces
+" endif

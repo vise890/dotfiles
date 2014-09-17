@@ -39,7 +39,6 @@ Plug 'vim-scripts/paredit.vim'      , { 'for': ['clojure', 'scheme'] } " Structu
 Plug 'kien/rainbow_parentheses.vim' , { 'for': ['clojure', 'scheme'] } " moar colors for parentheses
 
 " Haskell
-Plug 'dag/vim2hs'               , { 'for': 'haskell' }                 " A collection of vimscripts for Haskell development.
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)
 Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
 

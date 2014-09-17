@@ -9,13 +9,28 @@ set mousehide                    " hide mouse cursor when typing
 " UI
 set number                       " show line numbers
 set background=dark
-colorscheme solarized
-
 highlight clear SignColumn       " signColumn(gutter) should match background
 highlight clear LineNr           " current line number row will have same background color in relative mode
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search results
+" colours are loaded depending on the filetype:
+autocmd! FileType * call Color_Setup ()
+function Color_Setup ()
+  if (&filetype == 'nerdtree')
+    " continue as usual
+  elseif (&filetype == 'clojure') || (&filetype == 'scheme')
+    " if it's something lispy, use a suitable theme with rainbowparens
+    colorscheme gruvbox
+    RainbowParenthesesActivate
+    RainbowParenthesesLoadRound
+    RainbowParenthesesLoadSquare
+    RainbowParenthesesLoadBraces
+  else
+    " .. otherwise jus solarize, Mr. Sulu
+    colorscheme solarized
+  endif
+endfunction
 
 " Highlight problematic whitespace
 set list
@@ -61,15 +76,3 @@ let g:airline_powerline_fonts=1   " use cool symbols
 " TAGBAR: display tags in a window
 nmap <F8> :TagbarToggle<CR>
 
-" FIXME: this is all borked
-" only use certain features when writing in <langs>,
-" change colorscheme when using <langs>
-" autocmd! BufEnter,BufNewFile *.clj,*.cljs,*.scm,*.js colorscheme gruvbox
-" autocmd! BufLeave *.clj,*.cljs,*.scm,*.js colorscheme solarized
-" if (&filetype == 'clojure') || (&filetype == 'scheme') || (&filetype == 'javascript')
-"   " ranbow parentheses only for <langs>
-"   au VimEnter * RainbowParenthesesActivate
-"   au Syntax * RainbowParenthesesLoadRound
-"   au Syntax * RainbowParenthesesLoadSquare
-"   au Syntax * RainbowParenthesesLoadBraces
-" endif

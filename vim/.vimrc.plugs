@@ -33,9 +33,9 @@ Plug 'fatih/vim-go'             , { 'for': 'go' }                      " golang 
 Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] }  " tags in a window, ordered by scope
 
 " lisp/clojure
-Plug 'guns/vim-clojure-static'  , { 'for': 'clojure' }                 " Clojure runtime files
-Plug 'tpope/vim-fireplace'      , { 'for': 'clojure' }                 " Clojure nREPL support
-Plug 'vim-scripts/paredit.vim'  , { 'for': ['clojure', 'scheme'] }     " Structured Editing of Lisp S-expressions
+Plug 'guns/vim-clojure-static'      , { 'for': 'clojure' }             " Clojure runtime files
+Plug 'tpope/vim-fireplace'          , { 'for': 'clojure' }             " Clojure nREPL support
+Plug 'vim-scripts/paredit.vim'      , { 'for': ['clojure', 'scheme'] } " Structured Editing of Lisp S-expressions
 Plug 'kien/rainbow_parentheses.vim' , { 'for': ['clojure', 'scheme'] } " moar colors for parentheses
 
 " Haskell

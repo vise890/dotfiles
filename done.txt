@@ -6,3 +6,5 @@ x (A) add python support to @vimrc
 x find a way to load different customizations @vimrc
 x (A) go to position directly above cursor when wrapping words and pressing jk @vimrc
 x (A) tmux conf
+x (A) load certain plugins only for relevant filetypes
+x look into antigen/prezto as oh-my-zsh sub

@@ -7,14 +7,16 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 Plug 'altercation/vim-colors-solarized'
 Plug 'jonathanfilip/vim-lucius'
 
-Plug 'airblade/vim-gitgutter'   " show git diff in the gutter
-Plug 'bling/vim-airline'        " a better status bar
+" UI_UX:
+Plug 'airblade/vim-gitgutter'         " show git diff in the gutter
+Plug 'bling/vim-airline'              " Airline: a better status bar
 
-Plug 'kien/ctrlp.vim'           " fuzzy file search and opening
-Plug 'scrooloose/nerdtree'      " file browser
+Plug 'kien/ctrlp.vim'                 " Ctrl-P: fuzzy file search and opening
+Plug 'scrooloose/nerdtree'            " NerdTree: file browser
+Plug 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
-Plug 'scrooloose/syntastic'     " automatic syntax checking / linting
-Plug 'Shougo/neocomplete.vim'   " autocompletion
+Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
+Plug 'Shougo/neocomplete.vim'         " autocompletion
 
 " UTILS:
 Plug 'tpope/vim-dispatch'       , { 'for': 'clojure' }                 " asynchronous build and test dispatcher

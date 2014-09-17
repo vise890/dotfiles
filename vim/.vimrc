@@ -3,12 +3,6 @@ source ~/.vimrc.plugs
 set nocompatible                  " be improved
 let mapleader = ','
 
-" move around windows more easily
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-L> <C-W>l<C-W>_
-map <C-H> <C-W>h<C-W>_
-
 set mouse=a                      " automatically enable mouse
 set mousehide                    " hide mouse cursor when typing
 

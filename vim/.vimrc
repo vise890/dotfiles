@@ -36,9 +36,6 @@ endfunction
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 
-" yank from cursor to end of line (more consistent with A, C, D, etc.)
-nnoremap Y y$
-
 " if 'ignorecase' and 'smartcase' are both on, if a pattern contains an uppercase
 " letter, it is case sensitive, otherwise, it is not
 set ignorecase
@@ -51,6 +48,9 @@ noremap  <buffer> <silent> k gk
 noremap  <buffer> <silent> j gj
 noremap  <buffer> <silent> 0 g0
 noremap  <buffer> <silent> $ g$
+
+" yank from cursor to end of line (more consistent with A, C, D, etc.)
+nnoremap Y y$
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

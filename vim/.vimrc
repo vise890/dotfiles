@@ -19,9 +19,9 @@ set hlsearch                     " highlight search results
 autocmd! FileType * call Color_Setup ()
 function Color_Setup ()
   if (&filetype == 'nerdtree')
-    " continue as usual
+    " continue, don't change anything
   elseif (&filetype == 'clojure') || (&filetype == 'scheme')
-    " if it's something lispy, use a suitable theme with rainbowparens
+    " if what you're editing is lispy, use a suitable theme with rainbowparens
     colorscheme gruvbox
     RainbowParenthesesActivate
     RainbowParenthesesLoadRound

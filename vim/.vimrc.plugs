@@ -3,7 +3,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'       " sensible vim defaults
 Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, expandtab, etc.)
 
+" COLORSCHEMES:
 Plug 'altercation/vim-colors-solarized'
+Plug 'jonathanfilip/vim-lucius'
 
 Plug 'airblade/vim-gitgutter'   " show git diff in the gutter
 Plug 'bling/vim-airline'        " a better status bar
@@ -14,20 +16,31 @@ Plug 'scrooloose/nerdtree'      " file browser
 Plug 'scrooloose/syntastic'     " automatic syntax checking / linting
 Plug 'Shougo/neocomplete.vim'   " autocompletion
 
+" UTILS:
+Plug 'tpope/vim-dispatch'       , { 'for': 'clojure' }                 " asynchronous build and test dispatcher
+Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }   " Interactive command execution (dep for ghc-mod..)
+
+" LANGUAGES:
 " golang
-Plug 'fatih/vim-go'             , { 'for': 'go' }                     " golang support
-Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] } " tags in a window, ordered by scope
+Plug 'fatih/vim-go'             , { 'for': 'go' }                      " golang support
+Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] }  " tags in a window, ordered by scope
+
+" lisp/clojure
+Plug 'guns/vim-clojure-static'  , { 'for': 'clojure' }                 " Clojure runtime files
+Plug 'tpope/vim-leiningen'      , { 'for': 'clojure' }                 " static support for Leiningen
+Plug 'tpope/vim-fireplace'      , { 'for': 'clojure' }                 " Clojure nREPL support
+Plug 'vim-scripts/paredit.vim'  , { 'for': ['clojure', 'scheme'] }     " Structured Editing of Lisp S-expressions
+Plug 'kien/rainbow_parentheses.vim' , { 'for': ['clojure', 'scheme'] } " moar colors for parentheses
 
 " Haskell
-Plug 'dag/vim2hs'               , { 'for': 'haskell' } " A collection of vimscripts for Haskell development.
-Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' } " happy haskell programming (type, errors/warnings, ..)
-Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' } " haskell completion plugin
-Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }     " Interactive command execution (dep for ghc-mod..)
+Plug 'dag/vim2hs'               , { 'for': 'haskell' }                 " A collection of vimscripts for Haskell development.
+Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)
+Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
 
-" Assorted filetypes/syntaxes
-Plug 'elzr/vim-json'            , { 'for': 'json' } " more kickass JSON syntax highlight
-Plug 'tpope/vim-markdown'       " syntax highlight
-Plug 'cespare/vim-toml'         " TOML
-Plug 'vimez/vim-tmux'           " highlight in tmux.conf
+" Other misc. filetypes/syntaxes
+Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
+Plug 'tpope/vim-markdown'                                              " syntax highlight
+Plug 'cespare/vim-toml'                                                " TOML
+Plug 'vimez/vim-tmux'                                                  " highlight in tmux.conf
 
 call plug#end()

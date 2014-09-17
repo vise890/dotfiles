@@ -6,6 +6,11 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 " COLORSCHEMES:
 Plug 'altercation/vim-colors-solarized'
 Plug 'jonathanfilip/vim-lucius'
+Plug 'w0ng/vim-hybrid'
+Plug 'morhetz/gruvbox'
+Plug 'ciaranm/inkpot'
+Plug 'nanotech/jellybeans.vim'
+Plug 'chriskempson/vim-tomorrow-theme' " just light version!
 
 " UI_UX:
 Plug 'airblade/vim-gitgutter'         " show git diff in the gutter

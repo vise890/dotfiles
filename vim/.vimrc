@@ -22,12 +22,18 @@ highlight clear LineNr           " current line number row will have same backgr
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search results
+
 " Highlight problematic whitespace
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$
+
+" if 'ignorecase' and 'smartcase' are both on, if a pattern contains an uppercase
+" letter, it is case sensitive, otherwise, it is not
+set ignorecase
+set smartcase
 
 " WRAPPING
 set nowrap                       " do not wrap long lines

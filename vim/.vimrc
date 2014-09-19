@@ -1,7 +1,9 @@
 source ~/.vimrc.plugs
 
-set nocompatible                  " be improved
-let mapleader = ','
+set nocompatible                 " be improved
+let mapleader = ' '
+" get rid of Ex mode
+nnoremap Q <Nop>
 
 set mouse=a                      " automatically enable mouse
 set mousehide                    " hide mouse cursor when typing

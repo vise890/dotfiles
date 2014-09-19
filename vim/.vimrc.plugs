@@ -24,19 +24,12 @@ Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
 Plug 'Shougo/neocomplete.vim'         " autocompletion
 
 " UTILS:
-Plug 'tpope/vim-dispatch'       , { 'for': 'clojure' }                 " asynchronous build and test dispatcher
 Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }   " Interactive command execution (dep for ghc-mod..)
 
 " LANGUAGES:
 " golang
 Plug 'fatih/vim-go'             , { 'for': 'go' }                      " golang support
 Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] }  " tags in a window, ordered by scope
-
-" lisp/clojure
-Plug 'guns/vim-clojure-static'      , { 'for': 'clojure' }             " Clojure runtime files
-Plug 'tpope/vim-fireplace'          , { 'for': 'clojure' }             " Clojure nREPL support
-Plug 'vim-scripts/paredit.vim'      , { 'for': 'clojure' }             " Structured Editing of Lisp S-expressions
-Plug 'kien/rainbow_parentheses.vim' , { 'for': 'clojure' }             " moar colors for parentheses
 
 " Haskell
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)

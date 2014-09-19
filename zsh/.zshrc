@@ -27,7 +27,7 @@ alias te="$EDITOR $TODO_TXT_PATH"
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump pacman vi-mode colored-man)
+plugins=(autojump pacman lein vi-mode colored-man)
 
 source $ZSH/oh-my-zsh.sh
 

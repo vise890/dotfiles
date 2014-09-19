@@ -18,7 +18,7 @@ set hlsearch                     " highlight search results
 " colours are loaded depending on the filetype:
 autocmd! FileType * call Color_Setup ()
 function Color_Setup ()
-  if (&filetype == 'nerdtree')
+  if (&filetype == 'nerdtree') || (&filetype == 'help')
     " continue, don't change anything
   elseif (&filetype == 'clojure') || (&filetype == 'scheme')
     " if what you're editing is lispy, use a suitable theme with rainbowparens

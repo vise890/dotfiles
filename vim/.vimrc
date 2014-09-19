@@ -15,24 +15,36 @@ highlight clear LineNr           " current line number row will have same backgr
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 set hlsearch                     " highlight search results
-" colours are loaded depending on the filetype:
+" Highlight problematic whitespace
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+
+" colours and functionalities are loaded depending on the filetype:
 autocmd! FileType * call Color_Setup ()
 function Color_Setup ()
   if (&filetype == 'nerdtree') || (&filetype == 'help')
     " continue, don't change anything
-  elseif (&filetype == 'clojure') || (&filetype == 'scheme')
+  elseif (&filetype == 'clojure')
     " if what you're editing is lispy, use a suitable theme with rainbowparens
     colorscheme gruvbox
     RainbowParenthesesActivate
     RainbowParenthesesLoadRound
     RainbowParenthesesLoadSquare
     RainbowParenthesesLoadBraces
+  else
+    " only enable neocomplete the language is not lispy
+    " NEOCOMPLETE: autocompletion
+    let g:neocomplete#enable_at_startup = 1
+    let g:neocomplete#enable_smart_case = 1
+    let g:neocomplete#enable_auto_delimiter = 1
+    let g:neocomplete#max_list = 15
+    " <TAB>: completion
+    " inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+    " set completeopt-=preview          " don't open preview window all over
+    " the place
   endif
 endfunction
 
-" Highlight problematic whitespace
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 
 " if 'ignorecase' and 'smartcase' are both on, if a pattern contains an uppercase
 " letter, it is case sensitive, otherwise, it is not
@@ -52,14 +64,6 @@ nnoremap Y y$
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" NEOCOMPLETE: autocompletion
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#enable_auto_delimiter = 1
-let g:neocomplete#max_list = 15
-" <TAB>: completion
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-set completeopt-=preview          " don't open preview window all over the place
 
 " GHCMOD: haskell type info and error checking
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync " check and lint on write

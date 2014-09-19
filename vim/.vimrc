@@ -44,9 +44,8 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#enable_auto_delimiter = 1
 let g:neocomplete#max_list = 15
 " <TAB>: completion
-" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-" set completeopt-=preview          " don't open preview window all over
-" the place
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+set completeopt-=preview          " don't open preview window all over the place
 
 " GHCMOD: haskell type info and error checking
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync " check and lint on write

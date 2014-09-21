@@ -50,9 +50,9 @@
 ;;; evil leader = vim leader
 (require 'evil-leader)
 (global-evil-leader-mode)
-(evil-leader/set-leader ",")
+(evil-leader/set-leader " ")
 (evil-leader/set-key
-  "," 'projectile-find-file)
+  " " 'projectile-find-file)
 
 ;;; git-gutter = git diffs in the gutter
 (require 'git-gutter)

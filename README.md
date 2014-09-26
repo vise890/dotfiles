@@ -11,6 +11,11 @@ stow -t ~ gnome
 ```
 
 ## Pre-requisites
+- `git`
 - GNU `stow`
 - `ghc-mod` (for hs development in vim)
   - `cabal install ghc-mod`
+
+### Nice to have
+- `zsh`
+- `tmux`

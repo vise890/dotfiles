@@ -41,6 +41,9 @@ Plug 'tpope/vim-fireplace'      , { 'for': 'clojure' }                 " Clojure
 " Rust
 Plug 'wting/rust.vim'
 
+" Javascript
+Plug 'pangloss/vim-javascript'
+
 " Other misc. filetypes/syntaxes
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 Plug 'tpope/vim-markdown'                                              " syntax highlight

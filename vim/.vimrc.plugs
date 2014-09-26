@@ -34,6 +34,13 @@ Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] }  " tags in
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)
 Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
 
+" Clojure
+Plug 'guns/vim-clojure-static'  , { 'for': 'clojure' }                 " Clojure runtime files
+Plug 'tpope/vim-fireplace'      , { 'for': 'clojure' }                 " Clojure REPL support
+
+" Rust
+Plug 'wting/rust.vim'
+
 " Other misc. filetypes/syntaxes
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 Plug 'tpope/vim-markdown'                                              " syntax highlight

@@ -6,7 +6,7 @@ IFS=$'\n\t'
 DOTFILES_DIR=`pwd`
 
 echo "==> copy dotfiles"
-stow --restow --target=$HOME vim zsh tmux haskell lein emacs
+stow --restow --target=$HOME vim zsh tmux haskell lein
 
 echo "==> install oh-my-zsh"
 rm -rf $HOME/.bash* # yeeeha!

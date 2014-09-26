@@ -1,7 +1,8 @@
+(A) muttrc
+(A) weechat
 (A) work on emacs config
 (B) avoid useless duplicated re-addind of scm breeze on each run
 configure i3 window manager
 highlight code in .md files @vimrc
 oh-my-zsh=>prezto
 source highlight when `less`ing
-youcompleteme @vimrc

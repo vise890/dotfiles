@@ -27,7 +27,7 @@ alias te="$EDITOR $TODO_TXT_PATH"
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump pacman lein vi-mode colored-man)
+plugins=(autojump pacman rbenv lein vi-mode colored-man)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,6 +43,9 @@ export PATH=$GOPATH/bin:$PATH
 
 # add cabal (haskell) bins
 export PATH=$HOME/.cabal/bin:$PATH
+
+# add rbenv shims to path
+export PATH=$HOME/.rbenv/shims:$PATH
 
 # add useful user scripts
 export PATH=$HOME/code/scripts:$PATH

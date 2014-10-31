@@ -2,6 +2,7 @@ source ~/.vimrc.plugs
 
 set nocompatible                 " be improved
 let mapleader = ' '
+
 " get rid of Ex mode
 nnoremap Q <Nop>
 
@@ -39,7 +40,6 @@ nnoremap Y y$
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" only enable neocomplete the language is not lispy
 " NEOCOMPLETE: autocompletion
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1

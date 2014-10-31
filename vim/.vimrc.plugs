@@ -6,7 +6,7 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 " COLORSCHEMES:
 Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
-Plug 'chriskempson/vim-tomorrow-theme' " just light version!
+Plug 'chriskempson/vim-tomorrow-theme'
 
 " UI_UX:
 Plug 'airblade/vim-gitgutter'         " show git diff in the gutter
@@ -21,11 +21,11 @@ Plug 'Shougo/neocomplete.vim'         " autocompletion
 
 " UTILS:
 Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }   " Interactive command execution (dep for ghc-mod..)
+Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] }  " tags in a window, ordered by scope
 
 " LANGUAGES:
 " golang
-Plug 'fatih/vim-go'             , { 'for': 'go' }                      " golang support
-Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] }  " tags in a window, ordered by scope
+Plug 'fatih/vim-go'             , { 'for': 'go' }
 
 " Haskell
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)

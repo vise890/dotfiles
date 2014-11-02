@@ -3,6 +3,8 @@ source ~/.vimrc.plugs
 set nocompatible                 " be improved
 let mapleader = ' '
 
+nnoremap <Leader><Space> :
+
 " get rid of Ex mode
 nnoremap Q <Nop>
 
@@ -17,10 +19,13 @@ highlight clear SignColumn       " signColumn(gutter) should match background
 highlight clear LineNr           " current line number row will have same background color in relative mode
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
-set hlsearch                     " highlight search results
+
 " Highlight problematic whitespace
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+
+set hlsearch                     " highlight search results
+set incsearch                    " incremental search
 
 " if 'ignorecase' and 'smartcase' are both on, if a pattern contains an uppercase
 " letter, it is case sensitive, otherwise, it is not

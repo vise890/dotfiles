@@ -1,3 +1,0 @@
-(A) paredit
-orgmode
-show whitespace

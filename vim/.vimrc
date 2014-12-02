@@ -39,6 +39,9 @@ noremap  <buffer> <silent> k gk
 noremap  <buffer> <silent> j gj
 noremap  <buffer> <silent> 0 g0
 noremap  <buffer> <silent> $ g$
+" shortcut for to wrap all lines at 80 characters without breaking any words,
+" and preserve shorter lines:
+nnoremap Q gqip
 
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$

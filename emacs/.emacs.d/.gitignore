@@ -1,0 +1,10 @@
+*~
+
+backups/*
+elpa/*
+auto-save-list
+
+places
+
+\#*\#
+projectile-bookmarks.eld

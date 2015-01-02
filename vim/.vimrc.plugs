@@ -33,6 +33,7 @@ Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy h
 Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
 
 " Other misc. filetypes/syntaxes
+Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 Plug 'tpope/vim-markdown'                                              " syntax highlight
 Plug 'cespare/vim-toml'                                                " TOML

@@ -6,6 +6,8 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 " COLORSCHEMES:
 Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
+Plug 'vim-scripts/saturn.vim'
 
 " UI_UX:
 Plug 'airblade/vim-gitgutter'         " show git diff in the gutter
@@ -19,8 +21,8 @@ Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
 Plug 'Shougo/neocomplete.vim'         " autocompletion
 
 " UTILS:
-Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }   " Interactive command execution (dep for ghc-mod..)
-Plug 'majutsushi/tagbar'        , { 'for': ['go', 'ruby', 'python'] }  " tags in a window, ordered by scope
+Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }        " Interactive command execution (dep for ghc-mod..)
+Plug 'majutsushi/tagbar'        , { 'for': ['c', 'go', 'ruby', 'python'] }  " tags in a window, ordered by scope
 
 " LANGUAGES:
 " golang
@@ -30,7 +32,12 @@ Plug 'fatih/vim-go'             , { 'for': 'go' }
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)
 Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
 
+" Clojure
+Plug 'guns/vim-clojure-static'  , { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace'      , { 'for': 'clojure' }
+
 " Other misc. filetypes/syntaxes
+Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 Plug 'tpope/vim-markdown'                                              " syntax highlight
 Plug 'cespare/vim-toml'                                                " TOML

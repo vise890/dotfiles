@@ -1,19 +1,9 @@
-;;; ux.el --- UX/UI stuff
+;;; ux.el --- UX additions
 
 ;;; Commentary:
-;; User Interface / User experience gizmos
+;; User experience gizmos
 
 ;;; Code:
-
-;; * line numbers
-(global-linum-mode t)
-
-;; * no splash screen
-(setq inhibit-splash-screen t)
-
-;; * git-gutter: git diffs in the gutter
-(require 'git-gutter)
-(global-git-gutter-mode t)
 
 ;; * flycheck: syntax chekcker
 (add-hook 'after-init-hook #'global-flycheck-mode)

@@ -6,13 +6,12 @@
 ;;; * configs are in their respective packages
 (add-to-list 'load-path "~/.emacs.d/configs")
 
-;; * Color theme
-(load-theme 'monokai t)
+(require 'ui)
 
-(require 'ux) ; UX/UI stuff
+(require 'ux)
 
 (require 'vim)
 
+;;; Languages
 (require 'markdown)
-
 (require 'elisp)

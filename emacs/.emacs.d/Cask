@@ -8,6 +8,7 @@
 ;;; package management + sync
 (depends-on "cask")
 (depends-on "pallet")
+
 (depends-on "better-defaults")
 
 ;;; Themes
@@ -18,9 +19,12 @@
 
 ;;; UI/UX
 (depends-on "git-gutter")
+(depends-on "flycheck")
 (depends-on "ido-ubiquitous")
+(depends-on "projectile")
+(depends-on "flx-ido")
+(depends-on "smex")
 ;(depends-on "rainbow-mode")
-;(depends-on "projectile")
 
 ;;; Vim
 ;;; all hail

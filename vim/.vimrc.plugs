@@ -32,6 +32,10 @@ Plug 'fatih/vim-go'             , { 'for': 'go' }
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)
 Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
 
+" Clojure
+Plug 'guns/vim-clojure-static'  , { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace'      , { 'for': 'clojure' }
+
 " Other misc. filetypes/syntaxes
 Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight

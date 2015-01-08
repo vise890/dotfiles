@@ -1,3 +1,10 @@
+;;; ux.el --- UX/UI stuff
+
+;;; Commentary:
+;; User Interface / User experience gizmos
+
+;;; Code:
+
 ;; * line numbers
 (global-linum-mode t)
 
@@ -34,4 +41,9 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
+;; * helm: incremental completion + narrowing
+(require 'helm-config)
+(helm-mode 1)
+
 (provide 'ux)
+;;; ux.el ends here

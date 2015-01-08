@@ -2,7 +2,6 @@
 ;;; See ~./Cask~ file
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
-(require 'pallet) ; sync Cask with packages installed through M-x
 
 ;;; * configs are in their respective packages
 (add-to-list 'load-path "~/.emacs.d/configs")

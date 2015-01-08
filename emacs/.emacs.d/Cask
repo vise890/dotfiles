@@ -7,7 +7,7 @@
 ;;; Cask + Pallet
 ;;; package management + sync
 (depends-on "cask")
-(depends-on "pallet")
+(depends-on "pallet") ; sync Cask file with M-x installs
 
 (depends-on "better-defaults")
 
@@ -19,11 +19,19 @@
 
 ;;; UI/UX
 (depends-on "git-gutter")
+
 (depends-on "flycheck")
 (depends-on "ido-ubiquitous")
 (depends-on "projectile")
+
 (depends-on "flx-ido")
+
 (depends-on "smex")
+
+(depends-on "helm")
+(depends-on "helm-projectile")
+(depends-on "helm-ag")
+
 ;(depends-on "rainbow-mode")
 
 ;;; Vim

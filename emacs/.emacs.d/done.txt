@@ -1,0 +1,3 @@
+x (A) split out individual configs
+x (A) line numbers
+x suppress splash screen

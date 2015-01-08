@@ -1,0 +1,63 @@
+;;; * Package archives
+(source melpa) ;; archive of VCS snapshots built automatically from upstream repositories, at http://melpa.org
+(source org) ;; archive providing packages for Org Mode, at http://orgmode.org/elpa
+(source gnu) ;; standard GNU ELPA archive, at http://elpa.gnu.org
+(source marmalade) ;; archive of packages uploaded by users and maintainers, at http://marmalade-repo.org
+
+;;; Cask + Pallet
+;;; package management + sync
+(depends-on "cask")
+(depends-on "pallet")
+(depends-on "better-defaults")
+
+;;; Themes
+(depends-on "monokai-theme")
+;(depends-on "solarized-theme")
+;(depends-on "zenburn-theme")
+;(depends-on "spacegray-theme")
+
+;;; UI/UX
+(depends-on "git-gutter")
+(depends-on "ido-ubiquitous")
+;(depends-on "rainbow-mode")
+;(depends-on "projectile")
+
+;;; Vim
+;;; all hail
+(depends-on "evil")
+;(depends-on "evil-leader")
+
+;;; Clojure
+;(depends-on "clojure-mode")
+;(depends-on "cider")
+;(depends-on "clojure-test-mode")
+
+;;; Elisp
+(depends-on "elisp-slime-nav")
+
+;;; Misc
+(depends-on "markdown-mode")
+
+;;; Cask defaults
+;(depends-on "bind-key")
+;(depends-on "dash")
+;(depends-on "drag-stuff")
+;(depends-on "exec-path-from-shell")
+;(depends-on "expand-region")
+;(depends-on "f")
+;(depends-on "flycheck")
+;(depends-on "flycheck-cask")
+;(depends-on "htmlize")
+;(depends-on "idle-highlight-mode")
+;(depends-on "magit")
+;(depends-on "multiple-cursors")
+;(depends-on "nyan-mode")
+;(depends-on "popwin")
+;(depends-on "prodigy")
+;(depends-on "projectile")
+;(depends-on "s")
+;(depends-on "smartparens")
+;(depends-on "smex")
+;(depends-on "use-package")
+;(depends-on "web-mode")
+;(depends-on "yasnippet")

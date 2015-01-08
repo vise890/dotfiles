@@ -1,8 +1,14 @@
 (A) show whitespace
-(A) split out individual configs
+
 highlight FIXME
 migrate to literate elisp
 
 paredit
 orgmode
 
+projectile
+flywheel
+
+ubuntu font
+
+(A) autocompletion for M-x

@@ -52,6 +52,9 @@ export PATH=$HOME/.rbenv/shims:$PATH
 # add useful user scripts
 export PATH=$HOME/code/scripts:$PATH
 
+# add cask (emacs package manager)
+export PATH=$HOME/.cask/bin/:$PATH
+
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 #############################################

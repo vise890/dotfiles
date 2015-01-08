@@ -21,6 +21,9 @@
 (depends-on "git-gutter")
 
 (depends-on "flycheck")
+
+(depends-on "company")
+
 (depends-on "ido-ubiquitous")
 (depends-on "projectile")
 

@@ -18,6 +18,9 @@
 ;; * flycheck: syntax chekcker
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; * company-mode: code completion
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; * Interactively do things
 (require 'ido)
 (require 'ido-ubiquitous)

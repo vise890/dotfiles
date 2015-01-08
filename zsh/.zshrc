@@ -1,35 +1,37 @@
+#!/bin/zsh
+
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="robbyrussell"
+export ZSH_THEME="robbyrussell"
 
-COMPLETION_WAITING_DOTS="true"
+export COMPLETION_WAITING_DOTS="true"
 
 export EDITOR='vim'
-alias v="$EDITOR"
+alias v='$EDITOR'
 
 # RC/Config files ###########################
-alias zshrc="$EDITOR $HOME/.zshrc"
-alias tmuxconf="$EDITOR $HOME/.tmux.conf"
-alias vimrc="$EDITOR $HOME/.vimrc"
-alias vplugs="$EDITOR $HOME/.vimrc.plugs"
+alias zshrc='$EDITOR $HOME/.zshrc'
+alias tmuxconf='$EDITOR $HOME/.tmux.conf'
+alias vimrc='$EDITOR $HOME/.vimrc'
+alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 #############################################
 
 # ORG stuff #################################
 export ORGPATH="$HOME/org"
-alias org="cd $ORGPATH && vim ."
+alias org='cd $ORGPATH && vim .'
 
 export TODO_TXT_PATH="$ORGPATH/todo/todo.txt"
 export DONE_TXT_PATH="$ORGPATH/todo/done.txt"
-alias te="$EDITOR $TODO_TXT_PATH"
+alias te='$EDITOR $TODO_TXT_PATH'
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(autojump pacman rbenv lein vi-mode colored-man)
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # restore some shortcuts in vi-mode
 bindkey '^R' history-incremental-search-backward

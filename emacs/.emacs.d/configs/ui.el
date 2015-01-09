@@ -3,6 +3,8 @@
 ;;; Commentary:
 ;; Tweaks to the user interface
 
+;;; Code:
+
 ;; * Color theme
 (load-theme 'monokai t)
 

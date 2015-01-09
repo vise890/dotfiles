@@ -14,8 +14,8 @@
 ;; * Interactively do things
 (require 'ido)
 (require 'ido-ubiquitous)
-(ido-mode 1)
-(ido-ubiquitous-mode 1)
+(ido-mode t)
+(ido-ubiquitous-mode t)
 
 ;; * projectile: interact with projects (think ctrl-P 2.0)
 (projectile-global-mode)
@@ -23,7 +23,7 @@
 
 ;; * Flx: fuzzy matching
 (require 'flx-ido)
-(flx-ido-mode 1)
+(flx-ido-mode t)
 ;; disable ido faces to see flx highlights.
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
@@ -38,7 +38,7 @@
 (require 'helm-config)
 (helm-mode 1)
 
-;;; * neotree: nerdtree like thing
+;; * neotree: nerdtree like thing
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 

@@ -12,3 +12,4 @@ flywheel
 ubuntu font
 
 (A) autocompletion for M-x
+investigate + re-add helm?

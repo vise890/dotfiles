@@ -34,10 +34,6 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
-;; * helm: incremental completion + narrowing
-(require 'helm-config)
-(helm-mode 1)
-
 ;; * neotree: nerdtree like thing
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)

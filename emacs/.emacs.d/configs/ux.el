@@ -13,7 +13,6 @@
 
 ;; * Interactively do things
 (require 'ido)
-(require 'ido-ubiquitous)
 (ido-mode t)
 (ido-ubiquitous-mode t)
 
@@ -22,20 +21,17 @@
 (setq projectile-require-project-root nil) ; use projectile everywhere
 
 ;; * Flx: fuzzy matching
-(require 'flx-ido)
 (flx-ido-mode t)
 ;; disable ido faces to see flx highlights.
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
 
 ;; * smex: smart M-x
-(require 'smex)
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 ;; * neotree: nerdtree like thing
-(require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
 (provide 'ux)

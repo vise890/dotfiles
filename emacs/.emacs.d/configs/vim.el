@@ -8,7 +8,6 @@
 
 ;; * Evil mode
 ;; vim keymappings
-(require 'evil)
 (evil-mode t) ; on by default
 
 ;; switch to normal state with C-c C-c

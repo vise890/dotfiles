@@ -15,9 +15,7 @@
 (setq inhibit-splash-screen t)
 
 ;; * git-gutter: git diffs in the gutter
-(require 'git-gutter)
 (global-git-gutter-mode t)
-
 
 (provide 'ui)
 ;;; ui.el ends here

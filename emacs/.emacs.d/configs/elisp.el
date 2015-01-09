@@ -4,7 +4,6 @@
 ;; well
 
 ;;; Code:
-(require 'elisp-slime-nav)
 
 (defun my-elisp-hook ()
   "Enable all the elisp goodies."

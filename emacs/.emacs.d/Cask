@@ -16,8 +16,9 @@
 ;(depends-on "solarized-theme")
 ;(depends-on "zenburn-theme")
 ;(depends-on "spacegray-theme")
+;(depends-on "rainbow-mode")
 
-;;; UI/UX
+;;; UX
 (depends-on "git-gutter")
 
 (depends-on "flycheck")
@@ -36,6 +37,8 @@
 (depends-on "helm-ag")
 
 ;(depends-on "rainbow-mode")
+
+(depends-on "neotree")
 
 ;;; Vim
 ;;; all hail

@@ -5,6 +5,7 @@
 
 ;; switch to normal state with C-c C-c
 (define-key evil-insert-state-map (kbd "C-c C-c") 'evil-normal-state)
+(define-key evil-normal-state-map (kbd "C-n") 'neotree-toggle)
 
 ;;; esc quits everywhere
 (define-key evil-normal-state-map [escape] 'keyboard-quit)

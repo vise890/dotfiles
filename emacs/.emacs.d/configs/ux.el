@@ -38,5 +38,9 @@
 (require 'helm-config)
 (helm-mode 1)
 
+;;; * neotree: nerdtree like thing
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
 (provide 'ux)
 ;;; ux.el ends here

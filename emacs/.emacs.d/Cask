@@ -11,10 +11,8 @@
 
 (depends-on "better-defaults")
 
-;;; Themes
+;;; UI
 (depends-on "monokai-theme")
-;(depends-on "solarized-theme")
-;(depends-on "zenburn-theme")
 ;(depends-on "spacegray-theme")
 ;(depends-on "rainbow-mode")
 
@@ -35,8 +33,6 @@
 (depends-on "helm")
 (depends-on "helm-projectile")
 (depends-on "helm-ag")
-
-;(depends-on "rainbow-mode")
 
 (depends-on "neotree")
 

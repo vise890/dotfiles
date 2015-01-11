@@ -19,6 +19,7 @@
 
 ;; Languages
 (require 'markdown)
+(require 'clojure)
 (require 'elisp)
 
 ;; must be loaded last

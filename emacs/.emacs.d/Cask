@@ -14,8 +14,7 @@
 ;;; UI
 (depends-on "monokai-theme")
 (depends-on "git-gutter")
-;(depends-on "spacegray-theme")
-;(depends-on "rainbow-mode")
+(depends-on "rainbow-delimiters")
 
 ;;; UX
 (depends-on "magit")
@@ -33,15 +32,16 @@
 
 (depends-on "neotree")
 
+(depends-on "smartparens")
+
 ;;; Vim
 ;;; all hail
 (depends-on "evil")
 ;(depends-on "evil-leader")
 
 ;;; Clojure
-;(depends-on "clojure-mode")
-;(depends-on "cider")
-;(depends-on "clojure-test-mode")
+(depends-on "clojure-mode")
+(depends-on "cider")
 
 ;;; Elisp
 (depends-on "elisp-slime-nav")

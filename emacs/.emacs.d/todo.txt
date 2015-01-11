@@ -1,15 +1,10 @@
 (A) show whitespace
 
 highlight FIXME
-migrate to literate elisp
 
 paredit
 orgmode
 
-projectile
-flywheel
 
-ubuntu font
-
-(A) autocompletion for M-x
 investigate + re-add helm?
+(A) clojure!

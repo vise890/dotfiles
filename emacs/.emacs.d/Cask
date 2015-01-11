@@ -13,11 +13,12 @@
 
 ;;; UI
 (depends-on "monokai-theme")
+(depends-on "git-gutter")
 ;(depends-on "spacegray-theme")
 ;(depends-on "rainbow-mode")
 
 ;;; UX
-(depends-on "git-gutter")
+(depends-on "magit")
 
 (depends-on "flycheck")
 
@@ -59,7 +60,6 @@
 ;(depends-on "flycheck-cask")
 ;(depends-on "htmlize")
 ;(depends-on "idle-highlight-mode")
-;(depends-on "magit")
 ;(depends-on "multiple-cursors")
 ;(depends-on "nyan-mode")
 ;(depends-on "popwin")

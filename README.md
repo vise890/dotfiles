@@ -17,7 +17,7 @@ stow -t ~ gnome
   - `cabal install ghc-mod hlint`
 - `cask` (emacs plugin manager)
 
-### Nice to have
+### Nice to have / supported
 - `zsh`
 - `tmux`
 - `autojump`

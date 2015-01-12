@@ -13,8 +13,8 @@ stow -t ~ gnome
 ## Pre-requisites
 - `git`
 - GNU `stow`
-- `ghc-mod` (for hs development in vim)
-  - `cabal install ghc-mod`
+- `ghc-mod`, `hlint` (for hs development in vim)
+  - `cabal install ghc-mod hlint`
 - `cask` (emacs plugin manager)
 
 ### Nice to have

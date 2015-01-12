@@ -21,7 +21,7 @@ alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 
 # ORG stuff #################################
 export ORGPATH="$HOME/org"
-alias org='cd $ORGPATH && vim .'
+alias org='cd $ORGPATH && $EDITOR .'
 
 export TODO_TXT_PATH="$ORGPATH/todo/todo.txt"
 export DONE_TXT_PATH="$ORGPATH/todo/done.txt"

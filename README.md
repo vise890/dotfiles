@@ -20,3 +20,4 @@ stow -t ~ gnome
 ### Nice to have
 - `zsh`
 - `tmux`
+- `autojump`

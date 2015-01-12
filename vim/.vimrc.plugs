@@ -22,7 +22,6 @@ Plug 'Shougo/neocomplete.vim'         " autocompletion
 
 " UTILS:
 Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }        " Interactive command execution (dep for ghc-mod..)
-Plug 'majutsushi/tagbar'        , { 'for': ['c', 'go', 'ruby', 'python'] }  " tags in a window, ordered by scope
 
 " LANGUAGES:
 " golang

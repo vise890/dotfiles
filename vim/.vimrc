@@ -66,7 +66,3 @@ map <C-n> :NERDTreeToggle<CR>
 " AIRLINE: status bar
 set laststatus=2                  " don't wait for a split to appear for airline to be visible
 let g:airline_powerline_fonts=1   " use cool symbols
-
-" TAGBAR: display tags in a window
-nmap <F8> :TagbarToggle<CR>
-

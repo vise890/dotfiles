@@ -7,6 +7,7 @@
 ;;; Cask + Pallet
 ;;; package management + sync
 (depends-on "cask")
+(depends-on "pallet")
 
 (depends-on "better-defaults")
 

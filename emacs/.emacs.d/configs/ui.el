@@ -5,6 +5,11 @@
 
 ;;; Code:
 
+;; * fonts
+(setq global-font "Ubuntu Mono-16")
+(set-face-attribute 'default t :font  global-font)
+(set-frame-font global-font nil t)
+
 ;; * Color theme
 (load-theme 'monokai t)
 

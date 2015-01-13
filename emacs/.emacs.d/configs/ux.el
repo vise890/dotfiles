@@ -9,6 +9,7 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; * company-mode: code completion
+(setq company-idle-delay 0.2)
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;; * Interactively do things

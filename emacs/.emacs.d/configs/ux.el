@@ -5,6 +5,9 @@
 
 ;;; Code:
 
+;; y/n instead of 'yes' and 'no'
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; * flycheck: syntax chekcker
 (add-hook 'after-init-hook #'global-flycheck-mode)
 

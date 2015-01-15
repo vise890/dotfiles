@@ -6,7 +6,7 @@
 ;;; Code:
 
 ;; * fonts
-(setq global-font "Ubuntu Mono-16")
+(setq global-font "Ubuntu Mono-18")
 (set-face-attribute 'default t :font  global-font)
 (set-frame-font global-font nil t)
 

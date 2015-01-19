@@ -1,7 +1,0 @@
-x (A) split out individual configs
-x (A) line numbers
-x suppress splash screen
-x projectile
-x flywheel
-x ubuntu font
-x (A) autocompletion for M-x

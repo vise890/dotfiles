@@ -5,9 +5,6 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 
 " COLORSCHEMES:
 Plug 'altercation/vim-colors-solarized'
-Plug 'morhetz/gruvbox'
-Plug 'chriskempson/base16-vim'
-Plug 'vim-scripts/saturn.vim'
 
 " UI_UX:
 Plug 'airblade/vim-gitgutter'         " show git diff in the gutter

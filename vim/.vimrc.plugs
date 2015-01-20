@@ -17,6 +17,8 @@ Plug 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes a
 Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
 Plug 'Shougo/neocomplete.vim'         " autocompletion
 
+Plug 'godlygeek/tabular'              " align stuff
+
 " UTILS:
 Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }        " Interactive command execution (dep for ghc-mod..)
 

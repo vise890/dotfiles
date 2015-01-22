@@ -11,6 +11,8 @@ nnoremap Q <Nop>
 set mouse=a                      " automatically enable mouse
 set mousehide                    " hide mouse cursor when typing
 
+setlocal spell spelllang=en_gb   " enable spell checking
+
 " UI
 set number                       " show line numbers
 set background=dark

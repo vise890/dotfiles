@@ -30,6 +30,12 @@ Plug 'fatih/vim-go'             , { 'for': 'go' }
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)
 Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
 
+Plug 'pangloss/vim-javascript'  , { 'for': ['javascript', 'necessity']}
+
+" The hipster selection
+Plug 'wavded/vim-stylus'
+Plug 'digitaltoad/vim-jade'
+
 " Other misc. filetypes/syntaxes
 Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
 Plug 'ekalinin/Dockerfile.vim'

@@ -19,6 +19,10 @@ alias vimrc='$EDITOR $HOME/.vimrc'
 alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 #############################################
 
+# Code ######################################
+export CODEPATH="$HOME/code"
+#############################################
+
 # ORG stuff #################################
 export ORGPATH="$HOME/org"
 alias org='cd $ORGPATH && $EDITOR .'

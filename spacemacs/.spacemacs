@@ -10,7 +10,7 @@
  ;; Paths must have a trailing slash (ie. `~/.mycontribs/')
  dotspacemacs-configuration-layer-path '()
  ;; List of configuration layers to load.
- dotspacemacs-configuration-layers '(smex company-mode git haskell clojure)
+ dotspacemacs-configuration-layers '(company-mode smex haskell clojure)
  ;; A list of packages and/or extensions that will not be install and loaded.
  dotspacemacs-excluded-packages '()
 )
@@ -24,8 +24,21 @@
  ;; then the banner is chosen randomly among the available banners, if
  ;; the value is nil then no banner is displayed.
  dotspacemacs-startup-banner 'random
- ;; Default theme applied at startup
- dotspacemacs-default-theme 'solarized-light
+ ;; List of themes, the first of the list is loaded when spacemacs starts.
+ ;; Press <SPC> T n to cycle to the next theme in the list (works great
+ ;; with 2 themes variants, one dark and one light)
+ dotspacemacs-themes '(solarized-light
+                       solarized-dark
+                       leuven
+                       monokai
+                       zenburn)
+ ;; Default font. The powerline-offset allows to quickly tweak the mode-line
+ ;; size to make separators look not too crappy.
+ dotspacemacs-default-font '("Source Code Pro"
+                             :size 16
+                             :weight normal
+                             :width normal
+                             :powerline-scale 1.1)
  ;; The leader key
  dotspacemacs-leader-key "SPC"
  ;; Major mode leader key is a shortcut key which is the equivalent of
@@ -46,7 +59,7 @@
  dotspacemacs-fullscreen-use-non-native nil
  ;; If non nil the frame is maximized when Emacs starts up (Emacs 24.4+ only).
  ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
- dotspacemacs-maximized-at-startup nil
+ dotspacemacs-maximized-at-startup t
  ;; A value from the range (0..100), in increasing opacity, which describes the
  ;; transparency level of a frame when it's active or selected. Transparency can
  ;; be toggled through `toggle-transparency'.
@@ -82,6 +95,7 @@
 (defun dotspacemacs/config ()
   "This is were you can ultimately override default Spacemacs configuration.
 This function is called at the very end of Spacemacs initialization."
+  (setq powerline-default-separator 'zigzag)
 )
 
 ;; Custom variables

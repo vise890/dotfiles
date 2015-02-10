@@ -1,8 +1,11 @@
-(A) muttrc
-(A) weechat
+.vimrc : pump up the conf (spellchk, pastemode, light-dark)
+.spacemacs : remap <leader><space> as :
+.vim : move everything in .vim (breaks auto_arch)
 
-(B) avoid useless duplicated re-addind of scm breeze on each run
+avoid useless duplicated re-addind of scm breeze on each run
 configure i3 window manager
 highlight code in .md files @vimrc
+muttrc
 oh-my-zsh=>prezto
 source highlight when `less`ing
+weechat

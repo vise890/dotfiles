@@ -48,7 +48,7 @@
  dotspacemacs-command-key ":"
  ;; Guide-key delay in seconds. The Guide-key is the popup buffer listing
  ;; the commands bound to the current keystrokes.
- dotspacemacs-guide-key-delay 0.4
+ dotspacemacs-guide-key-delay 0.2
  ;; If non nil the frame is fullscreen when Emacs starts up (Emacs 24.4+ only).
  dotspacemacs-fullscreen-at-startup nil
  ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.

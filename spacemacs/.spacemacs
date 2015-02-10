@@ -87,12 +87,13 @@
 (defun dotspacemacs/init ()
   "User initialization for Spacemacs. This function is called at the very
  startup."
-  )
+)
 
 (defun dotspacemacs/config ()
   "This is were you can ultimately override default Spacemacs configuration.
 This function is called at the very end of Spacemacs initialization."
   (setq powerline-default-separator 'zigzag)
+  (add-hook 'haskell-mode-hook 'flycheck-mode)
 )
 
 ;; Custom variables

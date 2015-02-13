@@ -48,6 +48,9 @@ nnoremap Q gqip
 " yank from cursor to end of line (more consistent with A, C, D, etc.)
 nnoremap Y y$
 
+" Ignore all the crap
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " NEOCOMPLETE: autocompletion

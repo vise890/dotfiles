@@ -33,7 +33,7 @@ alias te='$EDITOR $TODO_TXT_PATH'
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump pacman rbenv lein vi-mode colored-man)
+plugins=(autojump pacman rbenv cabal lein vi-mode colored-man)
 
 source "$ZSH/oh-my-zsh.sh"
 
@@ -55,9 +55,6 @@ export PATH=$HOME/.rbenv/shims:$PATH
 
 # add useful user scripts
 export PATH=$HOME/code/scripts:$PATH
-
-# add cask (emacs package manager)
-export PATH=$HOME/.cask/bin/:$PATH
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path

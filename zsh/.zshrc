@@ -54,7 +54,7 @@ export PATH=$HOME/.cabal/bin:$PATH
 export PATH=$HOME/.rbenv/shims:$PATH
 
 # add useful user scripts
-export PATH=$HOME/code/scripts:$PATH
+export PATH=$CODEPATH/scripts:$PATH
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path

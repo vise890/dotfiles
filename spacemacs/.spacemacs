@@ -9,10 +9,15 @@
  ;; List of additional paths where to look for configuration layers.
  ;; Paths must have a trailing slash (ie. `~/.mycontribs/')
  dotspacemacs-configuration-layer-path '()
- ;; List of configuration layers to load.
- dotspacemacs-configuration-layers '(company-mode smex git haskell go markdown)
+ ;; List of configuration layers to load. If it is the symbol `all' instead
+ ;; of a list then all discovered layers will be installed.
+ dotspacemacs-configuration-layers '(company-mode smex git markdown go)
  ;; A list of packages and/or extensions that will not be install and loaded.
  dotspacemacs-excluded-packages '()
+ ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
+ ;; are declared in a layer which is not a member of
+ ;; the list `dotspacemacs-configuration-layers'
+ dotspacemacs-delete-orhpan-packages t
 )
 
 ;; Settings
@@ -29,7 +34,7 @@
  ;; with 2 themes variants, one dark and one light)
  dotspacemacs-themes '(solarized-light
                        solarized-dark)
- ;; Default font. The powerline-offset allows to quickly tweak the mode-line
+ ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
  ;; size to make separators look not too crappy.
  dotspacemacs-default-font '("Source Code Pro"
                              :size 16
@@ -49,6 +54,8 @@
  ;; Guide-key delay in seconds. The Guide-key is the popup buffer listing
  ;; the commands bound to the current keystrokes.
  dotspacemacs-guide-key-delay 0.2
+ ;; Enable micro-state for helm buffer when pressing on TAB."
+ dotspacemacs-helm-micro-state t
  ;; If non nil the frame is fullscreen when Emacs starts up (Emacs 24.4+ only).
  dotspacemacs-fullscreen-at-startup nil
  ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
@@ -93,7 +100,6 @@
   "This is were you can ultimately override default Spacemacs configuration.
 This function is called at the very end of Spacemacs initialization."
   (setq powerline-default-separator 'zigzag)
-  (add-hook 'haskell-mode-hook 'flycheck-mode)
 )
 
 ;; Custom variables

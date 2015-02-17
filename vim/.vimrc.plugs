@@ -24,7 +24,7 @@ Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }        " In
 
 " LANGUAGES:
 " golang
-Plug 'fatih/vim-go'             , { 'for': 'go' }
+Plug 'fatih/vim-go'
 
 " Haskell
 Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)

@@ -17,29 +17,17 @@ Plug 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes a
 Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
 Plug 'Shougo/neocomplete.vim'         " autocompletion
 
-Plug 'godlygeek/tabular'              " align stuff
-
-" UTILS:
-Plug 'Shougo/vimproc.vim'       , { 'for': 'haskell', 'do': 'make' }        " Interactive command execution (dep for ghc-mod..)
-
 " LANGUAGES:
 " golang
 Plug 'fatih/vim-go'
 
-" Haskell
-Plug 'eagletmt/ghcmod-vim'      , { 'for': 'haskell' }                 " happy haskell programming (type, errors/warnings, ..)
-Plug 'eagletmt/neco-ghc'        , { 'for': 'haskell' }                 " haskell completion plugin
-
-Plug 'pangloss/vim-javascript'  , { 'for': ['javascript', 'necessity']}
-
-" The hipster selection
-Plug 'wavded/vim-stylus'
-Plug 'digitaltoad/vim-jade'
+Plug 'pangloss/vim-javascript'  , { 'for': ['javascript']}
 
 " Other misc. filetypes/syntaxes
 Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
-Plug 'ekalinin/Dockerfile.vim'
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
+Plug 'wavded/vim-stylus'
+Plug 'digitaltoad/vim-jade'
 Plug 'tpope/vim-markdown'                                              " syntax highlight
 Plug 'cespare/vim-toml'                                                " TOML
 Plug 'vimez/vim-tmux'                                                  " highlight in tmux.conf

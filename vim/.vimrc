@@ -5,6 +5,8 @@ let mapleader = ' '
 
 nnoremap <Leader><Space> :
 
+imap fd <Esc>
+
 " get rid of Ex mode
 nnoremap Q <Nop>
 

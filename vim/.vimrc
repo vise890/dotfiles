@@ -77,3 +77,4 @@ let g:airline_powerline_fonts=1   " use cool symbols
 " VIMGO:
 let g:go_fmt_command = "goimports"
 au FileType go nmap <Leader>e <Plug>(go-rename)
+au FileType go set tabstop=4

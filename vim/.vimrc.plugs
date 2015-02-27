@@ -25,6 +25,7 @@ Plug 'pangloss/vim-javascript'  , { 'for': ['javascript']}
 
 " Other misc. filetypes/syntaxes
 Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 Plug 'wavded/vim-stylus'
 Plug 'digitaltoad/vim-jade'

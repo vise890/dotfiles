@@ -54,6 +54,10 @@ nnoremap Y y$
 " Ignore all the crap
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 
+" Paste MODE
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " NEOCOMPLETE: autocompletion

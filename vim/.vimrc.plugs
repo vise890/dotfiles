@@ -16,6 +16,7 @@ Plug 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes a
 
 Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
 Plug 'Shougo/neocomplete.vim'         " autocompletion
+Plug 'tpope/vim-surround'
 
 " LANGUAGES:
 " golang

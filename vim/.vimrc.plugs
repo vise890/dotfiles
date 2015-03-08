@@ -17,19 +17,25 @@ Plug 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes a
 Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
 Plug 'Shougo/neocomplete.vim'         " autocompletion
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
 
 " LANGUAGES:
 " golang
 Plug 'fatih/vim-go'
 
-Plug 'pangloss/vim-javascript'  , { 'for': ['javascript']}
+" ORGMODE:
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'          " increment/decrement dates with ctrl-a / ctrl-x
 
-" Other misc. filetypes/syntaxes
-Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
-Plug 'ekalinin/Dockerfile.vim'
+" JS AND FRIENDS:
+Plug 'pangloss/vim-javascript'  , { 'for': ['javascript']}
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 Plug 'wavded/vim-stylus'
 Plug 'digitaltoad/vim-jade'
+
+" OTHER:
+Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'tpope/vim-markdown'                                              " syntax highlight
 Plug 'cespare/vim-toml'                                                " TOML
 Plug 'vimez/vim-tmux'                                                  " highlight in tmux.conf

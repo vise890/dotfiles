@@ -33,7 +33,7 @@
     <property name="MenuBarAccel" type="empty"/>
     <property name="CursorThemeName" type="string" value="default"/>
     <property name="CursorThemeSize" type="int" value="19"/>
-    <property name="DecorationLayout" type="string" value=":minimize,close"/>
+    <property name="DecorationLayout" type="string" value="close,minimize:"/>
   </property>
   <property name="Xfce" type="empty">
     <property name="LastCustomDPI" type="int" value="115"/>

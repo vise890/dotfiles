@@ -47,7 +47,7 @@ export PATH=$GOPATH/bin:$PATH
 export PATH=$HOME/.cabal/bin:$PATH
 
 # ruby gems
-export PATH=$HOME/.rbenv/shims:$PATH
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # useful user scripts
 export PATH=$CODEPATH/scripts:$PATH

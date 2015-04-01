@@ -26,10 +26,6 @@ export CODEPATH="$HOME/code"
 # ORG stuff #################################
 export ORGPATH="$HOME/org"
 alias org='cd $ORGPATH && $EDITOR .'
-
-export TODO_TXT_PATH="$ORGPATH/todo/todo.txt"
-export DONE_TXT_PATH="$ORGPATH/todo/done.txt"
-alias te='$EDITOR $TODO_TXT_PATH'
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/

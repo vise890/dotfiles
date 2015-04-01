@@ -41,16 +41,16 @@ export PATH=/usr/local/bin:$PATH
 
 # golang stuff
 export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
+PATH=$GOPATH/bin:$PATH
 
 # cabal (haskell) bins
-export PATH=$HOME/.cabal/bin:$PATH
+PATH=$HOME/.cabal/bin:$PATH
 
 # ruby gems
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # useful user scripts
-export PATH=$CODEPATH/scripts:$PATH
+PATH=$CODEPATH/scripts:$PATH
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path

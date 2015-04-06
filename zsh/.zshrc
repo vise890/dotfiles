@@ -29,7 +29,7 @@ alias org='cd $ORGPATH && $EDITOR .'
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump pacman cabal lein vi-mode colored-man)
+plugins=(autojump pacman vi-mode colored-man)
 
 source "$ZSH/oh-my-zsh.sh"
 

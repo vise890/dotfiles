@@ -43,9 +43,6 @@ export PATH=/usr/local/bin:$PATH
 export GOPATH=$HOME/go
 PATH=$GOPATH/bin:$PATH
 
-# cabal (haskell) bins
-PATH=$HOME/.cabal/bin:$PATH
-
 # ruby gems
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 

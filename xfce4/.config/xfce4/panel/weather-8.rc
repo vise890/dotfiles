@@ -1,8 +1,8 @@
-loc_name=New York, New York
-lat=40.688801
-lon=-74.020302
-msl=3
-timezone=America/New_York
+loc_name=Lucinico, GO
+lat=45.936205
+lon=13.575340
+msl=68
+timezone=Europe/Rome
 cache_file_max_age=172800
 power_saving=true
 units_temperature=0

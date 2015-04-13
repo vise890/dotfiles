@@ -20,16 +20,16 @@ alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 #############################################
 
 # Code ######################################
-export CODEPATH="$HOME/code"
+export CODEPATH="$HOME/Code"
 #############################################
 
 # ORG stuff #################################
-export ORGPATH="$HOME/org"
+export ORGPATH="$HOME/Documents/org"
 alias org='cd $ORGPATH && $EDITOR .'
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump pacman rbenv cabal lein vi-mode colored-man)
+plugins=(autojump pacman vi-mode colored-man)
 
 source "$ZSH/oh-my-zsh.sh"
 
@@ -41,16 +41,13 @@ export PATH=/usr/local/bin:$PATH
 
 # golang stuff
 export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
+PATH=$GOPATH/bin:$PATH
 
-# add cabal (haskell) bins
-export PATH=$HOME/.cabal/bin:$PATH
+# ruby gems
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
-# add rbenv shims to path
-export PATH=$HOME/.rbenv/shims:$PATH
-
-# add useful user scripts
-export PATH=$CODEPATH/scripts:$PATH
+# useful user scripts
+PATH=$CODEPATH/scripts:$PATH
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path

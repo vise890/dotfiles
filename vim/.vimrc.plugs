@@ -27,6 +27,7 @@ Plug 'fatih/vim-go'
 " ORGMODE:
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'          " increment/decrement dates with ctrl-a / ctrl-x
+Plug 'freitass/todo.txt-vim'
 
 " JS AND FRIENDS:
 Plug 'pangloss/vim-javascript'  , { 'for': ['javascript']}

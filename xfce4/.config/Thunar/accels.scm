@@ -32,7 +32,6 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/new-tab" "<Primary>t")
 ; (gtk_accel_path "<Actions>/ThunarWindow/preferences" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/rename" "F2")
-; (gtk_accel_path "<Actions>/ThunarBookmarks/1731ff26ad8e023466d14b6fcc729678" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/6a7eb7276d3539ceb64601fc7e3edad9" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-size" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/sendto-menu" "")

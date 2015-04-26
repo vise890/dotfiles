@@ -63,6 +63,7 @@
         <value type="string" value="task manager"/>
         <value type="string" value="goldendict"/>
         <value type="string" value="skype"/>
+        <value type="string" value="orage"/>
         <value type="string" value="zeal"/>
         <value type="string" value="clipman"/>
         <value type="string" value="xfce4-power-manager"/>
@@ -97,7 +98,6 @@
     </property>
     <property name="plugin-1" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="14280978001.desktop"/>
       </property>
     </property>
   </property>

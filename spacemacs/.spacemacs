@@ -26,7 +26,7 @@
      syntax-checking
 
      python
-     lua
+     php
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()

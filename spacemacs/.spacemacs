@@ -25,6 +25,7 @@
      org
      syntax-checking
 
+     clojure
      python
      php
      )

@@ -30,7 +30,7 @@ alias te="$EDITOR $ORGPATH/todo/todo.txt"
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump pacman vi-mode colored-man)
+plugins=(autojump pacman vi-mode colored-man python pip)
 
 source "$ZSH/oh-my-zsh.sh"
 
@@ -48,7 +48,7 @@ PATH=$GOPATH/bin:$PATH
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # useful user scripts
-PATH=$CODEPATH/scripts:$PATH
+PATH=$CODEPATH/scripts:$CODEPATH/avaaz_scripts:$PATH
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path

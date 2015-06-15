@@ -25,7 +25,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'fatih/vim-go'
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 
-" ORGMODE:
+" ORG:
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'          " increment/decrement dates with ctrl-a / ctrl-x
 Plug 'freitass/todo.txt-vim'

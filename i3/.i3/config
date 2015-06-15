@@ -111,6 +111,7 @@ set $cyan #2aa198
 # finds out, if available)
 bar {
   status_command i3status
+  position top
   colors {
     background $base03
     statusline $base00

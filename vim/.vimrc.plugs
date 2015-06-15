@@ -23,17 +23,12 @@ Plug 'scrooloose/nerdcommenter'
 " LANGUAGES:
 " golang
 Plug 'fatih/vim-go'
+Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 
 " ORGMODE:
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'          " increment/decrement dates with ctrl-a / ctrl-x
 Plug 'freitass/todo.txt-vim'
-
-" JS AND FRIENDS:
-Plug 'pangloss/vim-javascript'  , { 'for': ['javascript']}
-Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
-Plug 'wavded/vim-stylus'
-Plug 'digitaltoad/vim-jade'
 
 " OTHER:
 Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support

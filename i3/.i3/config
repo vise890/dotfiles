@@ -108,7 +108,7 @@ set $cyan #2aa198
 #set $green #859900
 
 # window colours        border  background text    indicator
-client.focused          $base02 $base00    $base03 $base00
+client.focused          $base02 $cyan      $base03 $base00
 client.unfocused        $base03 $base03    $base00 $base03
 client.focused_inactive $base03 $base03    $base00 $base03
 client.urgent           $orange $orange    $base00 $orange
@@ -123,8 +123,8 @@ bar {
     separator  $base1
 
     #                  border  background font
-    focused_workspace  $base02 $blue      $base03
-    active_workspace   $base02 $cyan      $base1
+    focused_workspace  $base02 $cyan      $base03
+    active_workspace   $base02 $base02    $base1
     inactive_workspace $base02 $base03    $base1
     urgent_workspace   $base02 $orange    $base03
   }

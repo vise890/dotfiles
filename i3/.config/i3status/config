@@ -35,8 +35,16 @@ general {
 
 order += "disk /"
 order += "ethernet _first_"
-
+order += "volume master"
 order += "tztime local"
+
+volume master {
+   format = "🔊 %volume"
+   format_muted = "🔈%volume"
+   device = "default"
+   mixer = "Master"
+   mixer_idx = 0
+}
 
 disk "/" {
   format = "/: %avail"

@@ -15,6 +15,7 @@ alias v='$EDITOR'
 # RC/Config files ###########################
 alias zshrc='$EDITOR $HOME/.zshrc'
 alias tmuxconf='$EDITOR $HOME/.tmux.conf'
+alias i3config='$EDITOR $HOME/.i3/config'
 alias vimrc='$EDITOR $HOME/.vimrc'
 alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 #############################################

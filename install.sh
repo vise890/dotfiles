@@ -4,7 +4,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> copy dotfiles"
-stow --restow --target="$HOME" vim zsh
+stow --restow --target="$HOME" vim zsh zathura
 
 echo "==> install oh-my-zsh"
 git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh" || true

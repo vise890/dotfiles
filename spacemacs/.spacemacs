@@ -32,6 +32,7 @@
      themes-megapack
 
      clojure
+     elixir
      haskell
      go
      )

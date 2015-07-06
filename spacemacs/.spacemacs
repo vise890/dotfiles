@@ -29,6 +29,7 @@
             shell-default-height 30
             shell-default-position 'bottom)
      syntax-checking
+     themes-megapack
 
      clojure
      haskell

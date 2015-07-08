@@ -5,9 +5,6 @@
     <property name="FailsafeSessionName" type="empty"/>
     <property name="SessionName" type="string" value="Default"/>
     <property name="SaveOnExit" type="bool" value="true"/>
-    <property name="AutoSave" type="bool" value="true"/>
-    <property name="PromptOnLogout" type="bool" value="false"/>
-    <property name="StartAssistiveTechnologies" type="bool" value="false"/>
   </property>
   <property name="sessions" type="empty">
     <property name="Failsafe" type="empty">
@@ -26,6 +23,6 @@
     </property>
   </property>
   <property name="splash" type="empty">
-    <property name="Engine" type="string" value=""/>
+    <property name="Engine" type="empty"/>
   </property>
 </channel>

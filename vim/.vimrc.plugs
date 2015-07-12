@@ -21,8 +21,8 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 
 " LANGUAGES:
-" golang
 Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
 
 " ORG:

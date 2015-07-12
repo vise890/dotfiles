@@ -59,6 +59,7 @@
   <property name="plugins" type="empty">
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="thunar"/>
         <value type="string" value="vlc"/>
         <value type="string" value="task manager"/>
         <value type="string" value="goldendict"/>
@@ -87,7 +88,7 @@
     <property name="plugin-2" type="string" value="thunar-tpa"/>
     <property name="plugin-3" type="string" value="fsguard"/>
     <property name="plugin-4" type="string" value="mixer">
-      <property name="sound-card" type="string" value="PlaybackcrasPulseAudioMixer"/>
+      <property name="sound-card" type="string" value="HDAIntelPCHAlsamixer"/>
       <property name="track" type="string" value="Master"/>
       <property name="command" type="string" value="xfce4-mixer"/>
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>

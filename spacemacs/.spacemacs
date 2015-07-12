@@ -17,27 +17,35 @@
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     better-defaults
      auto-completion
      smex
-     better-defaults
-     emacs-lisp
+
      git
-     markdown
-     org
-     syntax-checking
+     version-control
+
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     version-control
 
+     syntax-checking
+
+     themes-megapack
+
+     markdown
+     org
+
+     emacs-lisp
      clojure
+     elixir
+     haskell
      go
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(key-chord)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -70,14 +78,19 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-dark
-                         solarized-light)
+   dotspacemacs-themes '(solarized-light
+                         solarized-dark
+                         spacemacs-light
+                         spacemacs-dark
+                         leuven
+                         monokai
+                         zenburn)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 22
+   dotspacemacs-default-font '("Ubuntu Mono"
+                               :size 23
                                :weight normal
                                :width normal
                                :powerline-scale 1.2)
@@ -159,7 +172,13 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq powerline-default-separator 'zigzag)
+
+  (setq powerline-default-separator nil)
+
+  ;;Exit insert mode by pressing j and then k quickly
+  (setq key-chord-two-keys-delay 0.1)
+  (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+  (key-chord-mode t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

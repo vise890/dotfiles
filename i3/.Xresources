@@ -1,13 +1,3 @@
-! ASUS PB287Q
-Xft.dpi: 157
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintfull
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb
-!!
-
 #define BASE03    #002b36
 #define BASE02    #073642
 #define BASE01    #586e75

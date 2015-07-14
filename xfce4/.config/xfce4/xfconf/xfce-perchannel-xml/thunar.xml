@@ -10,5 +10,5 @@
   <property name="last-menubar-visible" type="bool" value="true"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLER"/>
-  <property name="last-details-view-column-widths" type="string" value="50,2920,50,50,449,50,50,76,153"/>
+  <property name="last-details-view-column-widths" type="string" value="50,3361,50,50,113,50,50,62,62"/>
 </channel>

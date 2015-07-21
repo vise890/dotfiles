@@ -20,6 +20,13 @@ Plug 'Shougo/neocomplete.vim'         " autocompletion
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 
+" Clojure:
+Plug 'guns/vim-clojure-static'
+Plug 'tpope/vim-salve'
+Plug 'tpope/vim-fireplace'
+Plug 'vim-scripts/paredit.vim'
+Plug 'kien/rainbow_parentheses.vim'
+
 " LANGUAGES:
 Plug 'fatih/vim-go'
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight

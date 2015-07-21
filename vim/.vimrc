@@ -8,8 +8,8 @@ nnoremap <Leader><Space> :
 imap jk <Esc>
 
 " get rid of some annoyances in normal mode
-nnoremap <F1> <Nop>              " help
-nnoremap Q <Nop>                 " Ex mode
+" help
+nnoremap <F1> <Nop>
 
 set mouse=a                      " automatically enable mouse
 set mousehide                    " hide mouse cursor when typing

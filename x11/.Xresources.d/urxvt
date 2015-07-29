@@ -1,0 +1,20 @@
+! vim: set filetype=xdefaults :
+
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+URxvt.urgentOnBell:         true
+URxvt.loginShell:           true
+URxvt.saveLines:            5000
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+URxvt*font: xft:Ubuntu Mono:size=22
+
+URxvt.urlLauncher:          firefox
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          BASE00
+URxvt.cursorUnderline:      false
+
+

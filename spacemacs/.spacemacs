@@ -82,13 +82,9 @@ before layers configuration."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          solarized-dark
-                         obsidian
                          solarized-light
 
-                         spacemacs-dark
-                         spacemacs-light
-
-                         monokai
+                         zenburn
                          )
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t

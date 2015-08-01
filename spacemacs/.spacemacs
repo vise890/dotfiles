@@ -36,9 +36,11 @@
      org
 
      emacs-lisp
+     racket
      clojure
      elixir
      haskell
+
      go
      )
    ;; List of additional packages that will be installed without being

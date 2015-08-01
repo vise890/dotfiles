@@ -38,7 +38,7 @@
      emacs-lisp
      racket
      clojure
-     elixir
+
      haskell
 
      go

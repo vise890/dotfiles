@@ -1,1 +1,55 @@
-set font "Source Code Pro 16"
+set font                        "Source Code Pro 16"
+
+
+# COLOURS
+
+# solarized palette:
+# "#002b36" # BASE03
+# "#073642" # BASE02
+# "#586e75" # BASE01
+# "#657b83" # BASE00
+# "#839496" # BASE0
+# "#93a1a1" # BASE1
+# "#eee8d5" # BASE2
+# "#fdf6e3" # BASE3
+# "#b58900" # YELLOW
+# "#cb4b16" # ORANGE
+# "#dc322f" # RED
+# "#d33682" # MAGENTA
+# "#6c71c4" # VIOLET
+# "#268bd2" # BLUE
+# "#2aa198" # CYAN
+# "#859900" # GREEN
+
+
+set default-bg                  "#002b36" # BASE03
+set default-fg                  "#586e75" # BASE01
+
+set statusbar-bg                "#073642" # BASE02
+set statusbar-fg                "#586e75" # BASE01
+
+set inputbar-bg                 "#002b36" # BASE03
+set inputbar-fg                 "#586e75" # BASE01
+
+set notification-bg             "#268bd2" # BLUE
+set notification-fg             "#586e75" # BASE01
+
+set notification-warning-bg     "#cb4b16" # ORANGE
+set notification-warning-fg     "#586e75" # BASE01
+
+set notification-error-bg       "#dc322f" # RED
+set notification-error-fg       "#586e75" # BASE01
+
+set highlight-color             "#F4BF75" #0A
+set highlight-active-color      "#6A9FB5" #0D
+
+set completion-bg               "#002b36" # BASE03
+set completion-fg               "#586e75" # BASE01
+
+set completion-highlight-bg     "#073642" # BASE02
+set completion-highlight-fg     "#586e75" # BASE01
+
+set recolor-lightcolor          "#fdf6e3" # BASE3
+set recolor-darkcolor           "#586e75" # BASE01
+
+set recolor                     "true"

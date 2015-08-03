@@ -175,7 +175,7 @@ layers configuration."
   (setq powerline-default-separator nil)
 
   ;;Exit insert mode by pressing j and then k quickly
-  (setq key-chord-two-keys-delay 0.1)
+  (setq key-chord-two-keys-delay 0.2)
   (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
   (key-chord-mode t)
 )

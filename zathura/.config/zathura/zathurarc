@@ -49,7 +49,7 @@ set completion-fg               "#586e75" # BASE01
 set completion-highlight-bg     "#073642" # BASE02
 set completion-highlight-fg     "#586e75" # BASE01
 
-set recolor-lightcolor          "#fdf6e3" # BASE3
+set recolor-lightcolor          "#002b36" # BASE03
 set recolor-darkcolor           "#586e75" # BASE01
 
 set recolor                     "true"

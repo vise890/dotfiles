@@ -14,9 +14,6 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec yeganesh --executables -- -fn 'Source Code Pro-16' | sh
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -106,6 +103,9 @@ set $orange #cb4b16
 #set $blue #268bd2
 set $cyan #2aa198
 #set $green #859900
+
+# start yeganesh wrapper for dmenu (a program launcher)
+bindsym $mod+d exec yeganesh --executables -- -nb '#002b36' -nf '#93a1a1' -sb '#2aa198' -sf '#002b36' -fn 'Source Code Pro-16' | sh
 
 # window colours        border  background text    indicator
 client.focused          $base02 $base01    $base03 $base00

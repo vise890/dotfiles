@@ -124,8 +124,8 @@ bar {
 
     #                  border  background font
     focused_workspace  $base02 $cyan      $base03
-    active_workspace   $base02 $base02    $base1
-    inactive_workspace $base02 $base03    $base1
+    active_workspace   $base02 $base02    $base00
+    inactive_workspace $base02 $base03    $base00
     urgent_workspace   $base02 $orange    $base03
   }
 }

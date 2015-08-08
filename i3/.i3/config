@@ -105,7 +105,7 @@ set $cyan #2aa198
 #set $green #859900
 
 # start yeganesh wrapper for dmenu (a program launcher)
-bindsym $mod+d exec yeganesh --executables -- -nb '#002b36' -nf '#93a1a1' -sb '#2aa198' -sf '#002b36' -fn 'Source Code Pro-16' | sh
+bindsym $mod+d exec yeganesh --executables -- -nb "$base03" -nf "$base00" -sb "$cyan" -sf "$base03" -fn 'Source Code Pro-16' | sh
 
 # window colours        border  background text    indicator
 client.focused          $base02 $base01    $base03 $base00

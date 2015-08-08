@@ -1,40 +1,10 @@
 #!/bin/zsh
-
+#### THE PATH ###############################
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="robbyrussell"
-
-export COMPLETION_WAITING_DOTS="true"
-
-export EDITOR='vim'
-
-# RC/Config files ###########################
-alias zshrc='$EDITOR $HOME/.zshrc'
-alias vimrc='$EDITOR $HOME/.vimrc'
-alias vplugs='$EDITOR $HOME/.vimrc.plugs'
-#############################################
-
-# Code ######################################
-export CODEPATH="$HOME/Code"
-#############################################
-
-# ORG stuff #################################
 export ORGPATH="$HOME/Documents/org"
-alias org='cd $ORGPATH && $EDITOR .'
-#############################################
-
-# plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump pacman vi-mode colored-man)
-
-source "$ZSH/oh-my-zsh.sh"
-
-# restore some shortcuts in vi-mode
-bindkey '^R' history-incremental-search-backward
-
-#### THE PATH ###############################
+export CODEPATH="$HOME/Code"
 
 # golang stuff
 export GOPATH=$HOME/go
@@ -49,6 +19,26 @@ PATH=$CODEPATH/scripts:$PATH
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 #############################################
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+export ZSH_THEME="robbyrussell"
+export COMPLETION_WAITING_DOTS="true"
+
+export EDITOR='vim'
+
+alias zshrc='$EDITOR $HOME/.zshrc'
+alias vimrc='$EDITOR $HOME/.vimrc'
+alias vplugs='$EDITOR $HOME/.vimrc.plugs'
+alias org='cd $ORGPATH && $EDITOR .'
+
+# plugins can be found in ~/.oh-my-zsh/plugins/
+plugins=(autojump pacman vi-mode colored-man)
+
+source "$ZSH/oh-my-zsh.sh"
+
+# restore some shortcuts in vi-mode
+bindkey '^R' history-incremental-search-backward
 
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"

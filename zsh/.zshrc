@@ -16,12 +16,10 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 # useful user scripts
 PATH=$CODEPATH/scripts:$PATH
 
-# Ensure path arrays do not contain duplicates.
-typeset -gU cdpath fpath mailpath path
+# Ensure path does not contain duplicates.
+typeset -gU path
 #############################################
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
 export ZSH_THEME="robbyrussell"
 export COMPLETION_WAITING_DOTS="true"
 

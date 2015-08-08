@@ -39,6 +39,8 @@
 
      haskell
 
+     themes-megapack
+
      go
      python
      )

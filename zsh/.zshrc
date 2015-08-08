@@ -55,6 +55,11 @@ PATH=$CODEPATH/scripts:$PATH
 typeset -gU cdpath fpath mailpath path
 #############################################
 
+# thefuck
+eval "$(thefuck-alias fuck)"
+eval "$(thefuck-alias fck)"
+eval "$(thefuck-alias fk)"
+
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 

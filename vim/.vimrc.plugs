@@ -20,6 +20,8 @@ Plug 'Shougo/neocomplete.vim'         " autocompletion
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 
+Plug 'tpope/vim-fugitive'
+
 " Clojure:
 Plug 'guns/vim-clojure-static'
 Plug 'tpope/vim-salve'

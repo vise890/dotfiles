@@ -7,7 +7,6 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 Plug 'altercation/vim-colors-solarized'
 
 
-Plug 'tpope/vim-fugitive'       " git from vim
 Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 
 Plug 'bling/vim-airline'        " more kickass status bar

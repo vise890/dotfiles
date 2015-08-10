@@ -31,6 +31,18 @@ set statusbar-fg                "#586e75" # BASE01
 set inputbar-bg                 "#002b36" # BASE03
 set inputbar-fg                 "#586e75" # BASE01
 
+set tabbar-bg                   "#002b36" # BASE03
+set tabbar-fg                   "#586e75" # BASE01
+
+set tabbar-focus-bg             "#073642" # BASE02
+set tabbar-focus-fg             "#586e75" # BASE01
+
+set index-bg                    "#002b36" # BASE03
+set index-fg                    "#586e75" # BASE01
+
+set index-active-bg             "#073642" # BASE02
+set index-active-fg             "#586e75" # BASE01
+
 set notification-bg             "#268bd2" # BLUE
 set notification-fg             "#002b36" # BASE03
 

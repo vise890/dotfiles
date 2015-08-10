@@ -3,47 +3,32 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'       " sensible vim defaults
 Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, expandtab, etc.)
 
-" COLORSCHEMES:
+
 Plug 'altercation/vim-colors-solarized'
-Plug 'flazz/vim-colorschemes'   " theme megapack
 
-" UI_UX:
-Plug 'airblade/vim-gitgutter'         " show git diff in the gutter
-Plug 'bling/vim-airline'              " Airline: a better status bar
 
-Plug 'kien/ctrlp.vim'                 " Ctrl-P: fuzzy file search and opening
-Plug 'scrooloose/nerdtree'            " NerdTree: file browser
-Plug 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
+Plug 'tpope/vim-fugitive'       " git from vim
+Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 
-Plug 'scrooloose/syntastic'           " automatic syntax checking / linting
-Plug 'Shougo/neocomplete.vim'         " autocompletion
-Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdcommenter'
+Plug 'bling/vim-airline'        " more kickass status bar
+Plug 'kien/ctrlp.vim'           " fuzzy file search
+Plug 'scrooloose/nerdtree'      " file tree
+Plug 'christoomey/vim-tmux-navigator' " seamless navigation between tmux panes and vim splits
 
-Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/syntastic'     " syntax check/lint
+Plug 'Shougo/neocomplete.vim'   " autocompletion
 
-" Clojure:
-Plug 'guns/vim-clojure-static'
-Plug 'tpope/vim-salve'
-Plug 'tpope/vim-fireplace'
-Plug 'vim-scripts/paredit.vim'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'tpope/vim-surround'       " surrond stuff with characters
+Plug 'scrooloose/nerdcommenter' " comment stuff
 
-" LANGUAGES:
+
 Plug 'fatih/vim-go'
-Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
+Plug 'elzr/vim-json'            , { 'for': 'json' }
+Plug 'tpope/vim-markdown'
 Plug 'adimit/prolog.vim'
 
-" ORG:
-Plug 'jceb/vim-orgmode'
-Plug 'tpope/vim-speeddating'          " increment/decrement dates with ctrl-a / ctrl-x
-Plug 'freitass/todo.txt-vim'
 
-" OTHER:
-Plug 'vim-scripts/gitignore.vim'                                       " .gitignore file support
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'tpope/vim-markdown'                                              " syntax highlight
-Plug 'cespare/vim-toml'                                                " TOML
-Plug 'vimez/vim-tmux'                                                  " highlight in tmux.conf
+Plug 'jceb/vim-orgmode'
+Plug 'freitass/todo.txt-vim'
 
 call plug#end()

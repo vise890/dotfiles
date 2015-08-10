@@ -32,7 +32,7 @@ Plug 'kien/rainbow_parentheses.vim'
 " LANGUAGES:
 Plug 'fatih/vim-go'
 Plug 'elzr/vim-json'            , { 'for': 'json' }                    " more kickass JSON syntax highlight
-Plug 'adimit/prolog-vim'
+Plug 'adimit/prolog.vim'
 
 " ORG:
 Plug 'jceb/vim-orgmode'

@@ -24,6 +24,7 @@ export ZSH_THEME="robbyrussell"
 export COMPLETION_WAITING_DOTS="true"
 
 export EDITOR='vim'
+alias v="$EDITOR"
 
 alias zshrc='$EDITOR $HOME/.zshrc'
 alias vimrc='$EDITOR $HOME/.vimrc'

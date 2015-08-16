@@ -21,8 +21,8 @@
      auto-completion
      smex
 
-     git
      version-control
+     git
 
      (shell :variables
             shell-default-height 30
@@ -75,12 +75,10 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(
-                         zenburn
+   dotspacemacs-themes '(zenburn
 
                          solarized-dark
-                         solarized-light
-                         )
+                         solarized-light)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line

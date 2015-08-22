@@ -22,7 +22,8 @@
      smex
 
      version-control
-     git
+     (git :variables
+          git-magit-status-fullscreen t)
 
      (shell :variables
             shell-default-height 30

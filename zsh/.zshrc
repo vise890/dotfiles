@@ -14,7 +14,7 @@ PATH=$GOPATH/bin:$PATH
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # haskell stuff
-PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.cabal/bin:$PATH"
 
 # useful user scripts
 PATH=$CODEPATH/scripts:$PATH

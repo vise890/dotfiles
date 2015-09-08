@@ -32,6 +32,7 @@
 
      markdown
      org
+     deft
 
      emacs-lisp
      racket
@@ -175,6 +176,11 @@ before layers configuration."
   (setq key-chord-two-keys-delay 0.2)
   (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
   (key-chord-mode t)
+
+  ;; Take notes nvalt style
+  (setq deft-directory "~/org")
+  (setq deft-use-filename-as-title t)
+  (setq deft-extension "org")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

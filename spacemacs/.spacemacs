@@ -19,7 +19,6 @@
      ;; ----------------------------------------------------------------
      better-defaults
      auto-completion
-     smex
 
      version-control
      (git :variables

@@ -166,8 +166,8 @@ before layers configuration."
 
 (defun dotspacemacs/config ()
   "Configuration function.
- This function is called at the very end of Spacemacs initialization after
-layers configuration."
+   This function is called at the very end of Spacemacs initialization after
+   layers configuration."
 
   (setq powerline-default-separator nil)
 

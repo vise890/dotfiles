@@ -90,10 +90,19 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(zenburn
+   dotspacemacs-themes '(
+                         zenburn
+
+                         gruvbox
+
+                         noctilux
+
+                         sanityinc-tomorrow-night
+                         sanityinc-tomorrow-eighties
 
                          solarized-dark
-                         solarized-light)
+                         solarized-light
+                         )
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
@@ -193,6 +202,9 @@ before layers configuration."
   (setq deft-directory "~/org")
   (setq deft-use-filename-as-title t)
   (setq deft-extension "org")
+
+  ;; goimports buffers instead of just fmt-ing them
+  (setq gofmt-command "goimports")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

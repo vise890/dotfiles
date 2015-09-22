@@ -1,8 +1,5 @@
 {:user {:plugins [[cider/cider-nrepl "0.10.0-SNAPSHOT"]
-                  [refactor-nrepl  "1.2.0-SNAPSHOT"]
-
-                  [lein-midje "3.1.3"]
-                  [lein-cljfmt "0.3.0"]]
+                  [refactor-nrepl  "1.2.0-SNAPSHOT"]]
 
         :dependencies [[alembic "0.3.2"]
-                       [org.clojure/tools.nrepl "0.2.10"]]}}
+                       [org.clojure/tools.nrepl "0.2.11"]]}}

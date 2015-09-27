@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Launch Cljs Repl
+# key: cljsrepl
+# binding: direct-keybinding
+# --
+(use 'figwheel-sidecar.repl-api)
+(cljs-repl)

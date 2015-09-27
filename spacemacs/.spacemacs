@@ -234,6 +234,9 @@ layers configuration. You are free to put any user code."
 
   ;; goimports buffers instead of just fmt-ing them
   (setq gofmt-command "goimports")
+
+  ;; temporary fix for yasnippet
+  (defalias 'yas--template-file 'yas--template-get-file)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

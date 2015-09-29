@@ -69,9 +69,6 @@ let g:neocomplete#max_list = 15
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 set completeopt-=preview          " don't open preview window all over the place
 
-" GHCMOD: haskell type info and error checking
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync " check and lint on write
-
 " NERDTREE: file browser
 map <C-n> :NERDTreeToggle<CR>
 
@@ -80,8 +77,3 @@ set laststatus=2                  " don't wait for a split to appear for airline
 let g:airline_powerline_fonts = 0   " do not require patched font ...
 let g:airline_left_sep = ''         " ... just use straight lines
 let g:airline_right_sep = ''
-
-" VIMGO:
-let g:go_fmt_command = "goimports"
-au FileType go nmap <Leader>e <Plug>(go-rename)
-au FileType go set tabstop=4

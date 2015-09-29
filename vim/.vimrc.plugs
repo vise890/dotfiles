@@ -21,10 +21,8 @@ Plug 'tpope/vim-surround'       " surrond stuff with characters
 Plug 'scrooloose/nerdcommenter' " comment stuff
 
 
-Plug 'fatih/vim-go'
 Plug 'elzr/vim-json'            , { 'for': 'json' }
 Plug 'tpope/vim-markdown'
-Plug 'adimit/prolog.vim'
 
 
 Plug 'jceb/vim-orgmode'

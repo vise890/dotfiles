@@ -231,6 +231,10 @@ layers configuration. You are free to put any user code."
   (setq deft-use-filename-as-title t)
   (setq deft-extension "org")
 
+  ;; js-beautify settings
+  (setq-default js2-basic-offset 2)
+  (setq-default js-indent-level 2)
+
   ;; goimports buffers instead of just fmt-ing them
   (setq gofmt-command "goimports")
 

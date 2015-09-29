@@ -1,5 +1,5 @@
 #!/bin/zsh
-#### THE PATH ###############################
+#### THE PATHs ###############################
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
 
@@ -48,9 +48,3 @@ bindkey '^R' history-incremental-search-backward
 
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
-
-# hack for getting more colours while on gnome-terminal
-if [[ "$COLORTERM" == "gnome-terminal" ]]; then
-  export TERM=xterm-256color
-fi
-

@@ -10,6 +10,9 @@ export CODEPATH="$HOME/Code"
 export GOPATH=$HOME/go
 PATH=$GOPATH/bin:$PATH
 
+# js stuff
+PATH=~/.npm/bin:$PATH
+
 # ruby stuff
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 

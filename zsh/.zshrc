@@ -3,7 +3,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
 
-export ORGPATH="$HOME/Documents/org"
+export ORGPATH="$HOME/org"
+export TODO_TXT_PATH="$ORGPATH/todo.txt"
+export DONE_TXT_PATH="$ORGPATH/done.txt"
 export CODEPATH="$HOME/Code"
 
 # golang stuff

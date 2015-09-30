@@ -19,7 +19,8 @@ PATH=~/.npm/bin:$PATH
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # haskell stuff
-PATH="$HOME/.cabal/bin:$PATH"
+PATH="$HOME/.cabal/bin:$PATH" # cabal
+PATH="$HOME/.local/bin:$PATH" # stack
 
 # useful user scripts
 PATH=$CODEPATH/scripts:$PATH

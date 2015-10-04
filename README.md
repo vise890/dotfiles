@@ -11,4 +11,5 @@ stow -t ~ hidpi
 ```
 
 ## Pre-requisites
+- `git`
 - GNU `stow`

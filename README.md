@@ -5,18 +5,10 @@ $ cd dotfiles
 $ ./install.sh
 ```
 
-If you want to install the extra configs (e.g. ./gnome):
+If you want to install the extra configs (e.g. ./hidpi):
 ```
-stow -t ~ gnome
+stow -t ~ hidpi
 ```
 
 ## Pre-requisites
-- `git`
 - GNU `stow`
-- `ghc-mod`, `hlint` (for hs development in vim)
-  - `cabal install ghc-mod hlint`
-
-### Nice to have / supported
-- `zsh`
-- `tmux`
-- `autojump`

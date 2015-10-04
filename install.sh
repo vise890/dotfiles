@@ -19,6 +19,10 @@ curl -fLo ~/.vim/autoload/plug.vim \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim -u "$HOME/.vimrc.plugs" +PlugInstall +qall!
 
+echo "==> install spacemacs"
+mv ~/.emacs.d ~/.emacs.bak || true
+git clone --recursive http://github.com/syl20bnr/spacemacs ~/.emacs.d
+
 # FIXME: massive hack to restore zshrc
 # scm_breeze should be installed manually or (better) nuked completely (since it is a dirty hack)
 git checkout ./zsh/.zshrc

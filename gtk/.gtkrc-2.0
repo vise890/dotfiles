@@ -13,5 +13,5 @@ gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle="hintfull"
 gtk-xft-rgba="rgb"
-gtk-icon-sizes = "panel-menu=36,36:panel=36,36:gtk-menu=36,36\
-:gtk-large-toolbar=36,36:gtk-small-toolbar=36,36:gtk-button=36,36"
+gtk-icon-sizes = "panel-menu=16,16:panel=16,16:gtk-menu=16,16\
+:gtk-large-toolbar=36,36:gtk-small-toolbar=36,36:gtk-button=16,16"

@@ -11,6 +11,8 @@ Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 
 Plug 'bling/vim-airline'        " more kickass status bar
 Plug 'kien/ctrlp.vim'           " fuzzy file search
+Plug 'sjl/gundo.vim'            " visualize vim's undo tree
+Plug 'rking/ag.vim'             " search with ag
 Plug 'scrooloose/nerdtree'      " file tree
 Plug 'christoomey/vim-tmux-navigator' " seamless navigation between tmux panes and vim splits
 

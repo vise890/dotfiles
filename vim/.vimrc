@@ -30,7 +30,7 @@ set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 
 set hlsearch                     " highlight search results
-set incsearch                    " incremental search
+set incsearch                    " search as you type
 
 " if 'ignorecase' and 'smartcase' are both on, if a pattern contains an uppercase
 " letter, it is case sensitive, otherwise, it is not
@@ -71,6 +71,12 @@ set completeopt-=preview          " don't open preview window all over the place
 
 " NERDTREE: file browser
 map <C-n> :NERDTreeToggle<CR>
+
+" GUNDO: undo tree
+nnoremap <leader>u :GundoToggle<CR>
+
+" AG: search with silver searcher
+nnoremap <leader>a :Ag 
 
 " AIRLINE: status bar
 set laststatus=2                  " don't wait for a split to appear for airline to be visible

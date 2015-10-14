@@ -224,6 +224,7 @@ layers configuration. You are free to put any user code."
 
   ;; Escape everything with jk
   (setq-default evil-escape-key-sequence "jk")
+  (setq evil-escape-delay 0.2)
 
   ;; Take notes nvalt style
   (setq deft-directory "~/org")

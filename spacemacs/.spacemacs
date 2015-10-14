@@ -34,8 +34,6 @@ values."
      (colors :variables
              colors-enable-nyan-cat-progress-bar t)
 
-     games
-
      smex
 
      (version-control :variables
@@ -105,11 +103,7 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(zenburn
-
-                         gruvbox
-
-                         solarized-dark
-                         solarized-light)
+                         gruvbox)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line

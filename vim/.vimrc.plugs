@@ -24,6 +24,7 @@ Plug 'scrooloose/nerdcommenter' " comment stuff
 
 
 Plug 'elzr/vim-json'            , { 'for': 'json' }
+Plug 'vim-ruby/vim-ruby'        , { 'for': 'ruby' }
 Plug 'tpope/vim-markdown'
 
 

@@ -59,6 +59,8 @@ values."
      haskell
 
      javascript
+     ruby
+     python
      go
    )
    ;; List of additional packages that will be installed without being

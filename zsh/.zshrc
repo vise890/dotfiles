@@ -1,39 +1,10 @@
 #!/bin/zsh
-#### THE PATHs ###############################
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
-
-export ORGPATH="$HOME/org"
-export TODO_TXT_PATH="$ORGPATH/todo.txt"
-export DONE_TXT_PATH="$ORGPATH/done.txt"
-export CODEPATH="$HOME/Code"
-
-# golang stuff
-export GOPATH=$HOME/go
-PATH=$GOPATH/bin:$PATH
-
-# js stuff
-PATH=~/.npm/bin:$PATH
-
-# ruby stuff
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-
-# haskell stuff
-PATH="$HOME/.cabal/bin:$PATH" # cabal
-PATH="$HOME/.local/bin:$PATH" # stack
-
-# useful user scripts
-PATH=$CODEPATH/scripts:$PATH
-
-
-# Ensure path does not contain duplicates.
-typeset -gU path
-#############################################
-
 export ZSH_THEME="robbyrussell"
+
 export COMPLETION_WAITING_DOTS="true"
 
-export EDITOR='vim'
 alias v="$EDITOR"
 
 alias zshrc='$EDITOR $HOME/.zshrc'

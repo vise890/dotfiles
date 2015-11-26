@@ -24,8 +24,6 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
 
-     eyebrowse
-
      auto-completion
      syntax-checking
      spell-checking
@@ -45,11 +43,8 @@ values."
             shell-default-position 'bottom
             shell-default-term-shell "/bin/zsh")
 
-     emoji
-
      markdown
      org
-     deft
 
      emacs-lisp
      racket
@@ -58,9 +53,6 @@ values."
 
      haskell
 
-     javascript
-     ruby
-     python
      go
    )
    ;; List of additional packages that will be installed without being

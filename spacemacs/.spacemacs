@@ -29,8 +29,6 @@ values."
      spell-checking
 
      themes-megapack
-     (colors :variables
-             colors-enable-nyan-cat-progress-bar t)
 
      smex
 
@@ -52,8 +50,6 @@ values."
               clojure-enable-fancify-symbols t)
 
      haskell
-
-     go
    )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these

@@ -248,6 +248,8 @@ user code here.  The exception is org related code, which should be placed in
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
 
+  (setq powerline-default-separator nil)
+
   ;; Escape everything with jk
   (setq-default evil-escape-key-sequence "jk")
   (setq evil-escape-delay 0.2)

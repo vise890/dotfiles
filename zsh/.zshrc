@@ -6,6 +6,7 @@ export ZSH_THEME="robbyrussell"
 export COMPLETION_WAITING_DOTS="true"
 
 export EDITOR='vim'
+alias v="$EDITOR"
 
 # THE PATHs ##################################
 export CODEPATH="$HOME/Code"
@@ -17,13 +18,10 @@ PATH=$CODEPATH/scripts:$PATH
 typeset -gU path
 #############################################
 
-alias v="$EDITOR"
-
 alias zshrc='$EDITOR $HOME/.zshrc'
 alias vimrc='$EDITOR $HOME/.vimrc'
 alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 alias org='cd $ORGPATH && $EDITOR .'
-
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(autojump pacman vi-mode colored-man)

@@ -247,26 +247,11 @@ user code here.  The exception is org related code, which should be placed in
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
-  (setq powerline-default-separator nil)
 
   ;; Escape everything with jk
   (setq-default evil-escape-key-sequence "jk")
   (setq evil-escape-delay 0.2)
 
-  ;; Take notes nvalt style
-  (setq deft-directory "~/org")
-  (setq deft-use-filename-as-title t)
-  (setq deft-extension "org")
-
-  ;; js-beautify settings
-  (setq-default js2-basic-offset 2)
-  (setq-default js-indent-level 2)
-
-  ;; goimports buffers instead of just fmt-ing them
-  (setq gofmt-command "goimports")
-
-  ;; temporary fix for yasnippet
-  (defalias 'yas--template-file 'yas--template-get-file)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

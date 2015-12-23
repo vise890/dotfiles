@@ -11,6 +11,9 @@ alias v="$EDITOR"
 # THE PATHs ##################################
 export CODEPATH="$HOME/Code"
 
+# ruby stuff
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
 # useful user scripts
 PATH=$CODEPATH/scripts:$PATH
 

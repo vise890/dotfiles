@@ -5,6 +5,8 @@ export ZSH_THEME="robbyrussell"
 
 export COMPLETION_WAITING_DOTS="true"
 
+setopt correct
+
 export EDITOR='vim'
 alias v="$EDITOR"
 

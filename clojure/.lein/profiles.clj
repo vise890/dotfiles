@@ -6,4 +6,5 @@
                   [lein-ancient "0.6.7"]]
 
         :dependencies [[alembic "0.3.2"]
+                       [acyclic/squiggly-clojure "0.1.3-SNAPSHOT"]
                        [org.clojure/tools.nrepl "0.2.12"]]}}

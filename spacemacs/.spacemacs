@@ -45,7 +45,6 @@ values."
      org
 
      emacs-lisp
-     racket
      (clojure :variables
               clojure-enable-fancify-symbols t)
    )

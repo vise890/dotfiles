@@ -26,7 +26,6 @@ typeset -gU path
 alias zshrc='$EDITOR $HOME/.zshrc'
 alias vimrc='$EDITOR $HOME/.vimrc'
 alias vplugs='$EDITOR $HOME/.vimrc.plugs'
-alias org='cd $ORGPATH && $EDITOR .'
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(autojump pacman vi-mode colored-man)

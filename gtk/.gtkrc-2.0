@@ -1,4 +1,8 @@
-gtk-theme-name="Orion"
+# DO NOT EDIT! This file will be overwritten by LXAppearance.
+# Any customization should be done in ~/.gtkrc-2.0.mine instead.
+
+include "/home/vise890/.gtkrc-2.0.mine"
+gtk-theme-name="Breeze"
 gtk-icon-theme-name="Faience-Azur"
 gtk-font-name="Ubuntu 19"
 gtk-cursor-theme-name="Adwaita"
@@ -13,5 +17,3 @@ gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle="hintfull"
 gtk-xft-rgba="rgb"
-gtk-icon-sizes = "panel-menu=16,16:panel=16,16:gtk-menu=16,16\
-:gtk-large-toolbar=36,36:gtk-small-toolbar=36,36:gtk-button=16,16"

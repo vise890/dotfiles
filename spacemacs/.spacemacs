@@ -32,6 +32,8 @@ values."
 
      smex
 
+     eyebrowse
+
      (version-control :variables
                       vc-follow-symlinks t)
      git

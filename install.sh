@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> copy dotfiles"
-stow --restow --target="$HOME" gtk haskell hidpi i3 lein nodejs readline ruby spacemacs vim x11 zathura zsh
+stow --restow --target="$HOME" gtk haskell hidpi i3 clojure nodejs readline ruby spacemacs vim x11 zathura zsh
 
 echo "==> install oh-my-zsh"
 git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh" || true

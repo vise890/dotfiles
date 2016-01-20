@@ -1,0 +1,1 @@
+/home/vise890/.vimrc

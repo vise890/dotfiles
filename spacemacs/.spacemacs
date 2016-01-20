@@ -265,8 +265,7 @@ layers configuration. You are free to put any user code."
     '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
   (setq deft-extensions '("org" "md" "txt"))
-  (setq deft-directory "~/Documents/org")
-  )
+  (setq deft-directory "~/Documents/org"))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

@@ -7,7 +7,13 @@ export COMPLETION_WAITING_DOTS="true"
 
 setopt correct
 
-export EDITOR='vim'
+if hash nvim 2>/dev/null; then
+	EDITOR='nvim'
+	alias vim='nvim'
+else
+	EDITOR='vim'
+fi
+export EDITOR
 alias v="$EDITOR"
 
 # THE PATHs ##################################

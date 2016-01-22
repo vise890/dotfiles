@@ -8,10 +8,10 @@ export COMPLETION_WAITING_DOTS="true"
 setopt correct
 
 if hash nvim 2>/dev/null; then
-	EDITOR='nvim'
-	alias vim='nvim'
+  EDITOR='nvim'
+  alias vim='nvim'
 else
-	EDITOR='vim'
+  EDITOR='vim'
 fi
 export EDITOR
 alias v="$EDITOR"

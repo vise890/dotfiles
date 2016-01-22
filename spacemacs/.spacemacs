@@ -262,11 +262,6 @@ layers configuration. You are free to put any user code."
 
   (setq-default evil-escape-key-sequence "jk")
 
-  (eval-after-load 'flycheck '(flycheck-clojure-setup))
-  (add-hook 'clojure-mode-hook 'flycheck-mode)
-
-  (eval-after-load 'flycheck
-    '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/Documents/org")

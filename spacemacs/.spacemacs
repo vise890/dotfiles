@@ -249,6 +249,7 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost any
 user code here.  The exception is org related code, which should be placed in
 `dotspacemacs/user-config'."
+  ;; don't check $PATH is set in .zshrc or .bashrc
   (setq exec-path-from-shell-check-startup-files nil)
   )
 

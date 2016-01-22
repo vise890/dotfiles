@@ -260,9 +260,7 @@ layers configuration. You are free to put any user code."
 
   (setq powerline-default-separator nil)
 
-  ;; Escape everything with jk
   (setq-default evil-escape-key-sequence "jk")
-  (setq evil-escape-delay 0.2)
 
   (eval-after-load 'flycheck '(flycheck-clojure-setup))
   (add-hook 'clojure-mode-hook 'flycheck-mode)

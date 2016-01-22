@@ -16,6 +16,7 @@ fi
 export EDITOR
 alias v="$EDITOR"
 
+alias ccat="pygmentize -g"
 # THE PATHs ##################################
 export CODEPATH="$HOME/Code"
 

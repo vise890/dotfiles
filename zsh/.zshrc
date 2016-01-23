@@ -7,13 +7,7 @@ export COMPLETION_WAITING_DOTS="true"
 
 setopt correct
 
-if hash nvim 2>/dev/null; then
-  EDITOR='nvim'
-  alias vim='nvim'
-else
-  EDITOR='vim'
-fi
-export EDITOR
+export EDITOR='vim'
 alias v="$EDITOR"
 
 alias ccat="pygmentize -g"

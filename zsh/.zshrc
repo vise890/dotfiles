@@ -1,7 +1,12 @@
 #!/bin/zsh
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
-export ZSH_THEME="robbyrussell"
+
+if [ $(whoami) = 'root' ]; then
+  export ZSH_THEME="gianu"
+else
+  export ZSH_THEME="robbyrussell"
+fi
 
 export COMPLETION_WAITING_DOTS="true"
 

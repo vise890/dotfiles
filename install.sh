@@ -18,6 +18,8 @@ mkdir -p ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim -u "$HOME/.vimrc.plugs" +PlugInstall +qall!
+# neovim only: register remote plugins
+vim +UpdateRemotePlugins +qall! || true
 
 echo "==> install spacemacs"
 mv ~/.emacs.d ~/.emacs.bak || true

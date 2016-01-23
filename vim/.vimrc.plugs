@@ -20,7 +20,7 @@ Plug 'scrooloose/nerdcommenter' " comment stuff
 Plug 'bronson/vim-trailing-whitespace' " highlight and fix whitespace
 
 Plug 'scrooloose/syntastic'     " syntax check/lint
-Plug 'Shougo/neocomplete.vim'   " auto-completion
+Plug 'Shougo/deoplete.nvim'     " auto-completion
 
 Plug 'vim-scripts/SudoEdit.vim' " read/write files with sudo
 

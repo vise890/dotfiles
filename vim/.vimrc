@@ -6,7 +6,6 @@ let mapleader = ' '
 nnoremap <Leader><Space> :
 
 imap jk <Esc>
-imap kj <Esc>
 
 " get rid of some annoyances in normal mode
 " help

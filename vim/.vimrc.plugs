@@ -6,28 +6,31 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 
 Plug 'altercation/vim-colors-solarized'
 
-
-Plug 'airblade/vim-gitgutter'   " git diff in the gutter
-
 Plug 'bling/vim-airline'        " more kickass status bar
-Plug 'kien/ctrlp.vim'           " fuzzy file search
-Plug 'sjl/gundo.vim'            " visualize vim's undo tree
-Plug 'rking/ag.vim'             " search with ag
-Plug 'scrooloose/nerdtree'      " file tree
+
 Plug 'christoomey/vim-tmux-navigator' " seamless navigation between tmux panes and vim splits
 
-Plug 'scrooloose/syntastic'     " syntax check/lint
-Plug 'Shougo/neocomplete.vim'   " autocompletion
+Plug 'scrooloose/nerdtree'      " file tree
+Plug 'kien/ctrlp.vim'           " fuzzy file search
+Plug 'majutsushi/tagbar'        " browse the tags of the current file
+Plug 'rking/ag.vim'             " search with ag
 
 Plug 'tpope/vim-surround'       " surrond stuff with characters
 Plug 'scrooloose/nerdcommenter' " comment stuff
+Plug 'bronson/vim-trailing-whitespace' " highlight and fix whitespace
+
+Plug 'scrooloose/syntastic'     " syntax check/lint
+Plug 'Shougo/neocomplete.vim'   " auto-completion
+
+Plug 'vim-scripts/SudoEdit.vim' " read/write files with sudo
+
+Plug 'tpope/vim-fugitive'       " git wrapper for vim
+Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 
 
 Plug 'elzr/vim-json'            , { 'for': 'json' }
 Plug 'vim-ruby/vim-ruby'        , { 'for': 'ruby' }
 Plug 'tpope/vim-markdown'
-
-
 Plug 'jceb/vim-orgmode'
 Plug 'freitass/todo.txt-vim'
 

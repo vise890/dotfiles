@@ -6,12 +6,12 @@ let mapleader = ' '
 nnoremap <Leader><Space> :
 
 imap jk <Esc>
+imap kj <Esc>
 
 " get rid of some annoyances in normal mode
 " help
 nnoremap <F1> <Nop>
 
-set mouse=a                      " automatically enable mouse
 set mousehide                    " hide mouse cursor when typing
 
 setlocal spell spelllang=en_gb   " enable spell checking
@@ -25,9 +25,9 @@ highlight clear LineNr           " current line number row will have same backgr
 set cursorline                   " highlight current line
 set showmatch                    " show matching brackets/parenthesis
 
-" Highlight problematic whitespace
+" Highlight some types of whitespace
 set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+set listchars=tab:›\ ,extends:#,nbsp:.
 
 set hlsearch                     " highlight search results
 set incsearch                    " search as you type
@@ -55,10 +55,25 @@ nnoremap Y y$
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 
 " Paste MODE
-nnoremap <F2> :set invpaste paste?<CR>
+noremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" AIRLINE: status bar
+set laststatus=2                  " don't wait for a split to appear for airline to be visible
+let g:airline_powerline_fonts = 0   " do not require patched font ...
+let g:airline_left_sep = ''         " ... just use straight lines
+let g:airline_right_sep = ''
+
+" NERDTREE: file browser
+map <C-n> :NERDTreeToggle<CR>
+
+" AG: search with silver searcher
+nnoremap <leader>a :Ag 
+
+" TAGBAR: view file tags
+map <F8> :TagbarToggle<CR>
+
 
 " NEOCOMPLETE: autocompletion
 let g:neocomplete#enable_at_startup = 1
@@ -69,17 +84,3 @@ let g:neocomplete#max_list = 15
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 set completeopt-=preview          " don't open preview window all over the place
 
-" NERDTREE: file browser
-map <C-n> :NERDTreeToggle<CR>
-
-" GUNDO: undo tree
-nnoremap <leader>u :GundoToggle<CR>
-
-" AG: search with silver searcher
-nnoremap <leader>a :Ag 
-
-" AIRLINE: status bar
-set laststatus=2                  " don't wait for a split to appear for airline to be visible
-let g:airline_powerline_fonts = 0   " do not require patched font ...
-let g:airline_left_sep = ''         " ... just use straight lines
-let g:airline_right_sep = ''

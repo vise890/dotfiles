@@ -29,6 +29,8 @@ values."
      spell-checking
 
      themes-megapack
+     (colors :variables
+             colors-enable-nyan-cat-progress-bar t)
 
      smex
 

@@ -22,9 +22,13 @@ export CODEPATH="$HOME/Code"
 # ruby stuff
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
+# haskell's stack & friends
+PATH=$HOME/.local/bin:$PATH
+
 # useful user scripts
 PATH=$CODEPATH/scripts:$PATH
 
+# user dir
 PATH=$HOME/bin:$PATH
 
 # Ensure path does not contain duplicates.

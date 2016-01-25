@@ -57,7 +57,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(flycheck-clojure)
+   dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -263,8 +263,6 @@ layers configuration. You are free to put any user code."
   (setq powerline-default-separator nil)
 
   (setq-default evil-escape-key-sequence "jk")
-
-  (add-hook 'clojure-mode-hook 'aggressive-indent-mode)
 
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/Documents/org")

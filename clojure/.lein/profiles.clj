@@ -1,5 +1,5 @@
-{:user {:plugins [[cider/cider-nrepl "0.11.0-SNAPSHOT"]
-                  [refactor-nrepl  "2.0.0-SNAPSHOT"]
+{:user {:plugins [[cider/cider-nrepl "0.10.1"]
+                  [refactor-nrepl  "1.2.0"]
 
                   [lein-cljfmt "0.3.0"]
 

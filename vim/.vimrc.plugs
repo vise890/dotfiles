@@ -30,6 +30,7 @@ Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 
 Plug 'elzr/vim-json'            , { 'for': 'json' }
 Plug 'vim-ruby/vim-ruby'        , { 'for': 'ruby' }
+Plug 'guns/vim-clojure-static'
 Plug 'tpope/vim-markdown'
 Plug 'jceb/vim-orgmode'
 Plug 'freitass/todo.txt-vim'

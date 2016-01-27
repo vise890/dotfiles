@@ -29,8 +29,6 @@ values."
      spell-checking
 
      themes-megapack
-     (colors :variables
-             colors-enable-nyan-cat-progress-bar t)
 
      smex
 
@@ -54,7 +52,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(flycheck-clojure)
+   dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -143,7 +141,7 @@ values."
    ;; works in the GUI. (default nil)
    dotspacemacs-distinguish-gui-tab nil
    ;; If non nil `Y' is remapped to `y$' in Evil states. (default nil)
-   dotspacemacs-remap-Y-to-y$ nil
+   dotspacemacs-remap-Y-to-y$ t
    ;; If non nil, inverse the meaning of `g' in `:substitute' Evil ex-command.
    ;; (default nil)
    dotspacemacs-ex-substitute-global nil
@@ -240,14 +238,14 @@ values."
    ;; `trailing' to delete only the whitespace at end of lines, `changed'to
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
-   dotspacemacs-whitespace-cleanup 'changed
+   dotspacemacs-whitespace-cleanup nil
    ))
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
-It is called immediately after `dotspacemacs/init'.  You are free to put almost any
-user code here.  The exception is org related code, which should be placed in
-`dotspacemacs/user-config'."
+It is called immediately after `dotspacemacs/init'.  You are free to put almost
+any user code here.  The exception is org related code, which should be placed
+in `dotspacemacs/user-config'."
   ;; don't check $PATH is set in .zshrc or .bashrc
   (setq exec-path-from-shell-check-startup-files nil)
   )
@@ -260,8 +258,6 @@ layers configuration. You are free to put any user code."
   (setq powerline-default-separator nil)
 
   (setq-default evil-escape-key-sequence "jk")
-
-  (add-hook 'clojure-mode-hook 'aggressive-indent-mode)
 
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/Documents/org")

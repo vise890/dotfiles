@@ -10,6 +10,7 @@ imap jk <Esc>
 " get rid of some annoyances in normal mode
 " help
 nnoremap <F1> <Nop>
+map Q <nop>
 
 set mousehide                    " hide mouse cursor when typing
 
@@ -36,7 +37,7 @@ set incsearch                    " search as you type
 set ignorecase
 set smartcase
 
-" WRAPPING
+" wrapping
 set nowrap                       " do not wrap long lines
 " move in a sane way when wrapping
 noremap  <buffer> <silent> k gk

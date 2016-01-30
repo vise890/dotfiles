@@ -16,6 +16,10 @@ export EDITOR='vim'
 alias v="$EDITOR"
 
 alias ccat="pygmentize -g"
+
+# duplicate current terminal window
+alias dup="urxvt &"
+
 # THE PATHs ##################################
 export CODEPATH="$HOME/Code"
 

@@ -41,6 +41,8 @@ values."
             shell-default-position 'bottom
             shell-default-term-shell "/bin/zsh")
 
+     restclient
+
      markdown
      org
 

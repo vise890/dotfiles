@@ -259,6 +259,8 @@ layers configuration. You are free to put any user code."
 
   (setq-default evil-escape-key-sequence "jk")
 
+  (setq initial-major-mode 'emacs-lisp-mode)
+
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/Documents/org")
   )

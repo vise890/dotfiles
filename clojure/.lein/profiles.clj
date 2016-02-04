@@ -1,7 +1,7 @@
-{:user {:plugins [;[cider/cider-nrepl "0.10.0-SNAPSHOT"]
-                  ;[refactor-nrepl "2.0.0-SNAPSHOT"]
-                  [refactor-nrepl "1.1.0"]
-                  [cider/cider-nrepl "0.9.1"]
+{:user {:plugins [[cider/cider-nrepl "0.11.0-SNAPSHOT"]
+                  [refactor-nrepl "2.0.0-SNAPSHOT"]
+                  ;[refactor-nrepl "1.1.0"]
+                  ;[cider/cider-nrepl "0.9.1"]
 
                   [lein-cljfmt "0.3.0"]
 

@@ -41,6 +41,8 @@ values."
             shell-default-position 'bottom
             shell-default-term-shell "/bin/zsh")
 
+     restclient
+
      markdown
      org
 
@@ -258,6 +260,8 @@ layers configuration. You are free to put any user code."
   (setq powerline-default-separator nil)
 
   (setq-default evil-escape-key-sequence "jk")
+
+  (setq initial-major-mode 'emacs-lisp-mode)
 
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/Documents/org")

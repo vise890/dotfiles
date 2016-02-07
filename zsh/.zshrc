@@ -51,10 +51,8 @@ alias zshrc='$EDITOR $HOME/.zshrc'
 alias vimrc='$EDITOR $HOME/.vimrc'
 alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 
-alias fk="fuck"
-
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump thefuck lein archlinux history vi-mode sudo systemd colored-man)
+plugins=(autojump lein archlinux history vi-mode sudo systemd colored-man)
 
 source "$ZSH/oh-my-zsh.sh"
 

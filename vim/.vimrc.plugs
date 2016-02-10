@@ -6,7 +6,9 @@ Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, 
 
 Plug 'altercation/vim-colors-solarized'
 
-Plug 'bling/vim-airline'        " more kickass status bar
+Plug 'vim-airline/vim-airline'        " more kickass status bar
+Plug 'vim-airline/vim-airline-themes'
+
 
 Plug 'christoomey/vim-tmux-navigator' " seamless navigation between tmux panes and vim splits
 

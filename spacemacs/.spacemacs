@@ -29,6 +29,7 @@ values."
      spell-checking
 
      themes-megapack
+     emoji
 
      smex
 

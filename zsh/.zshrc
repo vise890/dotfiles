@@ -12,7 +12,8 @@ export COMPLETION_WAITING_DOTS="true"
 
 setopt correct
 
-export EDITOR='vim'
+export EDITOR='nvim'
+alias vim="$EDITOR"
 alias v="$EDITOR"
 
 alias ccat="pygmentize -g"

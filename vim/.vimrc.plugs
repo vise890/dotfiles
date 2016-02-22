@@ -30,9 +30,16 @@ Plug 'tpope/vim-fugitive'       " git wrapper for vim
 Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 
 
-Plug 'elzr/vim-json'            , { 'for': 'json' }
-Plug 'vim-ruby/vim-ruby'        , { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby'            , { 'for': 'ruby' }
+
+Plug 'nvie/vim-flake8'              , { 'for': 'python' }
+Plug 'vim-scripts/indentpython.vim' , { 'for': 'python' }
+Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
+
 Plug 'guns/vim-clojure-static'
+
+Plug 'elzr/vim-json'                , { 'for': 'json' }
+
 Plug 'tpope/vim-markdown'
 Plug 'jceb/vim-orgmode'
 Plug 'freitass/todo.txt-vim'

@@ -20,10 +20,6 @@ vim -u "$HOME/.vimrc.plugs" +PlugInstall +qall!
 # neovim only: register remote plugins
 vim +UpdateRemotePlugins +qall! || true
 
-echo "==> install spacemacs"
-mv ~/.emacs.d ~/.emacs.bak || true
-git clone --recursive http://github.com/syl20bnr/spacemacs ~/.emacs.d
-
 # FIXME: massive hack to restore zshrc
 # scm_breeze should be installed manually or (better) nuked completely (since it is a dirty hack)
 git checkout ./zsh/.zshrc

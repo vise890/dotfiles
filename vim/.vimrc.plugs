@@ -41,6 +41,8 @@ Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
 Plug 'guns/vim-clojure-static'
 
 Plug 'elzr/vim-json'                , { 'for': 'json' }
+Plug 'pangloss/vim-javascript'      , { 'for': 'javascript' }
+Plug 'digitaltoad/vim-pug'
 
 Plug 'tpope/vim-markdown'
 Plug 'jceb/vim-orgmode'

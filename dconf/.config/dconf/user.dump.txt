@@ -59,6 +59,7 @@ scrollbar-policy='always'
 
 [org/gnome/shell]
 enabled-extensions=['battery-percentage@nohales.org']
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop']
 
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>d']

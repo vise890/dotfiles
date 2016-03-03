@@ -68,6 +68,10 @@ favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop']
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>d']
 
+[org/gnome/shell/overrides]
+dynamic-workspaces=false
+workspaces-only-on-primary=false
+
 [org/gnome/desktop/datetime]
 automatic-timezone=true
 
@@ -91,6 +95,9 @@ toolkit-accessibility=false
 
 [org/gnome/desktop/search-providers]
 sort-order=['gnome-contacts.desktop', 'gnome-documents.desktop', 'nautilus.desktop']
+
+[org/gnome/desktop/wm/preferences]
+num-workspaces=4
 
 [org/gnome/desktop/wm/keybindings]
 close=['<Super>q']

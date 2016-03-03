@@ -52,6 +52,8 @@ display=['SHP', '0x143e', '0x00000000']
 
 [org/gnome/desktop/interface]
 gtk-im-module='gtk-im-context-simple'
+icon-theme='Moka'
+gtk-theme='deepin'
 toolkit-accessibility=false
 
 [org/gnome/desktop/wm/keybindings]

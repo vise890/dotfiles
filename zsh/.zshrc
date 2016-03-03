@@ -36,6 +36,10 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 # NPM stuff
 PATH=$HOME/.npm/bin:$PATH
 
+# Go's stuff
+export GOPATH=$HOME/go
+PATH=$GOPATH/bin:$PATH
+
 # haskell's stack, pip & friends
 PATH=$HOME/.local/bin:$PATH
 

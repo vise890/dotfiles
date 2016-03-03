@@ -1,3 +1,6 @@
+[org/gnome/system/location]
+enabled=true
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
 confirm-trash=false

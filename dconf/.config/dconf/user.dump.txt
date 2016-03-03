@@ -40,6 +40,9 @@ binding='<Super>Return'
 command='gnome-terminal'
 name='terminal'
 
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
 [org/gnome/terminal/legacy]
 new-terminal-mode='tab'
 schema-version=uint32 3

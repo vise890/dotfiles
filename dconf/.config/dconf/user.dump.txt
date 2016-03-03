@@ -58,6 +58,7 @@ display=['SHP', '0x143e', '0x00000000']
 show-desktop-icons=true
 
 [org/gnome/desktop/interface]
+clock-show-date=true
 gtk-im-module='gtk-im-context-simple'
 icon-theme='Moka'
 gtk-theme='deepin'

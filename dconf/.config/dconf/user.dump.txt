@@ -54,6 +54,11 @@ scrollbar-policy='always'
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>d']
 
+[org/gnome/desktop/peripherals/touchpad]
+natural-scroll=true
+speed=0.1063829787234043
+tap-to-click=true
+
 [org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
 display=['SHP', '0x143e', '0x00000000']
 
@@ -66,6 +71,9 @@ gtk-im-module='gtk-im-context-simple'
 icon-theme='Moka'
 gtk-theme='deepin'
 toolkit-accessibility=false
+
+[org/gnome/desktop/search-providers]
+sort-order=['gnome-contacts.desktop', 'gnome-documents.desktop', 'nautilus.desktop']
 
 [org/gnome/desktop/wm/keybindings]
 close=['<Super>q']

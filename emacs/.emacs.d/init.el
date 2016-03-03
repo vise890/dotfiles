@@ -9,6 +9,7 @@
 ; lisp mode / lispy for structural editing
 ; , gg
 ; projectile find in pj
+; trailing whitespace removal
 
 (add-to-list 'load-path "~/.emacs.d/packages")
 
@@ -23,14 +24,16 @@
         solarized-theme
 
         smex
-	ido-ubiquitous
+        ido-ubiquitous
         ido-vertical-mode
 
-	company
+        company
 
         smartparens
 
         rainbow-delimiters
+
+        deft
 
         evil
         evil-escape

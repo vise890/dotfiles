@@ -60,6 +60,9 @@ scrollbar-policy='always'
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>d']
 
+[org/gnome/desktop/datetime]
+automatic-timezone=true
+
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=true
 speed=0.1063829787234043

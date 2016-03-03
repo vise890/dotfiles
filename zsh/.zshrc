@@ -68,3 +68,5 @@ bindkey '^R' history-incremental-search-backward
 # initialize scm breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
+# fix for keeping terms in same directory
+source /etc/profile.d/vte.sh

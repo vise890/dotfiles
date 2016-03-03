@@ -21,6 +21,12 @@ default-visible-columns=['name', 'size', 'type', 'date_modified']
 default-zoom-level='standard'
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed']
 
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='suspend'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=1800
+
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 

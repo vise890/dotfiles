@@ -9,6 +9,10 @@ maximized=false
 [org/gnome/nautilus/icon-view]
 default-zoom-level='standard'
 
+[org/gnome/nautilus/desktop]
+home-icon-visible=false
+volumes-visible=true
+
 [org/gnome/nautilus/list-view]
 default-visible-columns=['name', 'size', 'type', 'date_modified']
 default-zoom-level='standard'
@@ -49,6 +53,9 @@ toggle-overview=['<Super>d']
 
 [org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
 display=['SHP', '0x143e', '0x00000000']
+
+[org/gnome/desktop/background]
+show-desktop-icons=true
 
 [org/gnome/desktop/interface]
 gtk-im-module='gtk-im-context-simple'

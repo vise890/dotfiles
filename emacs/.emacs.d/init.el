@@ -65,6 +65,13 @@
 (evil-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; window movement
+(evil-leader/set-key "wh" 'windmove-left)
+(evil-leader/set-key "wl" 'windmove-right)
+(evil-leader/set-key "wj" 'windmove-down)
+(evil-leader/set-key "wk" 'windmove-up)
+
+;; autocompletion
 (global-company-mode)
 
 ;; elisp

@@ -95,10 +95,11 @@ secondary-color='#000000'
 
 [org/gnome/desktop/interface]
 clock-show-date=true
+toolkit-accessibility=false
 gtk-im-module='gtk-im-context-simple'
 icon-theme='Moka'
 gtk-theme='deepin'
-toolkit-accessibility=false
+monospace-font-name='Ubuntu Mono 15'
 
 [org/gnome/desktop/search-providers]
 sort-order=['gnome-contacts.desktop', 'gnome-documents.desktop', 'nautilus.desktop']

@@ -23,6 +23,8 @@
 
         solarized-theme
 
+        projectile
+
         smex
         ido-ubiquitous
         ido-vertical-mode
@@ -37,7 +39,8 @@
 
         evil
         evil-escape
-        evil-leader))
+        bind-map))
+
 (ensure-are-installed! my-packages)
 
 (load-theme 'solarized-light t)
@@ -57,19 +60,30 @@
 ;; Evil mode
 (add-hook 'evil-mode-hook 'evil-escape-mode)
 (setq-default evil-escape-key-sequence "jk")
-(global-evil-leader-mode)
-(evil-leader/set-leader "<SPC>")
-(evil-leader/set-key "b" 'switch-to-buffer)
-(evil-leader/set-key "<SPC>" 'smex)
-(evil-leader/set-key "eb" 'eval-buffer)
+
+(bind-map main-leader-map
+  :evil-keys ("<SPC>")
+  :evil-states(normal))
+
+(bind-map-set-keys main-leader-map
+                   "b" 'switch-to-buffer
+                   "<SPC>" 'smex
+                   "eb" 'eval-buffer)
+
 (evil-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; window movement
-(evil-leader/set-key "wh" 'windmove-left)
-(evil-leader/set-key "wl" 'windmove-right)
-(evil-leader/set-key "wj" 'windmove-down)
-(evil-leader/set-key "wk" 'windmove-up)
+;; window movement/management
+(bind-map-set-keys main-leader-map
+                   "wh" 'windmove-left
+                   "wl" 'windmove-right
+                   "wj" 'windmove-down
+                   "wk" 'windmove-up)
+
+;;
+;; navigation
+(bind-map-set-keys main-leader-map
+                   "pf" 'projectile-find-file)
 
 ;; autocompletion
 (global-company-mode)
@@ -78,9 +92,9 @@
 (add-hook 'emacs-lisp-mode-hook #'smartparens-strict-mode)
 (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
 
-
 ;; org/deft
-(evil-leader/set-key "ad" 'deft)
+(bind-map-set-keys main-leader-map
+                   "ad" 'deft)
 (setq deft-extensions '("txt" "org" "md"))
 (setq deft-directory "~/Documents/org")
 

@@ -1,5 +1,14 @@
-[org/gnome/system/location]
-enabled=true
+[org/gnome/shell]
+app-picker-view=uint32 0
+enabled-extensions=['battery-percentage@nohales.org']
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop']
+
+[org/gnome/shell/keybindings]
+toggle-overview=['<Super>d']
+
+[org/gnome/shell/overrides]
+dynamic-workspaces=false
+workspaces-only-on-primary=false
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
@@ -43,6 +52,9 @@ name='terminal'
 [org/gnome/settings-daemon/peripherals/keyboard]
 numlock-state='off'
 
+[org/gnome/system/location]
+enabled=true
+
 [org/gnome/terminal/legacy]
 new-terminal-mode='tab'
 schema-version=uint32 3
@@ -60,17 +72,8 @@ scrollback-unlimited=true
 background-color='rgb(0,43,54)'
 scrollbar-policy='always'
 
-[org/gnome/shell]
-app-picker-view=uint32 0
-enabled-extensions=['battery-percentage@nohales.org']
-favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop']
-
-[org/gnome/shell/keybindings]
-toggle-overview=['<Super>d']
-
-[org/gnome/shell/overrides]
-dynamic-workspaces=false
-workspaces-only-on-primary=false
+[org/gnome/evolution-data-server]
+migrated=true
 
 [org/gnome/desktop/datetime]
 automatic-timezone=true

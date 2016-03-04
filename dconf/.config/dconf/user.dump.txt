@@ -87,7 +87,11 @@ tap-to-click=true
 display=['SHP', '0x143e', '0x00000000']
 
 [org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/gnome/Blinds.jpg'
 show-desktop-icons=true
+primary-color='#ffffff'
+picture-options='zoom'
+secondary-color='#000000'
 
 [org/gnome/desktop/interface]
 clock-show-date=true

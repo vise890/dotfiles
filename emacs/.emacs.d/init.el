@@ -33,6 +33,7 @@
 
         company
         smartparens
+        evil-nerd-commenter
 
         whitespace-cleanup-mode
         
@@ -46,11 +47,11 @@
 ;; bind-map (multiple evil leaders)
 (bind-map main-leader-map
   :evil-keys ("<SPC>")
-  :evil-states (normal))
+  :evil-states (normal visual))
 
 (bind-map major-mode-leader-map
   :evil-keys (",")
-  :evil-states (normal))
+  :evil-states (normal visual))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Appearance
@@ -70,6 +71,8 @@
   "Td" 'solarized-dark
   "Tg" 'gruvbox)
 
+(blink-cursor-mode 0) ; disable blinkage
+(global-hl-line-mode t)
 (nyan-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -94,9 +97,11 @@
 (ido-vertical-mode t)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; code help autocompletion/parens
+;; code editing autocompletion/parens
 (global-company-mode)
 (require 'smartparens-config)
+(bind-map-set-keys main-leader-map
+  ";" 'evilnc-comment-or-uncomment-lines)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; window movement/management

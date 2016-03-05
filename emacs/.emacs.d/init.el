@@ -1,15 +1,10 @@
 ; nicer colour for visual bell
-; nyan-cat
-; install packages in my-ppackages
-; dash
-; version control the dotfile
-;
 ; powerline + faces
 ; nerdcommenter
 ; lisp mode / lispy for structural editing
 ; , gg
-; projectile find in pj
-; trailing whitespace removal
+
+(setq inhibit-startup-message t)
 
 (add-to-list 'load-path "~/.emacs.d/packages")
 
@@ -17,97 +12,143 @@
 (setq my-packages
       '(dash
 
-        better-defaults
-
         which-key
 
-        solarized-theme
+        better-defaults
 
-        projectile
+        solarized-theme
+        gruvbox-theme
+        nyan-mode
+        rainbow-delimiters
+
+        evil
+        evil-escape
+        bind-map
 
         smex
         ido-ubiquitous
         ido-vertical-mode
 
-        company
+        projectile
 
+        company
         smartparens
 
-        rainbow-delimiters
-
+        whitespace-cleanup-mode
+        
         deft
 
-        evil
-        evil-escape
-        bind-map))
-
+        ))
 (ensure-are-installed! my-packages)
-
-(load-theme 'solarized-light t)
 
 (which-key-mode)
 
+;; bind-map (multiple evil leaders)
+(bind-map main-leader-map
+  :evil-keys ("<SPC>")
+  :evil-states (normal))
+
+(bind-map major-mode-leader-map
+  :evil-keys (",")
+  :evil-states (normal))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Appearance
+(defun solarized-light ()
+  (interactive)
+  (load-theme 'solarized-light t))
+(defun solarized-dark ()
+  (interactive)
+  (load-theme 'solarized-dark t))
+(defun gruvbox ()
+  (interactive)
+  (load-theme 'gruvbox t))
+(solarized-light)
+
+(bind-map-set-keys main-leader-map
+  "Tl" 'solarized-light
+  "Td" 'solarized-dark
+  "Tg" 'gruvbox)
+
+(nyan-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Evil mode
+(add-hook 'evil-mode-hook 'evil-escape-mode)
+(setq-default evil-escape-key-sequence "jk")
+(evil-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; M-x fuzzy and cool
 (smex-initialize)
+
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(bind-map-set-keys main-leader-map
+  "<SPC>" 'smex)
+(bind-map-set-keys major-mode-leader-map
+  "," 'smex-major-mode-commands)
 
 (ido-everywhere t)
 (ido-ubiquitous-mode t)
 (ido-vertical-mode t)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; Evil mode
-(add-hook 'evil-mode-hook 'evil-escape-mode)
-(setq-default evil-escape-key-sequence "jk")
-
-(bind-map main-leader-map
-  :evil-keys ("<SPC>")
-  :evil-states(normal))
-
-(bind-map-set-keys main-leader-map
-                   "b" 'switch-to-buffer
-                   "<SPC>" 'smex
-                   "eb" 'eval-buffer)
-
-(evil-mode)
+;; code help autocompletion/parens
+(global-company-mode)
+(require 'smartparens-config)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; window movement/management
 (bind-map-set-keys main-leader-map
-                   "wh" 'windmove-left
-                   "wl" 'windmove-right
-                   "wj" 'windmove-down
-                   "wk" 'windmove-up)
+  "wh" 'windmove-left
+  "wl" 'windmove-right
+  "wj" 'windmove-down
+  "wk" 'windmove-up
+  "wq" 'delete-window)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;
+;; buffer management
+(defun kill-all-other-buffers ()
+  (interactive)
+  (let ((other-buffers (delq (current-buffer) (buffer-list))))
+    (mapc 'kill-buffer other-buffers)))
+(bind-map-set-keys main-leader-map
+  "bb" 'switch-to-buffer
+  "bK" 'kill-all-other-buffers
+  "bp" 'previous-buffer
+  "bn" 'next-buffer)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; navigation
 (bind-map-set-keys main-leader-map
                    "pf" 'projectile-find-file)
-
-;; autocompletion
-(global-company-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; elisp
-(add-hook 'emacs-lisp-mode-hook #'smartparens-strict-mode)
-(add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'emacs-lisp-mode-hook 'smartparens-strict-mode)
+(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'emacs-lisp-mode-hook 'whitespace-cleanup-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; org/deft
-(bind-map-set-keys main-leader-map
-                   "ad" 'deft)
-(setq deft-extensions '("txt" "org" "md"))
-(setq deft-directory "~/Documents/org")
+;; evaluation
+(bind-map-set-keys major-mode-leader-map
+  "eb" 'eval-buffer
+  "ee" 'eval-last-sexp)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; init-el editing
 (defun init-el-edit ()
   (interactive)
   (set-buffer (find-file "~/.emacs.d/init.el")))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))))
+;; org/deft
+(bind-map-set-keys main-leader-map
+  "an" 'deft)
+(setq deft-recursive t)
+(setq deft-use-filename-as-title t)
+(setq deft-use-filter-string-for-filename t)
+(setq deft-extensions '("txt" "org" "md"))
+(setq deft-directory "~/Documents/org")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,35 +1,3 @@
-[org/gnome/shell]
-app-picker-view=uint32 0
-enabled-extensions=['battery-percentage@nohales.org']
-favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop']
-
-[org/gnome/shell/keybindings]
-toggle-overview=['<Super>d']
-
-[org/gnome/shell/overrides]
-dynamic-workspaces=false
-workspaces-only-on-primary=false
-
-[org/gnome/nautilus/preferences]
-default-folder-viewer='list-view'
-confirm-trash=false
-
-[org/gnome/nautilus/window-state]
-geometry='1012x1105+-26+4'
-maximized=false
-
-[org/gnome/nautilus/icon-view]
-default-zoom-level='standard'
-
-[org/gnome/nautilus/desktop]
-home-icon-visible=false
-volumes-visible=true
-
-[org/gnome/nautilus/list-view]
-default-visible-columns=['name', 'size', 'type', 'date_modified']
-default-zoom-level='standard'
-default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed']
-
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-battery-type='suspend'
 sleep-inactive-ac-timeout=3600
@@ -52,28 +20,57 @@ name='terminal'
 [org/gnome/settings-daemon/peripherals/keyboard]
 numlock-state='off'
 
+[org/gnome/shell]
+app-picker-view=uint32 0
+enabled-extensions=['battery-percentage@nohales.org']
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop']
+
+[org/gnome/shell/keybindings]
+toggle-overview=['<Super>d']
+
+[org/gnome/shell/overrides]
+dynamic-workspaces=false
+workspaces-only-on-primary=false
+
+[org/gnome/clocks/state/window]
+size=(1006, 1098)
+state=128
+panel-id='world'
+
+[org/gnome/clocks]
+world-clocks=[{'location': <(uint32 2, <('Porto Alegre', 'SBCO', true, [(-0.52388966962472883, -0.89389947104752665)], [(-0.52418054619786614, -0.89360857702109675)])>)>}, {'location': <(uint32 2, <('San Francisco', 'KSFO', true, [(0.65658801258494626, -2.1356672871875406)], [(0.659296885757089, -2.1366218601153339)])>)>}, {'location': <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>}]
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+confirm-trash=false
+
+[org/gnome/nautilus/window-state]
+geometry='1012x1080+2+12'
+maximized=false
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='standard'
+
+[org/gnome/nautilus/desktop]
+home-icon-visible=false
+volumes-visible=true
+
+[org/gnome/nautilus/list-view]
+default-visible-columns=['name', 'size', 'type', 'date_modified']
+default-zoom-level='standard'
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed']
+
 [org/gnome/system/location]
 enabled=true
 
-[org/gnome/terminal/legacy]
-new-terminal-mode='tab'
-schema-version=uint32 3
-default-show-menubar=false
-
-[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-foreground-color='rgb(131,148,150)'
-visible-name='default'
-palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
-scroll-on-output=true
-use-system-font=false
-use-theme-colors=false
-font='Ubuntu Mono 14'
-scrollback-unlimited=true
-background-color='rgb(0,43,54)'
-scrollbar-policy='always'
-
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/desktop/notifications]
+application-children=['firefox']
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
 
 [org/gnome/desktop/datetime]
 automatic-timezone=true
@@ -117,3 +114,34 @@ move-to-workspace-4=['<Shift><Super>dollar']
 move-to-workspace-3=['<Shift><Super>numbersign']
 switch-to-workspace-4=['<Super>4']
 switch-to-workspace-3=['<Super>3']
+
+[org/gnome/dictionary]
+strategy='exact'
+source-name='Default'
+database='!'
+
+[org/gnome/terminal/legacy]
+new-terminal-mode='tab'
+schema-version=uint32 3
+default-show-menubar=false
+
+[org/gnome/terminal/legacy/profiles:/:04b748c9-4c6b-470c-a858-8c7eb24eebc5]
+use-theme-colors=true
+palette=['rgb(0,0,0)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+visible-name='visible-green'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(131,148,150)'
+visible-name='default'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+scroll-on-output=true
+use-system-font=false
+use-theme-colors=false
+font='Ubuntu Mono 14'
+scrollback-unlimited=true
+background-color='rgb(0,43,54)'
+scrollbar-policy='always'
+
+[org/gnome/terminal/legacy/profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']
+default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'

@@ -1,10 +1,10 @@
-; nicer colour for visual bell
 ; powerline + faces
-; nerdcommenter
 ; lisp mode / lispy for structural editing
 ; , gg
+; different bind-maps depending on major-modes
 
-(setq inhibit-startup-message t)
+(fset 'yes-or-no-p 'y-or-n-p) ; yes/no -> y/n
+(setq inhibit-startup-message t) ; go to scratch
 
 (add-to-list 'load-path "~/.emacs.d/packages")
 
@@ -39,7 +39,9 @@
         
         deft
 
+        elisp-slime-nav
         ))
+
 (ensure-are-installed! my-packages)
 
 (which-key-mode)
@@ -74,6 +76,9 @@
 (blink-cursor-mode 0) ; disable blinkage
 (global-hl-line-mode t)
 (nyan-mode)
+
+(bind-map-set-keys main-leader-map
+  "tn" 'linum-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Evil mode
@@ -91,6 +96,12 @@
   "<SPC>" 'smex)
 (bind-map-set-keys major-mode-leader-map
   "," 'smex-major-mode-commands)
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward) ; use part of file's direcotry for distinguishing buffers
+(setq ido-enable-flex-matching t) ; bb matches beep boop
+(setq ido-use-filename-at-point nil)
+(setq ido-use-virtual-buffers t) ; include recent files in buffer list
 
 (ido-everywhere t)
 (ido-ubiquitous-mode t)

@@ -31,7 +31,6 @@ values."
      syntax-checking
      spell-checking
 
-     themes-megapack
      emoji
 
      smex

@@ -36,7 +36,7 @@
         evil-nerd-commenter
 
         whitespace-cleanup-mode
-        
+
         deft
 
         elisp-slime-nav

@@ -38,6 +38,8 @@ Plug 'nvie/vim-flake8'              , { 'for': 'python' }
 Plug 'vim-scripts/indentpython.vim' , { 'for': 'python' }
 Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
 
+Plug 'jvirtanen/vim-octave'
+
 Plug 'fatih/vim-go'
 
 Plug 'guns/vim-clojure-static'

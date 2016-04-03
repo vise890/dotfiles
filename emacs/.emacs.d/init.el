@@ -7,6 +7,7 @@
 
 (fset 'yes-or-no-p 'y-or-n-p) ; yes/no -> y/n
 (setq inhibit-startup-message t) ; go to scratch
+(setq ring-bell-function 'ignore)
 
 (add-to-list 'load-path "~/.emacs.d/packages")
 

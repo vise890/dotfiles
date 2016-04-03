@@ -1,12 +1,10 @@
 {:user {:plugins [[cider/cider-nrepl "0.12.0-SNAPSHOT"]
-                  [refactor-nrepl "2.0.0"]
-
-                  [lein-cljfmt "0.3.0"]
+                  [refactor-nrepl "2.3.0-SNAPSHOT"]
 
                   [jonase/eastwood "0.2.3"]
                   [lein-kibit "0.1.2"]
 
-                  [lein-ancient "0.6.8"]]
+                  [lein-ancient "0.6.10"]]
 
         :aliases {"slamhound" ["run" "-m" "slam.hound"]}
 

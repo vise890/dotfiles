@@ -1,3 +1,13 @@
+(require 'powerpack)
+(ensure-are-installed!
+ '(cider
+   clj-refactor
+   clojure-mode
+   rainbow-delimiters
+   whitespace-cleanup-mode
+   smartparens
+   bind-map))
+
 (add-hook 'clojure-mode-hook 'smartparens-strict-mode)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'clojure-mode-hook 'whitespace-cleanup-mode)
@@ -23,4 +33,4 @@
   "hg" 'cider-grimoire
   "hj" 'cider-javadoc)
 
-(provide 'clojure)
+(provide 'clojure-config)

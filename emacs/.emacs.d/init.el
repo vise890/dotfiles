@@ -5,12 +5,14 @@
 ; powerline + faces
 ; recent files/projects
 ; use-package
+; neotree
 
 (fset 'yes-or-no-p 'y-or-n-p) ; yes/no -> y/n
 (setq inhibit-startup-message t) ; go to scratch
 (setq ring-bell-function 'ignore)
 
 (add-to-list 'load-path "~/.emacs.d/packages")
+(add-to-list 'load-path "~/.emacs.d/config")
 
 (require 'powerpack)
 (setq my-packages
@@ -58,7 +60,6 @@
 (bind-map main-leader-map
   :evil-keys ("<SPC>")
   :evil-states (normal visual))
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Appearance
@@ -146,49 +147,8 @@
                    "pf" 'projectile-find-file)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; elisp
-(add-hook 'emacs-lisp-mode-hook 'smartparens-strict-mode)
-(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
-(add-hook 'emacs-lisp-mode-hook 'whitespace-cleanup-mode)
-
-(bind-map elisp-leader-map
-  :evil-keys (",")
-  :evil-states (normal visual)
-  :major-modes (emacs-lisp-mode
-                lisp-interaction-mode))
-(bind-map-set-keys elisp-leader-map
-  "eb" 'eval-buffer
-  "ee" 'eval-last-sexp
-  "gg" 'elisp-slime-nav-find-elisp-thing-at-point
-  "hh" 'elisp-slime-nav-describe-elisp-thing-at-point)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; clojure
-(add-hook 'clojure-mode-hook 'smartparens-strict-mode)
-(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
-(add-hook 'clojure-mode-hook 'whitespace-cleanup-mode)
-(add-hook 'clojure-mode-hook 'cider-mode)
-
-(bind-map clojure-leader-map
-  :evil-keys (",")
-  :evil-states (normal visual)
-  :major-modes (clojure-mode))
-
-(bind-map-set-keys clojure-leader-map
-  "eb" 'cider-eval-buffer
-  "ee" 'cider-eval-last-sexp
-
-  "fb" 'cider-format-buffer
-
-  "ss" 'cider-switch-to-repl-buffer
-  "sx" 'cider-refresh
-
-  "gg" 'cider-find-var
-
-  "hh" 'cider-doc
-  "hg" 'cider-grimoire
-  "hj" 'cider-javadoc)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'elisp)
+(require 'clojure)
 
 ;; init-el editing
 (defun init-el-edit ()

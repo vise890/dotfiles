@@ -6,9 +6,12 @@ SCM_BREEZE_PATH="$(TARGET)/.scm_breeze"
 
 DOT_VIM_PATH="./vim/.vim"
 
+all:
+	@echo "==> Nothing to be done, use 'make install'"
+
 # FIXME: vimrc and vplugs should put in ~/.vim
 # FIXME: scm_breeze is a dirty hack and should be burned with the sacred fire of doom remove it as soon as possible
-all: stow
+install: stow
 	@echo "==> install oh-my-zsh"
 	git clone https://github.com/robbyrussell/oh-my-zsh.git $(OH_MY_ZSH_PATH)
 	@echo "==> install vim-plug and plugins"

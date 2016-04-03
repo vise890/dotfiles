@@ -51,9 +51,6 @@
   :evil-keys ("<SPC>")
   :evil-states (normal visual))
 
-(bind-map major-mode-leader-map
-  :evil-keys (",")
-  :evil-states (normal visual))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Appearance
@@ -94,7 +91,7 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (bind-map-set-keys main-leader-map
   "<SPC>" 'smex)
-(bind-map-set-keys major-mode-leader-map
+(bind-map-set-keys main-leader-map
   "," 'smex-major-mode-commands)
 
 (require 'uniquify)
@@ -145,12 +142,18 @@
 (add-hook 'emacs-lisp-mode-hook 'smartparens-strict-mode)
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'emacs-lisp-mode-hook 'whitespace-cleanup-mode)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; evaluation
-(bind-map-set-keys major-mode-leader-map
+(bind-map elisp-leader-map
+  :evil-keys (",")
+  :evil-states (normal visual)
+  :major-modes (emacs-lisp-mode
+                lisp-interaction-mode))
+(bind-map-set-keys elisp-leader-map
   "eb" 'eval-buffer
   "ee" 'eval-last-sexp)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; clojure
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; init-el editing

@@ -204,3 +204,7 @@
 (setq deft-extensions '("txt" "org" "md"))
 (setq deft-directory "~/Documents/org")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; dired
+(bind-map-set-keys main-leader-map
+  "ad" 'dired)

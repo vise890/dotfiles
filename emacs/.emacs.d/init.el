@@ -157,7 +157,9 @@
                 lisp-interaction-mode))
 (bind-map-set-keys elisp-leader-map
   "eb" 'eval-buffer
-  "ee" 'eval-last-sexp)
+  "ee" 'eval-last-sexp
+  "gg" 'elisp-slime-nav-find-elisp-thing-at-point
+  "hh" 'elisp-slime-nav-describe-elisp-thing-at-point)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; clojure

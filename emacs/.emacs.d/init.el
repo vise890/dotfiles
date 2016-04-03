@@ -1,7 +1,9 @@
-; powerline + faces
 ; lisp mode / lispy for structural editing
-; , gg
-; different bind-maps depending on major-modes
+; decrease company delay
+; make main-leader-map work in dired mode
+; magit
+; powerline + faces
+; recent files/projects
 
 (fset 'yes-or-no-p 'y-or-n-p) ; yes/no -> y/n
 (setq inhibit-startup-message t) ; go to scratch

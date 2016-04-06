@@ -31,6 +31,7 @@
 
 ;; code autocompletion
 (global-company-mode)
+(setq company-idle-delay 0)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; smartparens

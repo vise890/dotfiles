@@ -1,5 +1,4 @@
 ; lisp mode / lispy for structural editing
-; decrease company delay
 ; make main-leader-map work in dired mode
 ; magit
 ; powerline + faces

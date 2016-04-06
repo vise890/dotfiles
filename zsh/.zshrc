@@ -30,9 +30,6 @@ alias tm="todotxt-machine $TODO_TXT_PATH $DONE_TXT_PATH"
 # THE PATHs ##################################
 export CODEPATH="$HOME/Code"
 
-# ruby stuff
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-
 # NPM stuff
 PATH=$HOME/.npm/bin:$PATH
 

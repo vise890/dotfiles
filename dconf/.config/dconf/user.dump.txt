@@ -109,6 +109,9 @@ natural-scroll=true
 speed=0.1063829787234043
 tap-to-click=true
 
+[org/gnome/desktop/peripherals/touchscreens/(null):(null)]
+display=['SHP', '0x143e', '0x00000000']
+
 [org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
 display=['SHP', '0x143e', '0x00000000']
 

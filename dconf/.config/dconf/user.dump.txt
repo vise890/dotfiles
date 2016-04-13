@@ -21,7 +21,7 @@ name='terminal'
 numlock-state='off'
 
 [org/gnome/shell]
-app-picker-view=uint32 0
+app-picker-view=uint32 1
 enabled-extensions=['battery-percentage@nohales.org']
 favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop']
 

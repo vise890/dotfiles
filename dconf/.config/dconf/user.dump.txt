@@ -32,9 +32,6 @@ toggle-overview=['<Super>d']
 dynamic-workspaces=false
 workspaces-only-on-primary=false
 
-[org/gnome/shell/keybindings]
-toggle-overview=['<Super>d']
-
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
 
@@ -98,6 +95,9 @@ migrated=true
 [org/gnome/desktop/notifications]
 application-children=['firefox']
 
+[org/gnome/desktop/notifications/application/gnome-tweak-tool]
+application-id='gnome-tweak-tool.desktop'
+
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
@@ -124,7 +124,7 @@ clock-show-date=true
 toolkit-accessibility=false
 gtk-im-module='gtk-im-context-simple'
 icon-theme='Moka'
-gtk-theme='deepin'
+gtk-theme='Adwaita'
 monospace-font-name='Ubuntu Mono 15'
 
 [org/gnome/desktop/search-providers]

@@ -152,6 +152,7 @@ database='!'
 [org/gnome/terminal/legacy]
 new-terminal-mode='tab'
 schema-version=uint32 3
+theme-variant='dark'
 default-show-menubar=false
 
 [org/gnome/terminal/legacy/profiles:/:04b748c9-4c6b-470c-a858-8c7eb24eebc5]

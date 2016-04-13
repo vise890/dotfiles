@@ -32,6 +32,9 @@ toggle-overview=['<Super>d']
 dynamic-workspaces=false
 workspaces-only-on-primary=false
 
+[org/gnome/shell/keybindings]
+toggle-overview=['<Super>d']
+
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
 

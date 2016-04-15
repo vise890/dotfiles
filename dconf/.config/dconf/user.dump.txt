@@ -112,9 +112,6 @@ application-id='gnome-tweak-tool.desktop'
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
-[org/gnome/desktop/datetime]
-automatic-timezone=true
-
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=true
 speed=0.1063829787234043
@@ -125,21 +122,6 @@ display=['SHP', '0x143e', '0x00000000']
 
 [org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
 display=['SHP', '0x143e', '0x00000000']
-
-[org/gnome/desktop/background]
-picture-uri='file:///usr/share/backgrounds/gnome/Blinds.jpg'
-show-desktop-icons=true
-primary-color='#ffffff'
-picture-options='zoom'
-secondary-color='#000000'
-
-[org/gnome/desktop/interface]
-clock-show-date=true
-toolkit-accessibility=false
-gtk-im-module='gtk-im-context-simple'
-icon-theme='Moka'
-gtk-theme='Adwaita'
-monospace-font-name='Ubuntu Mono 15'
 
 [org/gnome/desktop/search-providers]
 sort-order=['gnome-contacts.desktop', 'gnome-documents.desktop', 'nautilus.desktop']
@@ -171,9 +153,6 @@ primary-color='#ffffff'
 picture-options='zoom'
 secondary-color='#000000'
 
-[org/gnome/system/location]
-enabled=true
-
 [org/gnome/eog/view]
 background-color='rgb(0,0,0)'
 use-background-color=true
@@ -204,7 +183,7 @@ use-theme-colors=false
 font='Ubuntu Mono 14'
 scrollback-unlimited=true
 background-color='rgb(0,43,54)'
-scrollbar-policy='always'
+scrollbar-policy='never'
 
 [org/gnome/terminal/legacy/profiles:]
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']

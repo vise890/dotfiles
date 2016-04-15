@@ -1,4 +1,6 @@
 [org/gnome/settings-daemon/plugins/power]
+power-button-action='suspend'
+idle-dim=true
 sleep-inactive-battery-type='suspend'
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='suspend'
@@ -92,6 +94,15 @@ enabled=true
 [org/gnome/evolution-data-server]
 migrated=true
 
+[org/gnome/desktop/interface]
+clock-show-date=true
+toolkit-accessibility=false
+gtk-im-module='gtk-im-context-simple'
+show-battery-percentage=true
+icon-theme='Moka'
+gtk-theme='Adwaita'
+monospace-font-name='Ubuntu Mono 15'
+
 [org/gnome/desktop/notifications]
 application-children=['firefox']
 
@@ -146,6 +157,26 @@ move-to-workspace-4=['<Shift><Super>dollar']
 move-to-workspace-3=['<Shift><Super>numbersign']
 switch-to-workspace-4=['<Super>4']
 switch-to-workspace-3=['<Super>3']
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
+
+[org/gnome/desktop/datetime]
+automatic-timezone=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/gnome/Blinds.jpg'
+show-desktop-icons=true
+primary-color='#ffffff'
+picture-options='zoom'
+secondary-color='#000000'
+
+[org/gnome/system/location]
+enabled=true
+
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
 
 [org/gnome/dictionary]
 strategy='exact'

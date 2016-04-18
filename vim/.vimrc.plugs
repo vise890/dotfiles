@@ -14,10 +14,8 @@ Plug 'christoomey/vim-tmux-navigator' " seamless navigation between tmux panes a
 
 Plug 'scrooloose/nerdtree'      " file tree
 Plug 'kien/ctrlp.vim'           " fuzzy file search
-Plug 'majutsushi/tagbar'        " browse the tags of the current file
 Plug 'rking/ag.vim'             " search with ag
 
-Plug 'tpope/vim-surround'       " surrond stuff with characters
 Plug 'scrooloose/nerdcommenter' " comment stuff
 Plug 'bronson/vim-trailing-whitespace' " highlight and fix whitespace
 
@@ -28,9 +26,7 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'vim-scripts/SudoEdit.vim' " read/write files with sudo
 
-Plug 'tpope/vim-fugitive'       " git wrapper for vim
 Plug 'airblade/vim-gitgutter'   " git diff in the gutter
-
 
 Plug 'vim-ruby/vim-ruby'            , { 'for': 'ruby' }
 
@@ -40,13 +36,10 @@ Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
 
 Plug 'jvirtanen/vim-octave'
 
-Plug 'fatih/vim-go'
-
 Plug 'guns/vim-clojure-static'
 
 Plug 'elzr/vim-json'                , { 'for': 'json' }
 Plug 'pangloss/vim-javascript'      , { 'for': 'javascript' }
-Plug 'digitaltoad/vim-pug'
 
 Plug 'tpope/vim-markdown'
 Plug 'jceb/vim-orgmode'

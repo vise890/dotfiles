@@ -1,10 +1,10 @@
-(require 'powerpack)
-(ensure-are-installed!
- '(evil
-   evil-escape
-   bind-map))
-(add-hook 'evil-mode-hook 'evil-escape-mode)
-(setq-default evil-escape-key-sequence "jk")
-(evil-mode)
+(req-package evil-escape
+  :ensure t
+  :require evil
+  :config
+  (progn
+    (setq-default evil-escape-key-sequence "jk")
+    (add-hook #'evil-mode-hook 'evil-escape-mode)
+    (evil-mode)))
 
 (provide 'evil-config)

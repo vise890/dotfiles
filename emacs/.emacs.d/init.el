@@ -15,12 +15,12 @@
 
 (require 'powerpack)
 (setq my-packages
-      '(which-key
+      '(req-package
+        which-key
         better-defaults
         bind-map))
 (ensure-are-installed! my-packages)
-
-(which-key-mode)
+(require 'req-package)
 
 ;; bind-map (multiple evil leaders)
 (bind-map main-leader-map
@@ -33,7 +33,9 @@
 (require 'ux-config)
 
 (require 'elisp-config)
-(require 'clojure-config)
+;(require 'clojure-config)
 
-(require 'deft-config)
+;(require 'deft-config)
 (require 'dired-config)
+
+(req-package-finish)

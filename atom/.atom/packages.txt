@@ -1,0 +1,14 @@
+autocomplete-haskell@0.6.5
+ex-mode@0.8.0
+gruvbox-syntax@2.3.1
+haskell-ghc-mod@1.12.2
+ide-haskell@1.6.3
+language-common-lisp@0.3.1
+language-haskell@1.7.15
+language-lisp@0.2.0
+language-scala@1.1.6
+linter@1.11.4
+vim-mode@0.65.0
+vim-modeline@0.4.0
+
+

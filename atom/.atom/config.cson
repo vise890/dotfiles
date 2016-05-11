@@ -1,0 +1,7 @@
+"*":
+  core:
+    disabledPackages: [
+      "exception-reporting"
+    ]
+  welcome:
+    showOnStartup: false

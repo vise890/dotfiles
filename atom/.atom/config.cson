@@ -3,5 +3,7 @@
     disabledPackages: [
       "exception-reporting"
     ]
+  editor:
+    scrollPastEnd: true
   welcome:
     showOnStartup: false

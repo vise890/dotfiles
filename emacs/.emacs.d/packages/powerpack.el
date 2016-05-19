@@ -1,9 +1,8 @@
 (require 'package)
-(package-initialize)
-
 ; TODO: inject these in
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))

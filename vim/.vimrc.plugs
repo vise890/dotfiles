@@ -44,5 +44,6 @@ Plug 'pangloss/vim-javascript'      , { 'for': 'javascript' }
 Plug 'tpope/vim-markdown'
 Plug 'jceb/vim-orgmode'
 Plug 'freitass/todo.txt-vim'
+Plug 'stephpy/vim-yaml'
 
 call plug#end()

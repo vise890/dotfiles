@@ -34,6 +34,7 @@
 
 (require 'elisp-config)
 ;(require 'clojure-config)
+(require 'scala-config)
 
 ;(require 'deft-config)
 (require 'dired-config)

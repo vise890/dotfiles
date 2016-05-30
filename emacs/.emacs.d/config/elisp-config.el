@@ -8,6 +8,7 @@
 (add-hook 'emacs-lisp-mode-hook 'smartparens-strict-mode)
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'emacs-lisp-mode-hook 'whitespace-cleanup-mode)
+(add-hook 'emacs-lisp-mode-hook 'company-mode)
 
 (bind-map elisp-leader-map
   :evil-keys (",")

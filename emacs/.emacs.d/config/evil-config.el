@@ -1,10 +1,12 @@
-(req-package evil-escape
+(use-package evil-escape
   :ensure t
-  :require evil
+  :demand
+  :init (setq-default evil-escape-key-sequence "jk")
   :config
-  (progn
-    (setq-default evil-escape-key-sequence "jk")
-    (add-hook #'evil-mode-hook 'evil-escape-mode)
-    (evil-mode)))
+  (add-hook #'evil-mode-hook 'evil-escape-mode))
+
+(use-package evil
+  :ensure t
+  :config (evil-mode))
 
 (provide 'evil-config)

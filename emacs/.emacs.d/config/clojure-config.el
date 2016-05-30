@@ -14,6 +14,7 @@
 (add-hook 'clojure-mode-hook 'aggressive-indent-mode)
 (add-hook 'clojure-mode-hook 'whitespace-cleanup-mode)
 (add-hook 'clojure-mode-hook 'cider-mode)
+(add-hook 'clojure-mode-hook 'company-mode)
 
 (bind-map clojure-leader-map
   :evil-keys (",")

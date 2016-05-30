@@ -1,42 +1,84 @@
-(require 'powerpack)
-(ensure-are-installed!
- '(smex
-   ido-ubiquitous
-   bind-map
-   company
-   smartparens
-   projectile))
-
-;; fix annoyances
+(use-package better-defaults :ensure t)
 (fset 'yes-or-no-p 'y-or-n-p) ; yes/no -> y/n
-(setq inhibit-startup-message t) ; go to scratch
 (setq ring-bell-function 'ignore)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; M-x fuzzy and cool
-(smex-initialize)
-(bind-map-set-keys main-leader-map "<SPC>" 'smex)
-(bind-map-set-keys main-leader-map "," 'smex-major-mode-commands)
+(use-package company
+  :ensure t
+  :diminish company-mode
+  :commands company-mode
+  :init
+  (setq
+   company-dabbrev-ignore-case nil
+   company-dabbrev-code-ignore-case nil
+   company-dabbrev-downcase nil
+   company-idle-delay 0
+   company-minimum-prefix-length 0))
 
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'forward) ; use part of file's direcotry for distinguishing buffers
+(use-package ag :ensure t)
+(use-package projectile
+  :ensure t
+  :init (setq projectile-use-git-grep t)
+  :config (projectile-global-mode t)
+  :bind (:map main-leader-map
+              ("pf" . projectile-find-file)
+              ("pa" . projectile-ag)
+              ("pg" . projectile-grep)))
 
-(setq ido-enable-flex-matching t) ; bb matches beep boop
-(setq ido-use-filename-at-point nil)
-(setq ido-use-virtual-buffers t) ; include recent files in buffer list
+(use-package which-key
+  :ensure t
+  :config (which-key-mode))
 
-(ido-everywhere t)
-(ido-ubiquitous-mode t)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package ido-ubiquitous
+  :ensure t
+  :demand
+  :init
+  (setq
+   ido-enable-flex-matching t
+   ido-use-virtual-buffers t) ;include recent files
+  :config
+  (ido-mode t)
+  (ido-everywhere t)
+  (ido-ubiquitous-mode t))
 
-;; code autocompletion
-(global-company-mode)
-(setq company-idle-delay 0)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package evil-nerd-commenter
+  :ensure t
+  :bind (:map main-leader-map
+              (";" . evilnc-comment-or-uncomment-lines)))
 
-;; smartparens
-(require 'smartparens-config)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package undo-tree
+  :diminish undo-tree-mode
+  :config (global-undo-tree-mode)
+  :bind (:map main-leader-map
+              ("ut" . undo-tree-visualize)))
+
+(use-package highlight-symbol
+  :ensure t
+  :diminish highlight-symbol-mode
+  :commands highlight-symbol-at-point
+  :bind (:map main-leader-map
+              ("hs" . highlight-symbol)))
+
+(use-package uniquify
+  :config
+  (setq uniquify-buffer-name-style 'forward))
+
+(use-package smex
+  :ensure t
+  :config (smex-initialize)
+  :bind (:map main-leader-map
+              ("<SPC>" . smex)
+              ("," . smex-major-mode-commands)))
+
+(use-package goto-chg
+  :ensure t
+  :commands goto-last-change goto-last-change-reverse
+  :bind (:map main-leader-map
+              ("``" . goto-last-change)
+              ("~~" . goto-last-change-reverse)))
+
+(use-package smartparens
+  :diminish smartparens-mode
+  :config (require 'smartparens-config))
 
 ;; window movement/management
 (bind-map-set-keys main-leader-map
@@ -45,7 +87,6 @@
   "wj" 'windmove-down
   "wk" 'windmove-up
   "wq" 'delete-window)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; buffer management
 (defun kill-all-other-buffers ()
@@ -57,16 +98,8 @@
   "bK" 'kill-all-other-buffers
   "bp" 'previous-buffer
   "bn" 'next-buffer)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; navigation
 (bind-map-set-keys main-leader-map
-                   "pf" 'projectile-find-file)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; nerd commenter
-(bind-map-set-keys main-leader-map
-  ";" 'evilnc-comment-or-uncomment-lines)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  "ad" 'dired)
 
 (provide 'ux-config)

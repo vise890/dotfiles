@@ -38,6 +38,8 @@ Plug 'jvirtanen/vim-octave'
 
 Plug 'guns/vim-clojure-static'
 
+Plug 'derekwyatt/vim-scala'
+
 Plug 'elzr/vim-json'                , { 'for': 'json' }
 Plug 'pangloss/vim-javascript'      , { 'for': 'javascript' }
 

@@ -55,7 +55,7 @@ alias vimrc='$EDITOR $HOME/.vimrc'
 alias vplugs='$EDITOR $HOME/.vimrc.plugs'
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump lein pip python archlinux history vi-mode sudo systemd colored-man docker)
+plugins=(autojump lein pip sbt python archlinux history vi-mode sudo systemd colored-man docker)
 
 source "$ZSH/oh-my-zsh.sh"
 

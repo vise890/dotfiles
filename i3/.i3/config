@@ -1,5 +1,6 @@
 # set mod to Super
 set $mod Mod4
+set $alt Alt
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -19,6 +20,9 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+
+bindsym $mod+Tab exec $HOME/.npm/bin/i3-alt-tab --next
+bindsym $mod+Shift+Tab exec $HOME/.npm/bin/i3-alt-tab --prev
 
 # move focused window
 bindsym $mod+Shift+h move left

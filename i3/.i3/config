@@ -132,4 +132,4 @@ bar {
 
 # screen locking
 bindsym $mod+Shift+x exec i3lock --dpms --ignore-empty-password --show-failed-attempts --image=$HOME/Pictures/bg.png
-exec --no-startup-id xautolock -time 1 -locker "i3lock --dpms --ignore-empty-password --show-failed-attempts --image=$HOME/Pictures/bg.png"
+exec --no-startup-id xautolock -time 5 -locker "i3lock --dpms --ignore-empty-password --show-failed-attempts --image=$HOME/Pictures/bg.png"

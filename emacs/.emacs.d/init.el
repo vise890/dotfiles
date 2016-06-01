@@ -5,6 +5,8 @@
 ; recent files/projects
 ; neotree
 (setq exec-path (append exec-path '("/usr/local/bin")))
+(setq exec-path (append exec-path '("/usr/bin")))
+
 (defun init-el-edit ()
   (interactive)
   (set-buffer (find-file "~/.emacs.d/init.el")))

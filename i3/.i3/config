@@ -84,7 +84,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? ' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # set desktop background
-exec sh ~/.fehbg
+exec feh --bg-scale "$HOME/Pictures/bg.png"
 
 # solarized colors
 set $base03 #002b36

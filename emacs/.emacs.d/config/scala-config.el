@@ -30,6 +30,10 @@
               ("rm" . ensime-refactor-diff-extract-method)
               ("ri" . ensime-refactor-diff-organize-imports)
 
+              ("ta" . ensime-sbt-do-test-dwim)
+              ("tr" . ensime-sbt-do-test-quick-dwim)
+              ("tt" . ensime-sbt-do-test-only-dwim)
+
               ))
 
 (add-hook 'scala-mode-hook 'ensime-mode)

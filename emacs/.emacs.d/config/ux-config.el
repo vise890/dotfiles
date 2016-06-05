@@ -1,6 +1,7 @@
 (use-package better-defaults :ensure t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq ring-bell-function 'ignore)
+(setq vc-follow-symlinks t)
 
 (use-package company
   :ensure t

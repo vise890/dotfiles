@@ -4,7 +4,6 @@
   :major-modes (scala-mode sbt-mode))
 
 (use-package sbt-mode :ensure t)
-(use-package scala-mode2)
 
 (use-package ensime
   :ensure t

@@ -1,5 +1,5 @@
 (use-package better-defaults :ensure t)
-(fset 'yes-or-no-p 'y-or-n-p) ; yes/no -> y/n
+(fset 'yes-or-no-p 'y-or-n-p)
 (setq ring-bell-function 'ignore)
 
 (use-package company

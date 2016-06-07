@@ -1,5 +1,3 @@
-STOW_TARGETS := $(shell ls ./out)
-
 default:
 	python ./generate.py
 
@@ -8,4 +6,4 @@ config:
 	$(EDITOR) ./variables.py
 
 install:
-	(cd out && stow -t ~ $(STOW_TARGETS))
+	(cd out && stow -t ~ $(shell ls ./out))

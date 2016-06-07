@@ -1,6 +1,11 @@
+STOW_TARGETS := $(shell ls ./out)
+
 default:
-	python substitutions.py
+	python ./generate.py
 
 config:
 	cp ./__variables__.py ./variables.py
 	$(EDITOR) ./variables.py
+
+install:
+	(cd out && stow -t ~ $(STOW_TARGETS))

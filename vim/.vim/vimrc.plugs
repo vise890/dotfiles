@@ -3,12 +3,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'       " sensible vim defaults
 Plug 'tpope/vim-sleuth'         " heuristically set buffer options (shiftwidth, expandtab, etc.)
 
-
 Plug 'altercation/vim-colors-solarized'
 
 Plug 'vim-airline/vim-airline'        " more kickass status bar
 Plug 'vim-airline/vim-airline-themes'
-
 
 Plug 'christoomey/vim-tmux-navigator' " seamless navigation between tmux panes and vim splits
 
@@ -28,27 +26,17 @@ Plug 'vim-scripts/SudoEdit.vim' " read/write files with sudo
 
 Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 
-Plug 'vim-ruby/vim-ruby'            , { 'for': 'ruby' }
-
 Plug 'nvie/vim-flake8'              , { 'for': 'python' }
 Plug 'vim-scripts/indentpython.vim' , { 'for': 'python' }
 Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
 
-Plug 'fatih/vim-go'
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-
-Plug 'jvirtanen/vim-octave'
-
-Plug 'guns/vim-clojure-static'
-
-Plug 'derekwyatt/vim-scala'
-
 Plug 'elzr/vim-json'                , { 'for': 'json' }
-Plug 'pangloss/vim-javascript'      , { 'for': 'javascript' }
-
-Plug 'tpope/vim-markdown'
-Plug 'jceb/vim-orgmode'
 Plug 'freitass/todo.txt-vim'
+Plug 'guns/vim-clojure-static'
+Plug 'jceb/vim-orgmode'
+Plug 'jvirtanen/vim-octave'
+Plug 'pangloss/vim-javascript'      , { 'for': 'javascript' }
 Plug 'stephpy/vim-yaml'
+Plug 'tpope/vim-markdown'
 
 call plug#end()

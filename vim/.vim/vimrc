@@ -70,29 +70,13 @@ let g:airline_right_sep = ''
 map <C-n> :NERDTreeToggle<CR>
 
 " AG: search with silver searcher
-nnoremap <leader>a :Ag 
-
-" TAGBAR: view file tags
-map <F8> :TagbarToggle<CR>
-
+nnoremap <leader>a :Ag
 
 " NEOCOMPLETE: autocompletion
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 let g:deoplete#enable_auto_delimiter = 1
-let g:deoplete#max_list = 15
 " <TAB>: completion
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 set completeopt-=preview          " don't open preview window all over the place
 
-
-" GO:
-let g:go_fmt_command = "goimports"
-
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-au FileType go nmap <Leader>re <Plug>(go-rename)
-au FileType go nmap <Leader>gd <Plug>(go-doc-vertical)
-au FileType go nmap <Leader>i <Plug>(go-implements)

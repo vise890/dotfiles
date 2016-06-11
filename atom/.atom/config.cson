@@ -4,6 +4,7 @@
       "exception-reporting"
     ]
   editor:
+    invisibles: {}
     scrollPastEnd: true
   welcome:
     showOnStartup: false

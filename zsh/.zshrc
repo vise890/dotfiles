@@ -51,8 +51,8 @@ typeset -gU path
 #############################################
 
 alias zshrc='$EDITOR $HOME/.zshrc'
-alias vimrc='$EDITOR $HOME/.vimrc'
-alias vplugs='$EDITOR $HOME/.vimrc.plugs'
+alias vimrc='$EDITOR $HOME/.vim/vimrc'
+alias vplugs='$EDITOR $HOME/.vim/vimrc.plugs'
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(autojump colored-man docker last-working-dir vi-mode)

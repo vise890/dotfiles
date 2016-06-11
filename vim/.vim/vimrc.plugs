@@ -8,8 +8,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'        " more kickass status bar
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'christoomey/vim-tmux-navigator' " seamless navigation between tmux panes and vim splits
-
 Plug 'scrooloose/nerdtree'      " file tree
 Plug 'kien/ctrlp.vim'           " fuzzy file search
 Plug 'rking/ag.vim'             " search with ag

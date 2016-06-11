@@ -59,6 +59,13 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 noremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
+" move around
+nmap <BS> <C-W>h
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " AIRLINE: status bar
 set laststatus=2                  " don't wait for a split to appear for airline to be visible

@@ -11,7 +11,7 @@ quick = 5
 
 [Repository main-local]
 type = Maildir
-localfolders = ~/Maildir
+localfolders = $email_maildir_path
 
 [Repository main-remote]
 type = IMAP

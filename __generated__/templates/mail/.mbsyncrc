@@ -9,8 +9,8 @@ IMAPStore main-remote
 Account main
 
 MaildirStore main-local
-Path ~/Maildir/
-Inbox ~/Maildir/INBOX
+Path $email_maildir_path/
+Inbox $email_maildir_path/INBOX
 
 Channel main
 Master :main-remote:

@@ -1,5 +1,5 @@
 default:
-	python ./generate.py
+	python ./render.py
 
 config:
 	cp ./__variables__.py ./variables.py

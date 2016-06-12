@@ -8,3 +8,5 @@ set header_cache = ~/.cache/mutt
 set spoolfile = +INBOX
 set record = +sent
 set postponed = +drafts
+
+set sendmail = "msmtp"

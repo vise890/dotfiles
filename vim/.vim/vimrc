@@ -87,3 +87,5 @@ let g:deoplete#enable_auto_delimiter = 1
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 set completeopt-=preview          " don't open preview window all over the place
 
+" PYTHON:
+let g:flake_show_in_gutter = 1

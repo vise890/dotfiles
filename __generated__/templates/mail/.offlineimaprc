@@ -1,0 +1,23 @@
+[general]
+accounts = main
+maxsyncaccoutns = 1
+
+[Account main]
+localrepository = main-local
+remoterepository = main-remote
+status_backend = sqlite
+autorefresh = 1
+quick = 5
+
+[Repository main-local]
+type = Maildir
+localfolders = ~/Maildir
+
+[Repository main-remote]
+type = IMAP
+remotehost = $imap_hostname
+remoteuser = $imap_username
+remotepass = $imap_password
+keepalive = 60
+holdconnectionopen = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt

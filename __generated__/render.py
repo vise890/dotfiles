@@ -33,5 +33,6 @@ def render_all():
 
             render_to(fp, contents)
 
+
 if __name__ == "__main__":
     render_all()

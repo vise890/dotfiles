@@ -1,7 +1,7 @@
 IMAPAccount main
-Host $imap_hostname
-User $imap_username
-Pass $imap_password
+Host $email_imap_hostname
+User $email_username
+Pass $email_password
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 

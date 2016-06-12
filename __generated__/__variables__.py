@@ -1,7 +1,7 @@
 variables = {
-  'user_name': None,
+  'user_full_name': None,
   'user_email': None,
-  'imap_hostname': None,
-  'imap_username': None,
-  'imap_password': None
+  'email_imap_hostname': None,
+  'email_username': None,
+  'email_password': None
 }

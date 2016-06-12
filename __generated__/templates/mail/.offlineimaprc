@@ -15,9 +15,9 @@ localfolders = ~/Maildir
 
 [Repository main-remote]
 type = IMAP
-remotehost = $imap_hostname
-remoteuser = $imap_username
-remotepass = $imap_password
+remotehost = $email_imap_hostname
+remoteuser = $email_username
+remotepass = $email_password
 keepalive = 60
 holdconnectionopen = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt

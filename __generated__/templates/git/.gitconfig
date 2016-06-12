@@ -1,5 +1,5 @@
 [user]
 	email = $user_email
-	name = $user_name
+	name = $user_full_name
 [credential]
 	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring

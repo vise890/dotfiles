@@ -1,0 +1,20 @@
+IMAPAccount main
+Host $imap_hostname
+User $imap_username
+Pass $imap_password
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore main-remote
+Account main
+
+MaildirStore main-local
+Path ~/Maildir/
+Inbox ~/Maildir/INBOX
+
+Channel main
+Master :main-remote:
+Slave :main-local:
+Patterns *
+Create Both
+SyncState *

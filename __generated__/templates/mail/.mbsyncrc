@@ -11,6 +11,7 @@ Account main
 MaildirStore main-local
 Path $email_maildir_path/
 Inbox $email_maildir_path/INBOX
+Flatten .
 
 Channel main
 Master :main-remote:

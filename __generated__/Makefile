@@ -1,6 +1,7 @@
 default:
 	@echo "==> Rendering templates"
-	mkdir out || true
+	rm -rf out
+	mkdir out
 	python ./render.py
 
 config:

@@ -1,4 +1,5 @@
 default:
+	mkdir out || true
 	python ./render.py
 
 config:

@@ -1,4 +1,5 @@
 default:
+	@echo "==> Rendering templates"
 	mkdir out || true
 	python ./render.py
 
@@ -7,4 +8,5 @@ config:
 	$(EDITOR) ./variables.py
 
 install:
+	@echo "==> Symlinking dotfiles"
 	(cd out && stow -t ~ $(shell ls ./out))

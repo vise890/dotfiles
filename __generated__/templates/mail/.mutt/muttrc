@@ -9,4 +9,7 @@ set spoolfile = +INBOX
 set record = +sent
 set postponed = +drafts
 
+set sort = threads
+
 set sendmail = "msmtp"
+

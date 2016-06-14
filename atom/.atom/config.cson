@@ -6,5 +6,7 @@
   editor:
     invisibles: {}
     scrollPastEnd: true
+  tabs:
+    enableVcsColoring: true
   welcome:
     showOnStartup: false

@@ -10,6 +10,6 @@ set record = +sent
 set postponed = +drafts
 
 set sort = threads
+set sort_aux = date-received
 
 set sendmail = "msmtp"
-

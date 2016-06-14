@@ -18,4 +18,5 @@ Master :main-remote:
 Slave :main-local:
 Patterns *
 Create Both
+Expunge Both
 SyncState *

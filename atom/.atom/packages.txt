@@ -1,5 +1,6 @@
 autocomplete-haskell
 ex-mode
+file-icons
 gruvbox-syntax
 haskell-ghc-mod
 hidpi

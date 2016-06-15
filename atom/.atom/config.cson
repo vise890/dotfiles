@@ -5,6 +5,8 @@
       "exception-reporting"
     ]
   editor:
+    fontFamily: "Ubuntu Mono"
+    fontSize: 15
     invisibles: {}
     scrollPastEnd: true
   tabs:

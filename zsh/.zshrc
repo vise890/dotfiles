@@ -30,8 +30,8 @@ alias tm="todotxt-machine $TODO_TXT_PATH $DONE_TXT_PATH"
 # THE PATHs ##################################
 export CODEPATH="$HOME/Code"
 
-# NPM stuff
-PATH=$HOME/.npm/bin:$PATH
+# NPM / node stuff
+PATH=$HOME/.npm/bin:./node_modules/.bin:$PATH
 
 # Go's stuff
 export GOPATH=$HOME/go

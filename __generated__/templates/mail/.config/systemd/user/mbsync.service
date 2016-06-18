@@ -1,0 +1,8 @@
+[Unit]
+Description=Mailbox synchronization service for user %u
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mbsync -Va
+StandardOutput=syslog
+StandardError=syslog

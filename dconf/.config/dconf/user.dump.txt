@@ -24,13 +24,14 @@ numlock-state='off'
 
 [org/gnome/shell]
 app-picker-view=uint32 1
+favorite-apps=@as []
+
+[org/gnome/shell/keybindings]
+toggle-overview=['<Super>d']
 
 [org/gnome/shell/overrides]
 dynamic-workspaces=false
 workspaces-only-on-primary=false
-
-[org/gnome/shell/keybindings]
-toggle-overview=['<Super>d']
 
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'

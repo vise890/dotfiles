@@ -31,6 +31,7 @@ Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
 Plug 'elzr/vim-json'                , { 'for': 'json' }
 Plug 'freitass/todo.txt-vim'
 Plug 'guns/vim-clojure-static'
+Plug 'derekwyatt/vim-scala'
 Plug 'jceb/vim-orgmode'
 Plug 'jvirtanen/vim-octave'
 Plug 'pangloss/vim-javascript'      , { 'for': 'javascript' }

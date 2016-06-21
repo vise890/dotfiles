@@ -1,5 +1,4 @@
 #!/bin/zsh
-# Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
 
 if [ $(whoami) = 'root' ]; then
@@ -17,6 +16,10 @@ alias vim="$EDITOR"
 alias v="$EDITOR"
 
 alias ccat="pygmentize -g"
+
+alias zshrc='$EDITOR $HOME/.zshrc'
+alias vimrc='$EDITOR $HOME/.vim/vimrc'
+alias vplugs='$EDITOR $HOME/.vim/vimrc.plugs'
 
 # todo.txt ###################################
 export TODO_TXT_PATH=~/Documents/org/todo/todo.txt
@@ -45,10 +48,6 @@ PATH=$HOME/bin:$PATH
 # Ensure path does not contain duplicates.
 typeset -gU path
 #############################################
-
-alias zshrc='$EDITOR $HOME/.zshrc'
-alias vimrc='$EDITOR $HOME/.vim/vimrc'
-alias vplugs='$EDITOR $HOME/.vim/vimrc.plugs'
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(pass autojump colored-man docker last-working-dir vi-mode)

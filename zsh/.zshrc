@@ -55,6 +55,9 @@ plugins=(pass autojump colored-man docker last-working-dir vi-mode)
 
 source "$ZSH/oh-my-zsh.sh"
 
+# syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # restore some shortcuts in vi-mode
 bindkey '^R' history-incremental-search-backward
 

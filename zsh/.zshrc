@@ -18,14 +18,10 @@ alias v="$EDITOR"
 
 alias ccat="pygmentize -g"
 
-# duplicate current terminal window
-alias dup="urxvt &"
-
 # todo.txt ###################################
 export TODO_TXT_PATH=~/Documents/org/todo/todo.txt
 export DONE_TXT_PATH=~/Documents/org/todo/done.txt
 alias te="$EDITOR $TODO_TXT_PATH"
-alias tm="todotxt-machine $TODO_TXT_PATH $DONE_TXT_PATH"
 
 # THE PATHs ##################################
 export CODEPATH="$HOME/Code"

@@ -50,7 +50,7 @@ typeset -gU path
 #############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(pass autojump colored-man docker last-working-dir vi-mode)
+plugins=(grunt pass autojump colored-man docker last-working-dir vi-mode)
 
 source "$ZSH/oh-my-zsh.sh"
 

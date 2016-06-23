@@ -12,6 +12,9 @@ URxvt*font: xft:Ubuntu Mono:size=20
 
 URxvt.urlLauncher:          firefox
 
+! disable bright colors
+URxvt.intensityStyles:      false
+
 ! Cursor
 URxvt.cursorBlink:          true
 URxvt.cursorColor:          BASE00

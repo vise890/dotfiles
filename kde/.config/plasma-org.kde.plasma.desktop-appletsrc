@@ -22,6 +22,10 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.kickoff
 
+[Containments][1][Applets][2][Configuration][ConfigDialog]
+DialogHeight=840
+DialogWidth=1120
+
 [Containments][1][Applets][2][Configuration][General]
 favorites=preferred://browser,systemsettings.desktop,org.kde.kate.desktop
 
@@ -46,34 +50,6 @@ plugin=org.kde.plasma.systemtray
 [Containments][1][Applets][5][Configuration][Containments][8]
 formfactor=2
 location=4
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][10]
-immutability=1
-plugin=org.kde.plasma.volume
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][11]
-immutability=1
-plugin=org.kde.plasma.clipboard
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][12]
-immutability=1
-plugin=org.kde.plasma.devicenotifier
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][13]
-immutability=1
-plugin=org.kde.plasma.notifications
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][14]
-immutability=1
-plugin=org.kde.plasma.battery
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][15]
-immutability=1
-plugin=org.kde.plasma.networkmanagement
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][16]
-immutability=1
-plugin=org.kde.plasma.bluetooth
 
 [Containments][1][Applets][5][Configuration][General]
 extraItems=org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller

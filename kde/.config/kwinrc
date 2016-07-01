@@ -6,3 +6,8 @@ Number=1
 
 [Effect-Zoom]
 InitialZoom=1
+
+[TabBox]
+DesktopLayout=org.kde.breeze.desktop
+DesktopListLayout=org.kde.breeze.desktop
+LayoutName=org.kde.breeze.desktop

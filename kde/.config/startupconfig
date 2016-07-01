@@ -10,4 +10,4 @@ ksplashrc_ksplash_engine=KSplashQML
 # kdeglobals KScreen ScaleFactor 1
 kdeglobals_kscreen_scalefactor=1.5
 # kcmfonts General forceFontDPI 0
-kcmfonts_general_forcefontdpi=144
+kcmfonts_general_forcefontdpi=168

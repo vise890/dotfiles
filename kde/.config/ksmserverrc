@@ -1,0 +1,18 @@
+[General]
+screenCount=1
+
+[Session: saved at previous logout]
+clientId1=107f8f8733000146729531000000010700001
+clientId2=107f8f8733000146729571800000011140006
+count=2
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_107f8f8733000146729531000000010700001_1467295778_633924
+program1=kwin_x11
+program2=pulseaudio
+restartCommand1=kwin_x11,-session,107f8f8733000146729531000000010700001_1467295778_633924
+restartCommand2=
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=vise890
+userId2=vise890
+wasWm1=true
+wasWm2=false

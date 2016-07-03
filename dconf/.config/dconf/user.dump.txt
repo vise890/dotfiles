@@ -24,14 +24,32 @@ numlock-state='off'
 
 [org/gnome/shell]
 app-picker-view=uint32 1
+enabled-extensions=['dash-to-dock@micxgx.gmail.com']
 favorite-apps=@as []
 
-[org/gnome/shell/keybindings]
-toggle-overview=['<Super>d']
+[org/gnome/shell/extensions/dash-to-dock]
+show-favorites=false
+preferred-monitor=0
+extend-height=true
+intellihide=false
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+animation-time=0.10000000000000002
+require-pressure-to-show=true
+apply-custom-theme=false
+custom-theme-running-dots=true
+height-fraction=0.90000000000000002
+dock-position='LEFT'
+background-opacity=0.91000000000000003
+dash-max-icon-size=32
+opaque-background=true
+icon-size-fixed=false
 
 [org/gnome/shell/overrides]
 dynamic-workspaces=false
 workspaces-only-on-primary=false
+
+[org/gnome/shell/keybindings]
+toggle-overview=['<Super>d']
 
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'

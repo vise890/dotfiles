@@ -1,6 +1,6 @@
-(setq my-font "Ubuntu Mono-21")
-(set-face-attribute 'default t :font "Ubuntu Mono-21")
-(add-to-list 'default-frame-alist '(font . "Ubuntu Mono-21"))
+(setq my-font "Ubuntu Mono-16")
+(set-face-attribute 'default t :font "Ubuntu Mono-16")
+(add-to-list 'default-frame-alist '(font . "Ubuntu Mono-16"))
 
 (setq inhibit-startup-message t) ; go to scratch
 (setq initial-scratch-message "; Welcome. Welcome to city 17")

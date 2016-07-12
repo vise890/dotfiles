@@ -1,4 +1,4 @@
-STOW_PACKAGES=dconf haskell hidpi i3 clojure nodejs readline vim emacs x11 zathura zsh
+STOW_PACKAGES=dconf haskell hidpi i3 nodejs readline vim emacs x11 zathura zsh tmux
 TARGET=${HOME}
 
 OH_MY_ZSH_PATH="$(TARGET)/.oh-my-zsh"

@@ -10,7 +10,7 @@ imap JK <Esc>
 
 " get rid of some annoyances in normal mode
 " help
-nnoremap <F1> <Nop>
+map <F1> <Nop>
 map Q <nop>
 
 set mousehide                    " hide mouse cursor when typing

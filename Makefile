@@ -17,7 +17,7 @@ install: stow
 	mkdir -p $(DOT_VIM_PATH)/autoload
 	curl -fLo $(DOT_VIM_PATH)/autoload/plug.vim \
 	      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	vim -u "$(TARGET)/.vimrc.plugs" +PlugInstall +qall!
+	vim -u "$(TARGET)/.vim/vimrc.plugs" +PlugInstall +qall!
 	nvim +UpdateRemotePlugins +qall! || true # neovim only: don't fail if just vim
 	@echo "==> install scm_breeze"
 	git clone https://github.com/ndbroadbent/scm_breeze.git $(SCM_BREEZE_PATH)

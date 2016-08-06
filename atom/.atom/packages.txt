@@ -3,14 +3,12 @@ ex-mode
 file-icons
 gruvbox-syntax
 haskell-ghc-mod
+haskell-pointfree
 hidpi
 ide-haskell
-language-common-lisp
+ide-haskell-hasktags
+ide-haskell-repl
 language-haskell
-language-lisp
-language-scala
 linter
 vim-mode
 vim-modeline
-
-

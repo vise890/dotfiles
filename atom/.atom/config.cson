@@ -6,7 +6,7 @@
     ]
   editor:
     fontFamily: "Ubuntu Mono"
-    fontSize: 15
+    fontSize: 18
     invisibles: {}
     scrollPastEnd: true
   tabs:

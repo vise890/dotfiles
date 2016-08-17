@@ -21,9 +21,6 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-bindsym $mod+Tab exec $HOME/.npm/bin/i3-alt-tab --next
-bindsym $mod+Shift+Tab exec $HOME/.npm/bin/i3-alt-tab --prev
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down

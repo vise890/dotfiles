@@ -87,6 +87,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? ' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# rofi: app launcher
+bindsym $mod+d exec rofi -show drun
+
 # set desktop background
 exec feh --bg-scale "$HOME/Pictures/bg.png"
 
@@ -107,9 +110,6 @@ set $orange #cb4b16
 #set $blue #268bd2
 set $cyan #2aa198
 #set $green #859900
-
-# start yeganesh wrapper for dmenu (a program launcher)
-bindsym $mod+d exec yegonesh --executables -- -nb "$base03" -nf "$base00" -sb "$cyan" -sf "$base03" -fn 'Source Code Pro-16' | sh
 
 # window colours        border  background text    indicator
 client.focused          $base02 $base01    $base03 $base00

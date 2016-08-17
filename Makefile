@@ -1,4 +1,4 @@
-STOW_PACKAGES=dconf haskell i3 nodejs readline vim x11 zathura zsh
+STOW_PACKAGES=dconf haskell i3 rofi nodejs readline vim x11 zathura zsh
 TARGET=${HOME}
 
 OH_MY_ZSH_PATH="$(TARGET)/.oh-my-zsh"

@@ -85,7 +85,8 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? ' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # rofi: app launcher
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec "rofi -combi-modi drun,window -show combi"
+bindsym $mod+Shift+d exec "rofi -show run"
 
 # set desktop background
 exec feh --bg-scale "$HOME/Pictures/bg.png"

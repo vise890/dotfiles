@@ -137,3 +137,6 @@ bar {
 # screen locking
 bindsym $mod+Shift+x exec i3lock --ignore-empty-password --show-failed-attempts --image=$HOME/Pictures/bg.png
 exec --no-startup-id xautolock -time 10 -locker "i3lock --dpms --ignore-empty-password --show-failed-attempts --image=$HOME/Pictures/bg.png"
+
+# uzbl
+for_window [class="Uzbl-core"] focus child, layout stacking, focus

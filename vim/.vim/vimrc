@@ -15,6 +15,8 @@ map Q <nop>
 
 set mousehide                    " hide mouse cursor when typing
 
+set clipboard=unnamedplus        " use OS clipboard
+
 setlocal spell spelllang=en_gb   " enable spell checking
 
 " UI

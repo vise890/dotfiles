@@ -3,7 +3,7 @@
 (add-to-list 'default-frame-alist '(font . "Ubuntu Mono-16"))
 
 (setq inhibit-startup-message t) ; go to scratch
-(setq initial-scratch-message "; Welcome. Welcome to city 17")
+(setq initial-scratch-message ";; Welcome. Welcome to city 17")
 (blink-cursor-mode 0) ; disable blinkage
 (global-hl-line-mode t)
 

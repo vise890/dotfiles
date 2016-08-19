@@ -32,7 +32,7 @@
 (require 'ux-config)
 
 (require 'elisp-config)
-;(require 'clojure-config)
+(require 'clojure-config)
 (require 'scala-config)
 
 (require 'deft-config)

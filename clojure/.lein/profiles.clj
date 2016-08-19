@@ -1,4 +1,4 @@
-{:user {:plugins [[cider/cider-nrepl "0.12.0-SNAPSHOT"]
+{:user {:plugins [[cider/cider-nrepl "0.14.0-SNAPSHOT"]
                   [refactor-nrepl "2.3.0-SNAPSHOT"]
 
                   [jonase/eastwood "0.2.3"]

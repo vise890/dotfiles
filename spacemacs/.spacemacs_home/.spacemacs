@@ -36,11 +36,12 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     themes-megapack
+     (colors :variables colors-enable-nyan-cat-progress-bar t)
+
      auto-completion
      syntax-checking
      spell-checking
-
-     themes-megapack
 
      smex
      helm
@@ -53,6 +54,8 @@ values."
             shell-default-height 30
             shell-default-position 'bottom
             shell-default-term-shell "/bin/zsh")
+
+     docker
 
      markdown
      org

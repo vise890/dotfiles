@@ -317,6 +317,9 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq powerline-default-separator nil)
 
+  (setq nyan-animate-nyancat nil)
+  (setq nyan-wavy-trail nil)
+
   (setq-default evil-escape-key-sequence "jk")
 
   (setq initial-major-mode 'emacs-lisp-mode)

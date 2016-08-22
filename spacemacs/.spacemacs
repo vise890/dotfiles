@@ -1,0 +1,1 @@
+.spacemacs_home/.spacemacs

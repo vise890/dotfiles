@@ -23,42 +23,27 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     themes-megapack
-     (colors :variables colors-enable-nyan-cat-progress-bar t)
-
-     auto-completion
-     syntax-checking
      spell-checking
+     syntax-checking
+     auto-completion
 
-     smex
-     helm
+     (colors :variables colors-enable-nyan-cat-progress-bar t)
 
      (version-control :variables
                       vc-follow-symlinks t)
      git
 
-     (shell :variables
-            shell-default-height 30
-            shell-default-position 'bottom
-            shell-default-term-shell "/bin/zsh")
-
-     docker
-
      markdown
-     org
-
      emacs-lisp
      (clojure :variables
               clojure-enable-fancify-symbols t
               cljr-warn-on-eval nil)
-     haskell
-
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(gruvbox-theme)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -123,7 +108,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Ubuntu Mono"
-                               :size 36
+                               :size 32
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -256,8 +241,6 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  ;; don't check $PATH is set in .zshrc or .bashrc
-  (setq exec-path-from-shell-check-startup-files nil)
   )
 
 (defun dotspacemacs/user-config ()
@@ -267,18 +250,13 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (setq powerline-default-separator nil)
-  (spaceline-compile)
+  (setq-default evil-escape-key-sequence "jk")
 
   (setq nyan-animate-nyancat nil)
   (setq nyan-wavy-trail nil)
 
-  (setq-default evil-escape-key-sequence "jk")
-
-  (setq initial-major-mode 'emacs-lisp-mode)
-
-  (setq deft-extensions '("org" "md" "txt"))
-  (setq deft-directory "~/Documents/org")
+  (setq powerline-default-separator nil)
+  (spaceline-compile)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

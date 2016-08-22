@@ -27,6 +27,7 @@ Plug 'airblade/vim-gitgutter'   " git diff in the gutter
 Plug 'nvie/vim-flake8'              , { 'for': 'python' }
 Plug 'vim-scripts/indentpython.vim' , { 'for': 'python' }
 Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
+"Plug 'klen/python-mode'             , { 'for': 'python' }
 
 Plug 'elzr/vim-json'                , { 'for': 'json' }
 Plug 'freitass/todo.txt-vim'

@@ -31,6 +31,8 @@ export TODO_TXT_PATH=~/org/todo/todo.txt
 export DONE_TXT_PATH=~/org/todo/done.txt
 alias te="$EDITOR $TODO_TXT_PATH"
 
+source $HOME/.zprofile
+
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(grunt pass autojump colored-man docker last-working-dir vi-mode)
 

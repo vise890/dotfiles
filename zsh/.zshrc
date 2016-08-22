@@ -4,7 +4,8 @@ export ZSH=${HOME}/.oh-my-zsh
 if [ $(whoami) = 'root' ]; then
   export ZSH_THEME="gianu"
 else
-  export ZSH_THEME="robbyrussell"
+  # export ZSH_THEME="robbyrussell"
+  export ZSH_THEME="gitster"
 fi
 
 export COMPLETION_WAITING_DOTS="true"
@@ -21,33 +22,14 @@ alias zshrc='$EDITOR $HOME/.zshrc'
 alias vimrc='$EDITOR $HOME/.vim/vimrc'
 alias vplugs='$EDITOR $HOME/.vim/vimrc.plugs'
 
+alias bpy='bpython'
+alias bp='bpython'
+alias py='python'
+
 # todo.txt ###################################
 export TODO_TXT_PATH=~/org/todo/todo.txt
 export DONE_TXT_PATH=~/org/todo/done.txt
 alias te="$EDITOR $TODO_TXT_PATH"
-
-# THE PATHs ##################################
-export CODEPATH="$HOME/Code"
-
-# NPM / node stuff
-PATH=$HOME/.npm/bin:./node_modules/.bin:$PATH
-
-# Go's stuff
-export GOPATH=$HOME/go
-PATH=$GOPATH/bin:$PATH
-
-# haskell's stack, pip & friends
-PATH=$HOME/.local/bin:$PATH
-
-# useful user scripts
-PATH=$CODEPATH/scripts:$PATH
-
-# user bin dir
-PATH=$HOME/bin:$PATH
-
-# Ensure path does not contain duplicates.
-typeset -gU path
-#############################################
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(grunt pass autojump colored-man docker last-working-dir vi-mode)

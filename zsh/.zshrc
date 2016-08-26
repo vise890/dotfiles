@@ -4,8 +4,7 @@ export ZSH=${HOME}/.oh-my-zsh
 if [ $(whoami) = 'root' ]; then
   export ZSH_THEME="gianu"
 else
-  # export ZSH_THEME="robbyrussell"
-  export ZSH_THEME="gitster"
+  export ZSH_THEME="robbyrussell"
 fi
 
 export COMPLETION_WAITING_DOTS="true"

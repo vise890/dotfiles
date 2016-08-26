@@ -27,9 +27,8 @@ alias bp='bpython'
 alias py='python'
 
 # todo.txt ###################################
-export TODO_TXT_PATH=~/org/todo/todo.txt
-export DONE_TXT_PATH=~/org/todo/done.txt
-alias te="$EDITOR $TODO_TXT_PATH"
+export TODO_DIR=$HOME/org/todo/
+alias te="$EDITOR $TODO_DIR/todo.txt"
 
 source $HOME/.zprofile
 

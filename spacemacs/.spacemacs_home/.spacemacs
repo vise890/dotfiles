@@ -27,6 +27,8 @@ values."
      syntax-checking
      auto-completion
 
+     eyebrowse
+
      (colors :variables colors-enable-nyan-cat-progress-bar t)
 
      (version-control :variables

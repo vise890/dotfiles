@@ -1,8 +1,8 @@
 [org/gnome/settings-daemon/plugins/power]
-power-button-action='suspend'
+power-button-action='nothing'
 idle-dim=true
 sleep-inactive-battery-type='suspend'
-sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-timeout=7200
 sleep-inactive-ac-type='suspend'
 sleep-inactive-battery-timeout=1800
 
@@ -23,8 +23,8 @@ name='terminal'
 numlock-state='off'
 
 [org/gnome/shell]
-app-picker-view=uint32 1
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'caffeine@patapon.info']
+app-picker-view=uint32 0
+enabled-extensions=['dash-to-dock@micxgx.gmail.com']
 favorite-apps=@as []
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -74,7 +74,7 @@ state=128
 panel-id='world'
 
 [org/gnome/clocks]
-world-clocks=[{'location': <(uint32 2, <('Porto Alegre', 'SBCO', true, [(-0.52388966962472883, -0.89389947104752665)], [(-0.52418054619786614, -0.89360857702109675)])>)>}, {'location': <(uint32 2, <('San Francisco', 'KSFO', true, [(0.65658801258494626, -2.1356672871875406)], [(0.659296885757089, -2.1366218601153339)])>)>}, {'location': <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>}]
+world-clocks=@aa{sv} []
 
 [org/gnome/anjuta]
 toolbar-visible=true

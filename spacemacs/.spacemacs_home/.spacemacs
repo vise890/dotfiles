@@ -37,6 +37,7 @@ values."
 
      markdown
      emacs-lisp
+     racket
      (clojure :variables
               clojure-enable-fancify-symbols t
               cljr-warn-on-eval nil)

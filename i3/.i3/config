@@ -138,3 +138,5 @@ exec --no-startup-id xautolock -time 10 -locker "i3lock --dpms --ignore-empty-pa
 
 # uzbl
 for_window [class="Uzbl-core"] focus child, layout stacking, focus
+
+for_window [title="^emacs"] border none

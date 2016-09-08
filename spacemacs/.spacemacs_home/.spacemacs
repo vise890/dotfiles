@@ -42,7 +42,8 @@ values."
               clojure-enable-fancify-symbols t
               cljr-warn-on-eval nil)
      haskell
-     scala
+     (scala :variables
+            scala-enable-eldoc t)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -249,6 +250,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
   ;; fix slow startup: http://spacemacs.org/doc/FAQ.html#orgheadline14
   (setq tramp-ssh-controlmaster-options
         "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
+
+  ;; disable ensime warning for using snapshot version..
+  (setq ensime-startup-snapshot-notification nil)
   )
 
 (defun dotspacemacs/user-config ()

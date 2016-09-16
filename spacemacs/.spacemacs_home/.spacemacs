@@ -36,6 +36,7 @@ values."
      git
 
      markdown
+     python
      emacs-lisp
      racket
      (clojure :variables

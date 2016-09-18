@@ -3,17 +3,11 @@ ex-mode
 file-icons
 gruvbox-syntax
 haskell-ghc-mod
-haskell-pointfree
 hidpi
 ide-haskell
 ide-haskell-hasktags
-ide-haskell-repl
-ink
 language-haskell
 linter
-proto-repl
-proto-repl-charts
-tool-bar
 vim-mode
 vim-modeline
 

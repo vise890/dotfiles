@@ -19,6 +19,12 @@
       "open-on-github"
       "package-generator"
       "welcome"
+      "atom-grammar-test"
+      "autocomplete-css"
+      "autoflow"
+      "bookmarks"
+      "language-java"
+      "styleguide"
     ]
   editor:
     fontFamily: "Ubuntu Mono"
@@ -27,7 +33,5 @@
     scrollPastEnd: true
   tabs:
     enableVcsColoring: true
-  "tool-bar":
-    position: "Left"
   welcome:
     showOnStartup: false

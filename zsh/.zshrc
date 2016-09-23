@@ -17,13 +17,17 @@ alias v="$EDITOR"
 
 alias ccat="pygmentize -g"
 
-alias zshrc='$EDITOR $HOME/.zshrc'
-alias vimrc='$EDITOR $HOME/.vim/vimrc'
-alias vplugs='$EDITOR $HOME/.vim/vimrc.plugs'
+zshrc="$HOME/.zshrc"
+zprofile="$HOME/.zprofile"
+alias zrl="source $zshrc && source $zprofile"
+alias zshrc="$EDITOR $HOME/.zshrc && zrl"
+alias zprofile="$EDITOR $HOME/.zprofile && zrl"
+
+alias vimrc="$EDITOR $HOME/.vim/vimrc"
+alias vplugs="$EDITOR $HOME/.vim/vimrc.plugs"
 
 alias bpy='bpython'
 alias bp='bpython'
-alias py='python'
 
 # todo.txt ###################################
 export TODO_DIR=$HOME/org/todo/

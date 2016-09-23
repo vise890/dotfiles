@@ -7,6 +7,9 @@ PATH=$HOME/.npm/bin:./node_modules/.bin:$PATH
 export GOPATH=$HOME/go
 PATH=$GOPATH/bin:$PATH
 
+# rusts / cargo
+PATH=$HOME/.cargo/bin:$PATH
+
 # haskell's stack, pip & friends
 PATH=$HOME/.local/bin:$PATH
 

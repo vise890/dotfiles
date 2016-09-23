@@ -19,9 +19,9 @@ alias ccat="pygmentize -g"
 
 zshrc="$HOME/.zshrc"
 zprofile="$HOME/.zprofile"
-alias zrl="source $zshrc && source $zprofile"
-alias zshrc="$EDITOR $HOME/.zshrc && zrl"
-alias zprofile="$EDITOR $HOME/.zprofile && zrl"
+alias zrl="source $zshrc && source $zprofile && rehash"
+alias zshrc="$EDITOR $zshrc && zrl"
+alias zprofile="$EDITOR $zprofile && zrl"
 
 alias vimrc="$EDITOR $HOME/.vim/vimrc"
 alias vplugs="$EDITOR $HOME/.vim/vimrc.plugs"
@@ -41,7 +41,8 @@ plugins=(grunt pass autojump colored-man docker last-working-dir vi-mode)
 source "$ZSH/oh-my-zsh.sh"
 
 # syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source \
+  /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # restore some shortcuts in vi-mode
 bindkey '^R' history-incremental-search-backward

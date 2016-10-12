@@ -83,9 +83,10 @@ remembered-plugins=''
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
 confirm-trash=false
+search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-geometry='1012x1080+2+12'
+geometry='1012x1005+26+23'
 maximized=false
 
 [org/gnome/nautilus/icon-view]
@@ -102,6 +103,9 @@ default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', '
 
 [org/gnome/system/location]
 enabled=true
+
+[org/gnome/calendar]
+window-maximized=true
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -138,6 +142,9 @@ display=['SHP', '0x143e', '0x00000000']
 [org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
 display=['SHP', '0x143e', '0x00000000']
 
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
 [org/gnome/desktop/search-providers]
 sort-order=['gnome-contacts.desktop', 'gnome-documents.desktop', 'nautilus.desktop']
 
@@ -155,6 +162,9 @@ move-to-workspace-3=['<Shift><Super>numbersign']
 switch-to-workspace-4=['<Super>4']
 switch-to-workspace-3=['<Super>3']
 
+[org/gnome/desktop/session]
+idle-delay=uint32 900
+
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false
 
@@ -162,8 +172,9 @@ screen-reader-enabled=false
 automatic-timezone=true
 
 [org/gnome/desktop/background]
-picture-uri='file:///usr/share/backgrounds/gnome/Blinds.jpg'
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-lock.jpg'
 show-desktop-icons=true
+color-shading-type='solid'
 primary-color='#ffffff'
 picture-options='zoom'
 secondary-color='#000000'

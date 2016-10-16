@@ -1,7 +1,7 @@
 export CODEPATH="$HOME/Code"
 
 # NPM / node stuff
-PATH=$HOME/.npm/bin:./node_modules/.bin:$PATH
+PATH=$HOME/.npm/bin:$PATH
 
 # Go's stuff
 export GOPATH=$HOME/go

@@ -1,8 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "vim.useSolidBlockCursor": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
-            "after": ["<Esc>"]        }
+            "after": ["<Esc>"]
+        }
     ]
 }

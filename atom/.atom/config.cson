@@ -28,10 +28,11 @@
     ]
   editor:
     fontFamily: "Ubuntu Mono"
-    fontSize: 18
+    fontSize: 16
     invisibles: {}
     scrollPastEnd: true
   tabs:
     enableVcsColoring: true
+  "trailing-spaces": {}
   welcome:
     showOnStartup: false

@@ -1,13 +1,15 @@
 autocomplete-haskell
 ex-mode
 file-icons
-gruvbox-syntax
 haskell-ghc-mod
 hidpi
 ide-haskell
 ide-haskell-hasktags
 language-haskell
 linter
+project-manager
+sort-lines
+trailing-spaces
 vim-mode
 vim-modeline
 

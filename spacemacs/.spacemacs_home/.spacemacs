@@ -43,11 +43,14 @@ values."
      auto-completion
 
 
+
      (colors :variables colors-enable-nyan-cat-progress-bar t)
 
      (version-control :variables
                       vc-follow-symlinks t)
      git
+
+     shell
 
      markdown
 

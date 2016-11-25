@@ -1,4 +1,7 @@
 #!/bin/zsh
+
+[ -f /etc/profile ] && source /etc/profile
+
 export ZSH=${HOME}/.oh-my-zsh
 
 if [ $(whoami) = 'root' ]; then

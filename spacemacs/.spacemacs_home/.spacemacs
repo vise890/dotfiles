@@ -70,7 +70,13 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(gruvbox-theme color-theme-solarized hc-zenburn-theme)
+   dotspacemacs-additional-packages '(gruvbox-theme
+                                      hc-zenburn-theme
+                                      darktooth-theme
+                                      color-theme-solarized
+                                      color-theme-sanityinc-solarized
+                                      color-theme-sanityinc-tomorrow
+                                      firebelly-theme)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.

@@ -210,6 +210,7 @@ font='Ubuntu Mono 14'
 scrollback-unlimited=true
 background-color='rgb(0,43,54)'
 scrollbar-policy='never'
+audible-bell=false
 
 [org/gnome/terminal/legacy/profiles:]
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']

@@ -32,9 +32,11 @@ alias vplugs="$EDITOR $HOME/.vim/vimrc.plugs"
 alias bpy='bpython'
 alias bp='bpython'
 
-# todo.txt ###################################
-export TODO_DIR=$HOME/org/todo/
+# org / todo.txt
+export ORG_DIR=$HOME/org
+export TODO_DIR=$ORG_DIR/todo
 alias te="$EDITOR $TODO_DIR/todo.txt"
+alias sp="$EDITOR $ORG_DIR/sparkfile.md"
 
 source $HOME/.zprofile
 

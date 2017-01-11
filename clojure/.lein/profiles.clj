@@ -16,4 +16,17 @@
         :dependencies [[org.clojure/clojure "1.8.0"]
                        [slamhound "1.5.5"]
                        [alembic "0.3.2"]
-                       [org.clojure/tools.nrepl "0.2.12"]]}}
+
+                       [pjstadig/humane-test-output "0.8.1"]
+                       [clj-stacktrace "0.2.8"]
+
+                       [org.clojure/tools.nrepl "0.2.12"]]
+
+        :injections [(require 'pjstadig.humane-test-output)
+                     (pjstadig.humane-test-output/activate!)
+
+                     (let [orig (ns-resolve (doto 'clojure.stacktrace require)
+                                            'print-cause-trace)
+                           new (ns-resolve (doto 'clj-stacktrace.repl require)
+                                           'pst)]
+                       (alter-var-root orig (constantly (deref new))))] }}

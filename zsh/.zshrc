@@ -49,7 +49,7 @@ source $HOME/.zprofile
 
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(grunt pass autojump colored-man docker last-working-dir vi-mode)
+plugins=(autojump colored-man docker kubectl last-working-dir vi-mode)
 
 source "$ZSH/oh-my-zsh.sh"
 

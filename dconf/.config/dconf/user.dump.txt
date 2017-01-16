@@ -80,6 +80,11 @@ world-clocks=@aa{sv} []
 toolbar-visible=true
 remembered-plugins=''
 
+[org/gnome/gnome-screenshot]
+include-pointer=false
+include-border=true
+border-effect='none'
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
 confirm-trash=false
@@ -104,11 +109,11 @@ default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', '
 [org/gnome/system/location]
 enabled=true
 
-[org/gnome/calendar]
-window-maximized=true
-
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/calendar]
+window-maximized=true
 
 [org/gnome/desktop/interface]
 clock-show-date=true
@@ -146,7 +151,9 @@ display=['SHP', '0x143e', '0x00000000']
 show-weekdate=false
 
 [org/gnome/desktop/search-providers]
-sort-order=['gnome-contacts.desktop', 'gnome-documents.desktop', 'nautilus.desktop']
+sort-order=['gnome-contacts.desktop', 'org.gnome.Nautilus.desktop', 'gnome-documents.desktop', 'gnome-calculator.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.clocks.desktop', 'nautilus.desktop', 'org.gnome.Weather.Application.desktop', 'org.gnome.Terminal.desktop', 'epiphany.desktop', 'org.gnome.Boxes.desktop']
+disabled=['epiphany.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Terminal.desktop']
+enabled=['org.gnome.Weather.Application.desktop']
 
 [org/gnome/desktop/wm/preferences]
 num-workspaces=4
@@ -173,11 +180,11 @@ automatic-timezone=true
 
 [org/gnome/desktop/background]
 picture-uri='file:///usr/share/backgrounds/gnome/adwaita-lock.jpg'
-show-desktop-icons=true
+show-desktop-icons=false
 color-shading-type='solid'
-primary-color='#ffffff'
+primary-color='#000000000000'
 picture-options='zoom'
-secondary-color='#000000'
+secondary-color='#000000000000'
 
 
 [org/gnome/gnome-session]
@@ -191,6 +198,13 @@ use-background-color=true
 strategy='exact'
 source-name='Default'
 database='!'
+
+[org/gnome/software]
+first-run=false
+
+[org/gnome/Totem]
+subtitle-encoding='UTF-8'
+active-plugins=['media_player_keys', 'skipto', 'variable-rate', 'recent', 'vimeo', 'screensaver', 'movie-properties', 'screenshot', 'autoload-subtitles', 'save-file', 'apple-trailers']
 
 [org/gnome/terminal/legacy]
 new-terminal-mode='tab'

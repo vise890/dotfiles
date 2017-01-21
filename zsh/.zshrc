@@ -31,7 +31,7 @@ alias zprofile="$EDITOR $zprofile && zrl"
 
 
 alias vimrc="$EDITOR $HOME/.vim/vimrc"
-alias vplugs="$EDITOR $HOME/.vim/vimrc.plugs && vim +PlugUpgrade +PlugUpdate +PlugInstall +qall!"
+alias vplugs="$EDITOR $HOME/.vim/vimrc.plugs && vim +PlugUpgrade +PlugClean! +PlugUpdate +PlugInstall +qall!"
 
 
 alias bpy='bpython'

@@ -1,0 +1,1 @@
+make clean also deletes all the contents of .gitignores in their paths

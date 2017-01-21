@@ -19,5 +19,8 @@ PATH=$CODEPATH/scripts:$PATH
 # user bin dir
 PATH=$HOME/bin:$PATH
 
+# Ruby gems
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
 # Ensure path does not contain duplicates.
 typeset -gU path

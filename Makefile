@@ -4,7 +4,6 @@ TARGET=${HOME}
 OH_MY_ZSH_PATH="$(TARGET)/.oh-my-zsh"
 SCM_BREEZE_PATH="$(TARGET)/.scm_breeze"
 
-DOT_VIM_PATH="./vim/.vim"
 
 default:
 	@echo "==> Nothing to be done, use 'make install'"
@@ -18,16 +17,15 @@ clean: vim_clean oh_my_zsh_clean scm_breeze_clean unstow
 vim_install:
 	stow --restow --target=$(TARGET) vim
 	@echo "==> install vim-plug and plugins"
-	mkdir -p $(DOT_VIM_PATH)/autoload
-	curl -fLo $(DOT_VIM_PATH)/autoload/plug.vim \
-	      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	vim -u "$(TARGET)/.vim/plugs.vim" +PlugInstall +qall!
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	vim -u "vim/.config/nvim/plugs.vim" +PlugInstall +qall!
 	nvim +UpdateRemotePlugins +qall! || true # neovim only: don't fail if just vim
 
 vim_clean:
 	stow --delete --target=$(TARGET) vim
-	rm -rf $(DOT_VIM_PATH)/plugged
-	rm -rf $(DOT_VIM_PATH)/autoload
+	rm -rf ~/.local/share/nvim
+	cat vim/.config/nvim/.gitignore | xargs rm -rf
 
 
 oh_my_zsh_install:

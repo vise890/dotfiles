@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-sleuth'  " heuristically set buffer options (shiftwidth, expandtab, etc.)
 

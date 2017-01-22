@@ -30,8 +30,8 @@ alias zshrc="$EDITOR $zshrc && zrl"
 alias zprofile="$EDITOR $zprofile && zrl"
 
 
-alias vimrc="$EDITOR $HOME/.vim/vimrc"
-alias vplugs="$EDITOR $HOME/.vim/vimrc.plugs && vim +PlugUpgrade +PlugClean! +PlugUpdate +PlugInstall +qall!"
+alias vimrc="vim $HOME/.config/nvim/init.vim"
+alias vplugs="vim $HOME/.config/nvim/plugs.vim && vim +PlugUpgrade +PlugClean! +PlugUpdate +PlugInstall +qall!"
 
 
 alias bpy='bpython'

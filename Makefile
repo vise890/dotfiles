@@ -21,7 +21,7 @@ vim_install:
 	mkdir -p $(DOT_VIM_PATH)/autoload
 	curl -fLo $(DOT_VIM_PATH)/autoload/plug.vim \
 	      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	vim -u "$(TARGET)/.vim/vimrc.plugs" +PlugInstall +qall!
+	vim -u "$(TARGET)/.vim/plugs.vim" +PlugInstall +qall!
 	nvim +UpdateRemotePlugins +qall! || true # neovim only: don't fail if just vim
 
 vim_clean:

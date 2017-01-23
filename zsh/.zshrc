@@ -41,7 +41,7 @@ alias bp='bpython'
 export ORG_DIR=$HOME/org
 export TODO_DIR=$ORG_DIR/todo
 alias te="$EDITOR $TODO_DIR/todo.txt"
-alias sp="$EDITOR $ORG_DIR/sparkfile.md"
+alias sp="emacs $ORG_DIR/sparkfile.org"
 
 
 # $PATH & friends

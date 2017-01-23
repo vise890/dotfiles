@@ -35,10 +35,11 @@ Plug 'nvie/vim-flake8'              , { 'for': 'python' }
 "Plug 'klen/python-mode'             , { 'for': 'python' }
 
 Plug 'elzr/vim-json'                , { 'for': 'json' }
-Plug 'freitass/todo.txt-vim'
 Plug 'guns/vim-clojure-static'
-Plug 'jceb/vim-orgmode'
 Plug 'stephpy/vim-yaml'
+
+Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-markdown'
+Plug 'freitass/todo.txt-vim'
 
 call plug#end()

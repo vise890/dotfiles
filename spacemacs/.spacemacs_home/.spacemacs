@@ -52,6 +52,7 @@ values."
 
      shell
 
+     org
      markdown
 
      python

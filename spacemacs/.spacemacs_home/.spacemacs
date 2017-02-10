@@ -57,6 +57,8 @@ values."
 
      python
 
+     java
+
      emacs-lisp
      racket
      (clojure :variables

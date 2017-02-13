@@ -55,9 +55,12 @@ values."
      org
      markdown
 
-     python
+     sql
 
      java
+     javascript
+
+     python
 
      emacs-lisp
      racket

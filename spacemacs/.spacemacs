@@ -48,7 +48,9 @@ values."
 
      (version-control :variables
                       vc-follow-symlinks t)
-     git
+     (git :variables
+          magit-repository-directories '("~/Code/")
+          git-magit-status-fullscreen t)
 
      shell
 

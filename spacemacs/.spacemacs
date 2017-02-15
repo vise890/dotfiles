@@ -58,7 +58,8 @@ values."
      sql
 
      java
-     javascript
+     (javascript :variables
+                 tern-command '("node" "~/.npm/bin/tern"))
 
      python
 

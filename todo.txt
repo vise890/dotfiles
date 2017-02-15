@@ -1,1 +1,4 @@
 make clean also deletes all the contents of .gitignores in their paths
+make dotfiles linkable into /etc/
+merge dotfiles and auto_arch
+

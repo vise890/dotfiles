@@ -66,15 +66,12 @@ values."
      python
 
      emacs-lisp
-     racket
      (clojure :variables
               clojure-enable-fancify-symbols t
               cljr-warn-on-eval nil)
 
      (haskell :variables
               haskell-completion-backend 'intero)
-     (scala :variables
-            scala-enable-eldoc t)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these

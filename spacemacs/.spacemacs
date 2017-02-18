@@ -162,9 +162,34 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         sanityinc-solarized-dark
+                         ;; daily staples
+                         majapahit-dark
                          darktooth
                          gruvbox
+
+                         ;; for those lispy kind of mornings
+                         hc-zenburn
+                         zenburn
+
+                         ;; boring
+                         sanityinc-solarized-light
+                         sanityinc-solarized-dark
+                         sanityinc-tomorrow-night
+
+                         ;; funky
+                         molokai
+                         seti
+
+                         ;; light  / presentation friendly
+                         majapahit-light
+                         solarized
+                         oldlace
+                         tao
+                         sanityinc-tomorrow-day
+                         soft-morning
+                         soft-stone
+
+                         soft-charcoal ; dark
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t

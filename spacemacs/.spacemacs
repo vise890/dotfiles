@@ -42,7 +42,6 @@ values."
      syntax-checking
      auto-completion
 
-
      themes-megapack
      (colors :variables colors-enable-nyan-cat-progress-bar t)
 
@@ -52,7 +51,10 @@ values."
           magit-repository-directories '("~/Code/")
           git-magit-status-fullscreen t)
 
+     docker
      shell
+
+     yaml
 
      org
      markdown

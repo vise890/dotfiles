@@ -374,6 +374,9 @@ you should place your code here."
 
   (setq powerline-default-separator nil)
   (spaceline-compile)
+
+  (add-hook 'clojure-mode #'smartparens-mode)
+  (add-hook 'clojure-mode #'aggressive-indent-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

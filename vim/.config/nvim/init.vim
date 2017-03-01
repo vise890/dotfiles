@@ -1,6 +1,6 @@
 source ~/.vim/plugs.vim
 
-set nocompatible                 " be improved
+set nocompatible                 " be IMproved
 let mapleader = ' '
 
 nnoremap <Leader><Space> :

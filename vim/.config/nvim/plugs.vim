@@ -31,8 +31,6 @@ Plug 'Shougo/deoplete.nvim'     " auto-completion
 "
 Plug 'davidhalter/jedi-vim'         , { 'for': 'python' }
 Plug 'nvie/vim-flake8'              , { 'for': 'python' }
-"Plug 'vim-scripts/indentpython.vim' , { 'for': 'python' }
-"Plug 'klen/python-mode'             , { 'for': 'python' }
 
 Plug 'elzr/vim-json'                , { 'for': 'json' }
 Plug 'guns/vim-clojure-static'

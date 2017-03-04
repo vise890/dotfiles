@@ -1,3 +1,42 @@
+[io/github/gnome-mpv/window-state]
+playlist-width=250
+show-controls=true
+show-playlist=false
+width=640
+volume=1.0
+height=480
+
+[io/github/gnome-mpv]
+settings-migrated=true
+
+[org/gnome/terminal/legacy]
+new-terminal-mode='tab'
+schema-version=uint32 3
+theme-variant='dark'
+default-show-menubar=false
+
+[org/gnome/terminal/legacy/profiles:/:04b748c9-4c6b-470c-a858-8c7eb24eebc5]
+use-theme-colors=true
+palette=['rgb(0,0,0)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+visible-name='visible-green'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(131,148,150)'
+visible-name='default'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+scroll-on-output=true
+use-system-font=false
+use-theme-colors=false
+font='Ubuntu Mono 14'
+scrollback-unlimited=true
+background-color='rgb(0,43,54)'
+scrollbar-policy='never'
+audible-bell=false
+
+[org/gnome/terminal/legacy/profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']
+default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='nothing'
 idle-dim=true
@@ -24,8 +63,8 @@ numlock-state='off'
 
 [org/gnome/shell]
 app-picker-view=uint32 0
-enabled-extensions=['dash-to-dock@micxgx.gmail.com']
-favorite-apps=@as []
+enabled-extensions=['caffeine@patapon.info', 'autohide-battery@sitnik.ru']
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop']
 
 [org/gnome/shell/extensions/dash-to-dock]
 show-favorites=false
@@ -43,6 +82,20 @@ background-opacity=0.91000000000000003
 dash-max-icon-size=32
 opaque-background=true
 icon-size-fixed=false
+
+[org/gnome/shell/extensions/caffeine]
+user-enabled=true
+enable-fullscreen=true
+show-indicator=true
+restore-state=false
+
+[org/gnome/shell/extensions/dash-to-panel]
+show-appmenu=true
+panel-size=48
+hot-keys=false
+dot-position='BOTTOM'
+show-activities-button=false
+isolate-workspaces=false
 
 [org/gnome/shell/overrides]
 dynamic-workspaces=false
@@ -86,6 +139,7 @@ include-border=true
 border-effect='none'
 
 [org/gnome/nautilus/preferences]
+search-view='list-view'
 default-folder-viewer='list-view'
 confirm-trash=false
 search-filter-time-type='last_modified'
@@ -116,22 +170,27 @@ migrated=true
 window-maximized=true
 
 [org/gnome/desktop/interface]
-clock-show-date=true
-toolkit-accessibility=false
+text-scaling-factor=1.0
+clock-format='24h'
 gtk-im-module='gtk-im-context-simple'
 show-battery-percentage=true
-icon-theme='Moka'
-gtk-theme='Adwaita'
+toolkit-accessibility=false
+icon-theme='Paper'
 monospace-font-name='Ubuntu Mono 15'
+gtk-theme='Adwaita'
+clock-show-date=false
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'org-gnome-nautilus']
+application-children=['firefox', 'org-gnome-nautilus', 'gnome-network-panel', 'org-gnome-software']
 
 [org/gnome/desktop/notifications/application/gnome-tweak-tool]
 application-id='gnome-tweak-tool.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -189,6 +248,25 @@ secondary-color='#000000000000'
 
 [org/gnome/gnome-session]
 auto-save-session=true
+
+[org/gnome/gnome-screenshot]
+include-pointer=false
+include-border=true
+border-effect='none'
+
+[org/gnome/system/location]
+enabled=true
+
+[org/gnome/gedit/preferences/editor]
+wrap-last-split-mode='word'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+side-panel-visible=true
+
+[org/gnome/gedit/plugins]
+active-plugins=['spell', 'filebrowser', 'codeassistance', 'modelines', 'docinfo', 'time']
+
 
 [org/gnome/eog/view]
 background-color='rgb(0,0,0)'

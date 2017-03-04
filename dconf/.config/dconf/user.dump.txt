@@ -138,22 +138,19 @@ default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', '
 [org/gnome/system/location]
 enabled=true
 
-[org/gnome/evolution-data-server]
-migrated=true
-
 [org/gnome/calendar]
 window-maximized=true
 
 [org/gnome/desktop/interface]
-text-scaling-factor=1.0
 clock-format='24h'
+clock-show-date=false
 gtk-im-module='gtk-im-context-simple'
-show-battery-percentage=true
-toolkit-accessibility=false
+gtk-theme='Adwaita'
 icon-theme='Paper'
 monospace-font-name='Ubuntu Mono 15'
-gtk-theme='Adwaita'
-clock-show-date=false
+show-battery-percentage=true
+text-scaling-factor=1.0
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['firefox', 'org-gnome-nautilus', 'gnome-network-panel', 'org-gnome-software']
@@ -175,12 +172,6 @@ natural-scroll=true
 speed=0.1063829787234043
 tap-to-click=true
 
-[org/gnome/desktop/peripherals/touchscreens/(null):(null)]
-display=['SHP', '0x143e', '0x00000000']
-
-[org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
-display=['SHP', '0x143e', '0x00000000']
-
 [org/gnome/desktop/calendar]
 show-weekdate=false
 
@@ -196,12 +187,12 @@ num-workspaces=4
 close=['<Super>q']
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-3=['<Super>3']
 move-to-workspace-2=['<Shift><Super>at']
 move-to-workspace-1=['<Shift><Super>exclam']
 move-to-workspace-4=['<Shift><Super>dollar']
 move-to-workspace-3=['<Shift><Super>numbersign']
-switch-to-workspace-4=['<Super>4']
-switch-to-workspace-3=['<Super>3']
 
 [org/gnome/desktop/session]
 idle-delay=uint32 900
@@ -253,22 +244,26 @@ next-tab='<Primary><Shift>Right'
 help='disabled'
 
 [org/gnome/terminal/legacy/profiles:/:04b748c9-4c6b-470c-a858-8c7eb24eebc5]
-use-theme-colors=true
+audible-bell=false
 palette=['rgb(0,0,0)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+scroll-on-output=true
+scrollback-unlimited=true
+scrollbar-policy='never'
+use-theme-colors=true
 visible-name='visible-green'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+background-color='rgb(0,43,54)'
+font='Ubuntu Mono 14'
 foreground-color='rgb(131,148,150)'
-visible-name='default'
 palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
 scroll-on-output=true
+scrollback-unlimited=true
+scrollbar-policy='never'
 use-system-font=false
 use-theme-colors=false
-font='Ubuntu Mono 14'
-scrollback-unlimited=true
-background-color='rgb(0,43,54)'
-scrollbar-policy='never'
-audible-bell=false
+visible-name='default'
 
 [org/gnome/terminal/legacy/profiles:]
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']

@@ -35,7 +35,7 @@ numlock-state='off'
 
 [org/gnome/shell]
 app-picker-view=uint32 0
-enabled-extensions=['caffeine@patapon.info', 'autohide-battery@sitnik.ru']
+enabled-extensions=['caffeine@patapon.info', 'autohide-battery@sitnik.ru', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop']
 
 [org/gnome/shell/extensions/dash-to-dock]

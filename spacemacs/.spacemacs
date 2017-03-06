@@ -44,6 +44,8 @@ values."
      syntax-checking
      auto-completion
 
+     evil-cleverparens
+
      themes-megapack
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      vim-empty-lines
@@ -390,8 +392,9 @@ you should place your code here."
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
-  (add-hook 'clojure-mode #'smartparens-mode)
-  (add-hook 'clojure-mode #'aggressive-indent-mode)
+  (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
+  (add-hook 'clojure-mode-hook #'smartparens-mode)
+  (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/org/")

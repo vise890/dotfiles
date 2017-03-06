@@ -54,7 +54,7 @@ values."
      (version-control :variables
                       vc-follow-symlinks t)
      (git :variables
-          magit-repository-directories '("~/Code/")
+          magit-repository-directories '("~/code/")
           git-magit-status-fullscreen t)
 
      restclient

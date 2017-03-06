@@ -1,4 +1,4 @@
-export CODEPATH="$HOME/Code"
+export CODEPATH="$HOME/code"
 
 # NPM / node stuff
 PATH=$HOME/.npm/bin:$PATH

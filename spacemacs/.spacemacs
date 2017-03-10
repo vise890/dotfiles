@@ -46,9 +46,8 @@ values."
 
      evil-cleverparens
 
-     themes-megapack
      (colors :variables colors-enable-nyan-cat-progress-bar t)
-     ;; vim-empty-lines
+     ;; vim-empty-lines ; show tildes in the firnge on empty lines..
 
      ;; emoji
      ;; games
@@ -99,16 +98,26 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
-                                      dash
-                                      gruvbox-theme
-                                      hc-zenburn-theme
-                                      darktooth-theme
-                                      color-theme-solarized
+                                      dash ; functional helpers
+
+                                      ;;; themes
                                       color-theme-sanityinc-solarized
                                       color-theme-sanityinc-tomorrow
+                                      color-theme-solarized
+                                      darktooth-theme
                                       firebelly-theme
+                                      gruvbox-theme
+                                      hc-zenburn-theme
                                       majapahit-theme
-
+                                      monokai-theme
+                                      oldlace-theme
+                                      seti-theme
+                                      soft-charcoal-theme
+                                      soft-morning-theme
+                                      soft-stone-theme
+                                      tao-theme
+                                      zenburn-theme
+                                      zonokai-theme
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -182,34 +191,36 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         ;; daily staples
+                         ;;; daily staples
                          majapahit-dark
                          darktooth
                          gruvbox
 
-                         ;; for those lispy kind of mornings
+                         ;;; for those lispy kind of mornings
                          hc-zenburn
                          zenburn
 
-                         ;; boring
+                         ;;; boring
                          sanityinc-solarized-light
                          sanityinc-solarized-dark
                          sanityinc-tomorrow-night
 
-                         ;; funky
+                         ;;; funky
                          molokai
                          seti
 
-                         ;; light  / presentation friendly
+                         ;;; light  / presentation friendly
                          majapahit-light
-                         solarized
                          oldlace
                          sanityinc-tomorrow-day
                          soft-morning
                          soft-stone
+                         tao-yang
 
-                         soft-charcoal ; dark
-                         tao
+                         ;; dark
+                         solarized
+                         soft-charcoal
+                         tao-yin
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t

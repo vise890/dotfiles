@@ -37,7 +37,6 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     ;; smex
      vinegar
 
      spell-checking
@@ -47,7 +46,7 @@ values."
      evil-cleverparens
 
      (colors :variables colors-enable-nyan-cat-progress-bar t)
-     ;; vim-empty-lines ; show tildes in the firnge on empty lines..
+     vim-empty-lines ; use font for tildes indicating empty lines (in fringe)
 
      ;; emoji
      ;; games
@@ -65,7 +64,7 @@ values."
      ;; terraform
 
      ;; yaml
-     csv
+     ;; csv
 
      org
      markdown
@@ -98,7 +97,7 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
-                                      dash ; functional helpers
+                                      ;; dash ; functional helpers
 
                                       ;;; themes
                                       color-theme-sanityinc-solarized

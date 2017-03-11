@@ -64,7 +64,7 @@ values."
      ;; terraform
 
      ;; yaml
-     ;; csv
+     csv
 
      org
      markdown

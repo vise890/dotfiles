@@ -406,10 +406,6 @@ you should place your code here."
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
-  (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
-  (add-hook 'clojure-mode-hook #'smartparens-mode)
-  (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
-
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/org/")
 

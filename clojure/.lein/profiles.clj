@@ -1,5 +1,5 @@
 {:user {:plugins [[cider/cider-nrepl "0.15.0-SNAPSHOT"]
-                  [refactor-nrepl "2.3.0-SNAPSHOT"]
+                  [refactor-nrepl "2.3.0"]
 
                   ;; [jonase/eastwood "0.2.3"]
                   ;; [lein-kibit "0.1.3"]

@@ -41,17 +41,17 @@ values."
      ;; evil-cleverparens
 
      (colors :variables colors-enable-nyan-cat-progress-bar t)
-     vim-empty-lines ; use font for tildes indicating empty lines (in fringe)
+     ;; vim-empty-lines ; use font for tildes indicating empty lines (in fringe)
 
-     emoji
+     ;; emoji
      ;; games
 
-     shell
-     (version-control :variables
-                      vc-follow-symlinks t)
-     (git :variables
-          magit-repository-directories '("~/code/")
-          git-magit-status-fullscreen t)
+     ;; shell
+     ;; (version-control :variables
+     ;;                  vc-follow-symlinks t)
+     ;; (git :variables
+     ;;      magit-repository-directories '("~/code/")
+     ;;      git-magit-status-fullscreen t)
 
      ;; restclient
 
@@ -59,11 +59,11 @@ values."
      ;; terraform
 
      ;; yaml
-     csv
+     ;; csv
 
-     org
-     markdown
-     deft
+     ;; org
+     ;; markdown
+     ;; deft
      ;; html
 
      ;; sql
@@ -85,6 +85,7 @@ values."
      ;; scheme
      ;; racket
 
+     ;; scala
      ;; (haskell :variables
      ;;          haskell-completion-backend 'intero)
      )
@@ -96,22 +97,24 @@ values."
                                       ;; dash ; functional helpers
 
                                       ;;; themes
-                                      color-theme-sanityinc-solarized
-                                      color-theme-sanityinc-tomorrow
-                                      color-theme-solarized
-                                      darktooth-theme
-                                      firebelly-theme
-                                      gruvbox-theme
-                                      hc-zenburn-theme
+                                      ;; color-theme-sanityinc-solarized
+                                      ;; color-theme-sanityinc-tomorrow
+                                      ;; color-theme-solarized
+                                      ;; darktooth-theme
+                                      ;; firebelly-theme
+                                      ;; gruvbox-theme
+                                      ;; hc-zenburn-theme
                                       majapahit-theme
-                                      oldlace-theme
-                                      seti-theme
-                                      soft-charcoal-theme
-                                      soft-morning-theme
-                                      soft-stone-theme
-                                      tao-theme
-                                      zenburn-theme
-                                      zonokai-theme
+
+                                      ;; monokai-theme
+                                      ;; oldlace-theme
+                                      ;; seti-theme
+                                      ;; soft-charcoal-theme
+                                      ;; soft-morning-theme
+                                      ;; soft-stone-theme
+                                      ;; tao-theme
+                                      ;; zenburn-theme
+                                      ;; zonokai-theme
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -216,10 +219,8 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Ubuntu Mono"
-                               ;;:size 32
                                :weight normal
-                               :width normal
-                               :powerline-scale 1.1)
+                               :width normal)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
@@ -393,7 +394,7 @@ you should place your code here."
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
-  (setq deft-extensions '("org" "md" "txt"))
-  (setq deft-directory "~/org/")
+  ;; (setq deft-extensions '("org" "md" "txt"))
+  ;; (setq deft-directory "~/org/")
 
   )

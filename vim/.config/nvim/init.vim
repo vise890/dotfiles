@@ -1,4 +1,4 @@
-source ~/.vim/plugs.vim
+source ~/.config/nvim/plugs.vim
 
 set nocompatible                 " be IMproved
 let mapleader = ' '

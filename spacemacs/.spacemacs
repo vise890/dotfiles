@@ -31,8 +31,13 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     ;; ----------------------------------------------------------------
+     ;; Example of useful layers you may want to use right away.
+     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
+     ;; <M-m f e R> (Emacs style) to install them.
+     ;; ----------------------------------------------------------------
      helm
-     vinegar
+     ;; vinegar
 
      spell-checking
      syntax-checking
@@ -46,12 +51,12 @@ values."
      ;; emoji
      ;; games
 
-     ;; shell
-     ;; (version-control :variables
-     ;;                  vc-follow-symlinks t)
-     ;; (git :variables
-     ;;      magit-repository-directories '("~/code/")
-     ;;      git-magit-status-fullscreen t)
+     shell
+     (version-control :variables
+                      vc-follow-symlinks t)
+     (git :variables
+          magit-repository-directories '("~/code/")
+          git-magit-status-fullscreen t)
 
      ;; restclient
 

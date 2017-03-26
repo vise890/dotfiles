@@ -31,11 +31,6 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
      helm
      vinegar
 
@@ -43,7 +38,7 @@ values."
      syntax-checking
      auto-completion
 
-     evil-cleverparens
+     ;; evil-cleverparens
 
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      vim-empty-lines ; use font for tildes indicating empty lines (in fringe)
@@ -83,9 +78,10 @@ values."
      emacs-lisp
      ;; elixir
      ;; erlang
-     (clojure :variables
-              clojure-enable-fancify-symbols t
-              cljr-warn-on-eval nil)
+     clojure
+     ;; (clojure :variables
+     ;;         clojure-enable-fancify-symbols t
+     ;;         cljr-warn-on-eval nil)
      ;; scheme
      ;; racket
 

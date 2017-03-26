@@ -2,12 +2,50 @@
 playlist-width=250
 show-controls=true
 show-playlist=false
-width=640
+width=496
 volume=1.0
 height=480
 
 [io/github/gnome-mpv]
 settings-migrated=true
+
+[org/gnome/terminal/legacy]
+mnemonics-enabled=false
+new-terminal-mode='tab'
+default-show-menubar=false
+schema-version=uint32 3
+theme-variant='dark'
+
+[org/gnome/terminal/legacy/keybindings]
+prev-tab='<Primary><Shift>Left'
+next-tab='<Primary><Shift>Right'
+help='disabled'
+
+[org/gnome/terminal/legacy/profiles:/:04b748c9-4c6b-470c-a858-8c7eb24eebc5]
+scroll-on-output=true
+scrollbar-policy='never'
+palette=['rgb(0,0,0)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+scrollback-unlimited=true
+visible-name='visible-green'
+audible-bell=false
+use-theme-colors=true
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(131,148,150)'
+visible-name='default'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+scroll-on-output=false
+use-system-font=false
+use-theme-colors=false
+font='Ubuntu Mono 14'
+scrollback-unlimited=true
+background-color='rgb(0,43,54)'
+scrollbar-policy='never'
+audible-bell=false
+
+[org/gnome/terminal/legacy/profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']
+default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
 
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='nothing'
@@ -34,9 +72,20 @@ name='terminal'
 numlock-state='off'
 
 [org/gnome/shell]
-app-picker-view=uint32 0
-enabled-extensions=['caffeine@patapon.info', 'autohide-battery@sitnik.ru', 'dash-to-panel@jderose9.github.com']
+app-picker-view=uint32 1
+enabled-extensions=['autohide-battery@sitnik.ru', 'icon-hider@kalnitsky.org', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop']
+
+[org/gnome/shell/extensions/panel-osd]
+y-pos=0.0
+test-notification=false
+x-pos=100.0
+
+[org/gnome/shell/extensions/update-extensions]
+check-interval=1
+interval-unit='days'
+last-check-date-double=1490483607215.0
+transient=false
 
 [org/gnome/shell/extensions/dash-to-dock]
 show-favorites=false
@@ -55,8 +104,10 @@ dash-max-icon-size=32
 opaque-background=true
 icon-size-fixed=false
 
-[org/gnome/shell/extensions/icon-hider]
-known=['activities', 'appMenu', 'dateMenu', 'a11y', 'keyboard', 'aggregateMenu']
+[org/gnome/shell/extensions/dynamic-panel-transparency]
+panel-theme-color=(0, 0, 0)
+current-user-theme=''
+theme-opacity=255
 
 [org/gnome/shell/extensions/caffeine]
 user-enabled=true
@@ -64,9 +115,14 @@ enable-fullscreen=true
 show-indicator=true
 restore-state=false
 
+[org/gnome/shell/extensions/icon-hider]
+known=['activities', 'appMenu', 'dateMenu', 'a11y', 'keyboard', 'aggregateMenu', 'Caffeine', 'extensions', 'DoNotDistrub', 'EmojiMenu', 'deskchanger', 'docker-menu']
+hidden=['activities', 'a11y', 'keyboard', 'docker-menu', 'deskchanger', 'EmojiMenu', 'DoNotDistrub', 'extensions']
+is-indicator-shown=false
+
 [org/gnome/shell/extensions/dash-to-panel]
 show-appmenu=true
-panel-size=48
+panel-size=32
 hot-keys=false
 dot-position='BOTTOM'
 show-activities-button=false
@@ -79,6 +135,10 @@ workspaces-only-on-primary=false
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>d']
 
+[org/gnome/baobab/ui]
+window-state=128
+window-size=(1140, 868)
+
 [org/gnome/gedit/preferences/editor]
 wrap-last-split-mode='word'
 
@@ -86,18 +146,23 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 side-panel-visible=true
 
+[org/gnome/gedit/plugins/filebrowser]
+virtual-root='file:///home/vise890/Videos/elixir-sips/001%20-%20Introduction%20and%20Installing%20Elixir'
+tree-view=true
+root='file:///'
+
 [org/gnome/gedit/plugins]
 active-plugins=['spell', 'filebrowser', 'codeassistance', 'modelines', 'docinfo', 'time']
 
 [org/gnome/gedit/state/window]
-size=(1006, 1098)
+size=(1006, 985)
 state=128
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
 
 [org/gnome/clocks/state/window]
-size=(1006, 1098)
+size=(1006, 999)
 state=128
 panel-id='world'
 
@@ -120,7 +185,7 @@ confirm-trash=false
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-geometry='1012x1005+26+23'
+geometry='960x1000+45+29'
 maximized=false
 
 [org/gnome/nautilus/icon-view]
@@ -135,25 +200,38 @@ default-visible-columns=['name', 'size', 'type', 'date_modified']
 default-zoom-level='standard'
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed']
 
-[org/gnome/system/location]
-enabled=true
+[org/gnome/evince/default]
+window-ratio=(1.3847980997624703, 1.9118981217028996)
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+show-path=false
 
 [org/gnome/calendar]
 window-maximized=true
 
+[org/gnome/evolution-data-server]
+network-monitor-gio-name=''
+migrated=true
+
+[org/gnome/meld]
+window-state='normal'
+window-size=(549, 399)
+
 [org/gnome/desktop/interface]
-clock-format='24h'
-clock-show-date=false
-gtk-im-module='gtk-im-context-simple'
-gtk-theme='Adwaita'
-icon-theme='Paper'
-monospace-font-name='Ubuntu Mono 15'
-show-battery-percentage=true
 text-scaling-factor=1.0
+clock-format='24h'
+gtk-im-module='gtk-im-context-simple'
+show-battery-percentage=true
 toolkit-accessibility=false
+cursor-theme='Adwaita'
+icon-theme='Papirus'
+monospace-font-name='Ubuntu Mono 15'
+gtk-theme='VimixDark-Laptop'
+clock-show-date=false
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'org-gnome-nautilus', 'gnome-network-panel', 'org-gnome-software']
+application-children=['firefox', 'org-gnome-nautilus', 'gnome-network-panel', 'org-gnome-software', 'org-gnome-polari']
 
 [org/gnome/desktop/notifications/application/gnome-tweak-tool]
 application-id='gnome-tweak-tool.desktop'
@@ -164,12 +242,40 @@ application-id='firefox.desktop'
 [org/gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-polari]
+application-id='org.gnome.Polari.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'Sundry']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+translate=true
+categories=['X-GNOME-Utilities']
+apps=['org.gnome.baobab.desktop', 'deja-dup-preferences.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'gnome-dictionary.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gnome-tweak-tool.desktop', 'gucharmap.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
+name='X-GNOME-Utilities.directory'
+
+[org/gnome/desktop/app-folders/folders/Sundry]
+translate=true
+categories=['X-GNOME-Sundry']
+apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop', 'fedora-release-notes.desktop', 'firewall-config.desktop', 'flash-player-properties.desktop', 'gconf-editor.desktop', 'gnome-abrt.desktop', 'gnome-power-statistics.desktop', 'ibus-setup-anthy.desktop', 'ibus-setup.desktop', 'ibus-setup-hangul.desktop', 'ibus-setup-libbopomofo.desktop', 'ibus-setup-libpinyin.desktop', 'ibus-setup-m17n.desktop', 'ibus-setup-typing-booster.desktop', 'im-chooser.desktop', 'itweb-settings.desktop', 'jhbuild.desktop', 'javaws.desktop', 'java-1.7.0-openjdk-jconsole.desktop', 'java-1.7.0-openjdk-policytool.desktop', 'log4j-chainsaw.desktop', 'log4j-logfactor5.desktop', 'nm-connection-editor.desktop', 'orca.desktop', 'setroubleshoot.desktop', 'system-config-date.desktop', 'system-config-firewall.desktop', 'system-config-keyboard.desktop', 'system-config-language.desktop', 'system-config-printer.desktop', 'system-config-users.desktop', 'vino-preferences.desktop']
+name='X-GNOME-Sundry.directory'
+
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-timed.xml'
+color-shading-type='solid'
+primary-color='#3465a4'
+picture-options='zoom'
+secondary-color='#000000'
+
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=true
-speed=0.1063829787234043
+speed=0.59999999999999998
 tap-to-click=true
 
 [org/gnome/desktop/calendar]
@@ -195,7 +301,7 @@ move-to-workspace-4=['<Shift><Super>dollar']
 move-to-workspace-3=['<Shift><Super>numbersign']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 900
+idle-delay=uint32 600
 
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false
@@ -211,12 +317,39 @@ primary-color='#000000000000'
 picture-options='zoom'
 secondary-color='#000000000000'
 
+[org/gnome/gitg/preferences/history]
+reference-sort-order='last-activity'
+
+[org/gnome/gitg/preferences/interface]
+enable-monitoring=true
+
+[org/gnome/gitg/state/history]
+paned-sidebar-position=200
+
+[org/gnome/gitg/state/commit]
+paned-sidebar-position=200
+
+[org/gnome/gitg/state/window]
+size=(702, 599)
+state=128
+
 [org/gnome/gnome-session]
 auto-save-session=true
+auto-save-session-one-shot=false
 
 [org/gnome/eog/view]
 background-color='rgb(0,0,0)'
 use-background-color=true
+
+[org/gnome/boxes]
+view='icon-view'
+window-maximized=true
+
+[org/gnome/power-manager]
+info-history-type='charge'
+info-stats-type='discharge-accuracy'
+info-last-device='/org/freedesktop/UPower/devices/line_power_AC'
+info-page-number=0
 
 [org/gnome/dictionary]
 strategy='exact'
@@ -231,40 +364,41 @@ check-timestamp=int64 1488651809
 subtitle-encoding='UTF-8'
 active-plugins=['media_player_keys', 'skipto', 'variable-rate', 'recent', 'vimeo', 'screensaver', 'movie-properties', 'screenshot', 'autoload-subtitles', 'save-file', 'apple-trailers']
 
-[org/gnome/terminal/legacy]
-mnemonics-enabled=false
-new-terminal-mode='tab'
-default-show-menubar=false
-schema-version=uint32 3
-theme-variant='dark'
+[org/gnome/polari]
+saved-channel-list=[{'account': <'/org/freedesktop/Telepathy/Account/idle/irc/vise8900'>, 'channel': <'#archlinux'>}]
+last-selected-channel={'account': <'/org/freedesktop/Telepathy/Account/idle/irc/vise8900'>, 'channel': <'#archlinux-unregistered'>}
+window-maximized=false
+window-size=[800, 500]
 
-[org/gnome/terminal/legacy/keybindings]
-prev-tab='<Primary><Shift>Left'
-next-tab='<Primary><Shift>Right'
-help='disabled'
+[org/gnome/software]
+first-run=false
+check-timestamp=int64 1490534159
 
-[org/gnome/terminal/legacy/profiles:/:04b748c9-4c6b-470c-a858-8c7eb24eebc5]
-audible-bell=false
-palette=['rgb(0,0,0)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
-scroll-on-output=true
-scrollback-unlimited=true
-scrollbar-policy='never'
-use-theme-colors=true
-visible-name='visible-green'
+[org/gnome/system/location]
+enabled=true
 
-[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-audible-bell=false
-background-color='rgb(0,43,54)'
-font='Ubuntu Mono 14'
-foreground-color='rgb(131,148,150)'
-palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
-scroll-on-output=true
-scrollback-unlimited=true
-scrollbar-policy='never'
-use-system-font=false
-use-theme-colors=false
-visible-name='default'
+[org/gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=260
+window-position=(45, 29)
+show-size-column=true
+show-hidden=false
+window-size=(1203, 902)
+sort-directories-first=false
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'
 
-[org/gnome/terminal/legacy/profiles:]
-list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']
-default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+
+[org/yorba/shotwell/preferences/window]
+direct-maximize=false
+direct-height=1016
+direct-width=1920
+
+[apps/seahorse/windows/key-manager]
+width=1024
+height=638
+
+[apps/seahorse/listing]
+sidebar-width=230
+keyrings-selected=['secret-service://login']

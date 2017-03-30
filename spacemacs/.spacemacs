@@ -43,7 +43,7 @@ values."
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      vim-empty-lines ; use font for tildes indicating empty lines (in fringe)
 
-     ;; emoji
+     emoji
      ;; games
 
      shell
@@ -104,7 +104,6 @@ values."
                                       gruvbox-theme
                                       hc-zenburn-theme
                                       majapahit-theme
-                                      monokai-theme
                                       oldlace-theme
                                       seti-theme
                                       soft-charcoal-theme
@@ -200,10 +199,6 @@ values."
                          sanityinc-solarized-dark
                          sanityinc-tomorrow-night
 
-                         ;;; funky
-                         molokai
-                         seti
-
                          ;;; light  / presentation friendly
                          majapahit-light
                          oldlace
@@ -215,7 +210,6 @@ values."
                          ;; dark
                          solarized
                          soft-charcoal
-                         tao-yin
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -403,6 +397,3 @@ you should place your code here."
   (setq deft-directory "~/org/")
 
   )
-
-;; Do not write anything past this comment. This is where Emacs will
-;; auto-generate custom variable definitions.

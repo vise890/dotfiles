@@ -1,7 +1,7 @@
 export CODEPATH="$HOME/code"
 
 # NPM / node stuff
-PATH=$HOME/.npm/bin:$PATH
+PATH=$HOME/.config/yarn/global/node_modules/.bin:$HOME/.npm/bin:$PATH
 
 # Go's stuff
 export GOPATH=$HOME/go

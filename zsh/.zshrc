@@ -2,7 +2,7 @@
 
 [ -f /etc/profile ] && source /etc/profile
 
-export ZSH=${HOME}/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 if [ $(whoami) = 'root' ]; then
   export ZSH_THEME="gianu"
@@ -18,24 +18,16 @@ setopt correct
 export EDITOR='nvim'
 alias vim="$EDITOR"
 alias v="$EDITOR"
-
-
-alias ccat="pygmentize -g"
-
-
-zshrc="$HOME/.zshrc"
-zprofile="$HOME/.zprofile"
-alias zrl="source $zshrc && source $zprofile && rehash"
-alias zshrc="$EDITOR $zshrc && zrl"
-alias zprofile="$EDITOR $zprofile && zrl"
-
-
 alias vimrc="vim $HOME/.config/nvim/init.vim"
 alias vplugs="vim $HOME/.config/nvim/plugs.vim && vim +PlugUpgrade +PlugClean! +PlugUpdate! +PlugInstall! +qall!"
 
 
-alias bpy='bpython'
-alias bp='bpython'
+zshrc="$HOME/.zshrc"
+zprofile="$HOME/.zprofile"
+function zrl { source $zshrc && source $zprofile && rehash }
+alias zshrc="$EDITOR $zshrc && zrl"
+alias zprofile="$EDITOR $zprofile && zrl"
+
 
 # org / todo.txt
 export ORG_DIR=$HOME/org
@@ -44,6 +36,9 @@ alias te="$EDITOR $TODO_DIR/todo.txt"
 alias sp="emacs $ORG_DIR/SPARKFILE.org"
 
 
+alias ccat="pygmentize -g"
+
+alias bp='bpython'
 # $PATH & friends
 source $HOME/.zprofile
 

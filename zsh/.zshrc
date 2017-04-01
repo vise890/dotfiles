@@ -33,7 +33,7 @@ alias zprofile="$EDITOR $zprofile && zrl"
 export ORG_DIR=$HOME/org
 export TODO_DIR=$ORG_DIR/todo
 alias te="$EDITOR $TODO_DIR/todo.txt"
-alias sp="emacs $ORG_DIR/SPARKFILE.org"
+alias sp="emacs $ORG_DIR/SPARKFILE.org &; disown"
 
 
 alias ccat="pygmentize -g"

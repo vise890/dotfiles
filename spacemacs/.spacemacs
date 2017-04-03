@@ -83,10 +83,9 @@ values."
      emacs-lisp
      ;; elixir
      ;; erlang
-     clojure
-     ;; (clojure :variables
+     (clojure :variables
      ;;         clojure-enable-fancify-symbols t
-     ;;         cljr-warn-on-eval nil)
+                cljr-warn-on-eval nil)
      ;; scheme
      ;; racket
 

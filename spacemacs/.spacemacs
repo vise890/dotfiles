@@ -84,7 +84,7 @@ values."
      ;; elixir
      ;; erlang
      (clojure :variables
-     ;;         clojure-enable-fancify-symbols t
+                clojure-enable-fancify-symbols t
                 cljr-warn-on-eval nil)
      ;; scheme
      ;; racket
@@ -101,24 +101,29 @@ values."
                                       ;; dash ; functional helpers
 
                                       ;;; themes
-                                      ;; color-theme-sanityinc-solarized
-                                      ;; color-theme-sanityinc-tomorrow
-                                      ;; color-theme-solarized
-                                      ;; darktooth-theme
+                                      color-theme-sanityinc-solarized
+                                      color-theme-sanityinc-tomorrow
+                                      color-theme-solarized
+                                      darktooth-theme
                                       ;; firebelly-theme
-                                      ;; gruvbox-theme
-                                      ;; hc-zenburn-theme
+                                      gruvbox-theme
+                                      hc-zenburn-theme
+                                      zenburn-theme
                                       majapahit-theme
 
                                       ;; monokai-theme
-                                      ;; oldlace-theme
+                                      oldlace-theme
                                       ;; seti-theme
                                       ;; soft-charcoal-theme
                                       ;; soft-morning-theme
                                       ;; soft-stone-theme
                                       ;; tao-theme
-                                      ;; zenburn-theme
                                       ;; zonokai-theme
+
+                                      majapahit-theme
+
+                                      ;; other pkgs
+                                      flycheck-clojure
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -398,7 +403,24 @@ you should place your code here."
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
-  ;; (setq deft-extensions '("org" "md" "txt"))
-  ;; (setq deft-directory "~/org/")
+  (eval-after-load 'flycheck '(flycheck-clojure-setup))
+  (add-hook 'clojure-mode-hook #'flycheck-mode)
+  (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 
+  ;; (setq deft-directory "~/org/")
+  ;; (setq deft-extensions '("org" "md" "txt"))
   )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (flycheck-clojure vi-tilde-fringe zonokai-theme zenburn-theme xterm-color ws-butler window-numbering which-key volatile-highlights uuidgen use-package toc-org tao-theme spacemacs-theme spaceline soft-stone-theme soft-morning-theme soft-charcoal-theme smeargle shell-pop seti-theme restart-emacs rainbow-mode rainbow-identifiers rainbow-delimiters quelpa popwin persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file oldlace-theme neotree multi-term move-text mmm-mode markdown-toc majapahit-theme magit-gitflow macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag hc-zenburn-theme gruvbox-theme google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md flyspell-correct-helm flycheck-pos-tip flx-ido firebelly-theme fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help emoji-cheat-sheet-plus elisp-slime-nav dumb-jump diff-hl deft define-word darktooth-theme csv-mode company-statistics company-emoji company-emacs-eclim column-enforce-mode color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-identifiers-mode clojure-snippets clj-refactor clean-aindent-mode cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

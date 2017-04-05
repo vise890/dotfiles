@@ -16,7 +16,7 @@
 
         ;; :aliases {"slamhound" ["run" "-m" "slam.hound"]}
 
-        :dependencies [[org.clojure/clojure "1.8.0"]
+        :dependencies [;; [org.clojure/clojure "1.8.0"]
                        ;; [slamhound "1.5.5"]
 
                        [alembic "0.3.2"]

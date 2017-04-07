@@ -29,6 +29,10 @@ alias zshrc="$EDITOR $zshrc && zrl"
 alias zprofile="$EDITOR $zprofile && zrl"
 
 
+alias pa='pacaur'
+alias pm='pacman'
+
+
 # org / todo.txt
 export ORG_DIR=$HOME/org
 export TODO_DIR=$ORG_DIR/todo
@@ -39,13 +43,14 @@ alias sp="emacs $ORG_DIR/SPARKFILE.org &; disown"
 alias ccat="pygmentize -g"
 
 alias bp='bpython'
+
+
 # $PATH & friends
 source $HOME/.zprofile
 
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(autojump colored-man docker kubectl last-working-dir vi-mode)
-
 source "$ZSH/oh-my-zsh.sh"
 
 

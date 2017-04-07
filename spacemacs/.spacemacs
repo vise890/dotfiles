@@ -63,7 +63,7 @@ values."
      ;; docker
      ;; terraform
 
-     ;; yaml
+     yaml
      ;; csv
 
      ;; org
@@ -79,11 +79,12 @@ values."
 
      ;; python
      ;; go
-emacs-lisp
+
+     emacs-lisp
      ;; elixir
      ;; erlang
      (clojure :variables
-                clojure-enable-fancify-symbols t
+                ;; clojure-enable-fancify-symbols t
                 cljr-warn-on-eval nil)
      ;; scheme
      ;; racket

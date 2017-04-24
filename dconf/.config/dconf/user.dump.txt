@@ -98,6 +98,8 @@ natural-scroll=true
 
 [org/gnome/desktop/interface]
 gtk-im-module='gtk-im-context-simple'
+icon-theme='Papirus'
+gtk-theme='deepin'
 toolkit-accessibility=false
 
 [org/gnome/desktop/wm/preferences]

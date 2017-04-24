@@ -1,4 +1,4 @@
-STOW_PACKAGES=readline vim x11 zsh
+STOW_PACKAGES=readline vim zsh
 TARGET=${HOME}
 
 OH_MY_ZSH_PATH="$(TARGET)/.oh-my-zsh"

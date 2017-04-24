@@ -47,6 +47,17 @@ audible-bell=false
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']
 default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
 
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=1800
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=true
+night-light-schedule-from=18.0
+night-light-enabled=true
+
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 

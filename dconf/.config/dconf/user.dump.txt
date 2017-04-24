@@ -90,6 +90,9 @@ name='suse-yast.directory'
 [org/gnome/desktop/peripherals/touchpad]
 tap-to-click=true
 
+[org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
+display=['SHP', '0x143e', '0x00000000']
+
 [org/gnome/desktop/peripherals/mouse]
 natural-scroll=true
 

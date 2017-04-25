@@ -38,10 +38,12 @@ show-showdesktop-button=true
 
 [org/gnome/shell/extensions/hidetopbar]
 animation-time-autohide=0.10000000000000001
-enable-active-window=true
+enable-active-window=false
 shortcut-delay=0.10000000000000001
+hot-corner=true
 mouse-sensitive=true
 enable-intellihide=false
+mouse-triggers-overview=false
 
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>d']

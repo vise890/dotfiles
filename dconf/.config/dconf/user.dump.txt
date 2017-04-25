@@ -53,7 +53,7 @@ dynamic-workspaces=false
 workspaces-only-on-primary=false
 
 [org/gnome/nautilus/preferences]
-default-folder-viewer='icon-view'
+default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]

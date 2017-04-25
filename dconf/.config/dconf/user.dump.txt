@@ -26,9 +26,12 @@ name='terminal'
 numlock-state='off'
 
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'hidetopbar@mathieu.bidon.ca']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'hidetopbar@mathieu.bidon.ca', 'caffeine@patapon.info']
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop']
 had-bluetooth-devices-setup=true
+
+[org/gnome/shell/extensions/caffeine]
+user-enabled=false
 
 [org/gnome/shell/extensions/dash-to-panel]
 show-appmenu=true

@@ -1,6 +1,47 @@
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='suspend'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=1800
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=true
+night-light-schedule-from=18.0
+night-light-enabled=true
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>f'
+command='nautilus'
+name='file browser'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>Return'
+command='gnome-terminal'
+name='terminal'
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
 [org/gnome/shell]
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'hidetopbar@mathieu.bidon.ca']
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop']
 had-bluetooth-devices-setup=true
+
+[org/gnome/shell/extensions/dash-to-panel]
+show-appmenu=true
+panel-size=36
+show-activities-button=false
+show-showdesktop-button=true
+
+[org/gnome/shell/extensions/hidetopbar]
+animation-time-autohide=0.10000000000000001
+enable-active-window=true
+shortcut-delay=0.10000000000000001
+mouse-sensitive=true
+enable-intellihide=false
 
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>d']
@@ -8,6 +49,95 @@ toggle-overview=['<Super>d']
 [org/gnome/shell/overrides]
 dynamic-workspaces=false
 workspaces-only-on-primary=false
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+geometry='890x550+12+11'
+maximized=false
+
+[org/gnome/photos]
+window-maximized=true
+
+[org/gnome/evolution-data-server]
+network-monitor-gio-name=''
+migrated=true
+
+[org/gnome/desktop/interface]
+scaling-factor=uint32 2
+gtk-im-module='gtk-im-context-simple'
+icon-theme='Papirus'
+gtk-theme='Plano'
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-nautilus']
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'Sundry', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+translate=true
+categories=['X-GNOME-Utilities']
+apps=['org.gnome.baobab.desktop', 'deja-dup-preferences.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'gnome-dictionary.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gnome-tweak-tool.desktop', 'gucharmap.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
+name='X-GNOME-Utilities.directory'
+
+[org/gnome/desktop/app-folders/folders/Sundry]
+translate=true
+categories=['X-GNOME-Sundry']
+apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop', 'fedora-release-notes.desktop', 'firewall-config.desktop', 'flash-player-properties.desktop', 'gconf-editor.desktop', 'gnome-abrt.desktop', 'gnome-power-statistics.desktop', 'ibus-setup-anthy.desktop', 'ibus-setup.desktop', 'ibus-setup-hangul.desktop', 'ibus-setup-libbopomofo.desktop', 'ibus-setup-libpinyin.desktop', 'ibus-setup-m17n.desktop', 'ibus-setup-typing-booster.desktop', 'im-chooser.desktop', 'itweb-settings.desktop', 'jhbuild.desktop', 'javaws.desktop', 'java-1.7.0-openjdk-jconsole.desktop', 'java-1.7.0-openjdk-policytool.desktop', 'log4j-chainsaw.desktop', 'log4j-logfactor5.desktop', 'nm-connection-editor.desktop', 'orca.desktop', 'setroubleshoot.desktop', 'system-config-date.desktop', 'system-config-firewall.desktop', 'system-config-keyboard.desktop', 'system-config-language.desktop', 'system-config-printer.desktop', 'system-config-users.desktop', 'vino-preferences.desktop']
+name='X-GNOME-Sundry.directory'
+
+[org/gnome/desktop/app-folders/folders/YaST]
+translate=true
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=true
+
+[org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
+display=['SHP', '0x143e', '0x00000000']
+
+[org/gnome/desktop/peripherals/mouse]
+natural-scroll=true
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 480
+
+[org/gnome/desktop/wm/preferences]
+num-workspaces=4
+
+[org/gnome/desktop/wm/keybindings]
+close=['<Super>q']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+move-to-workspace-2=['<Shift><Super>at']
+move-to-workspace-1=['<Shift><Super>exclam']
+move-to-workspace-4=['<Shift><Super>dollar']
+move-to-workspace-3=['<Shift><Super>numbersign']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-3=['<Super>3']
+
+[org/gnome/desktop/background]
+picture-uri='file:///home/vise890/Pictures/Wallpapers/himalayas-3840x2160-nepal-mountains-sky-clouds-5513.jpg'
+color-shading-type='solid'
+primary-color='#000000'
+picture-options='zoom'
+secondary-color='#000000'
+
+[org/gnome/epiphany/state]
+window-position=(0, 0)
+is-maximized=false
+window-size=(1920, 1042)
 
 [org/gnome/terminal/legacy]
 mnemonics-enabled=false
@@ -47,82 +177,14 @@ audible-bell=false
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '04b748c9-4c6b-470c-a858-8c7eb24eebc5']
 default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
 
-[org/gnome/settings-daemon/plugins/power]
-sleep-inactive-battery-type='nothing'
-sleep-inactive-ac-timeout=3600
-sleep-inactive-ac-type='nothing'
-sleep-inactive-battery-timeout=1800
-
-[org/gnome/settings-daemon/plugins/color]
-night-light-schedule-automatic=true
-night-light-schedule-from=18.0
-night-light-enabled=true
-
-[org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-binding='<Super>f'
-command='nautilus'
-name='file browser'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Super>Return'
-command='gnome-terminal'
-name='terminal'
-
-[org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='off'
-
-[org/gnome/evolution-data-server]
-network-monitor-gio-name=''
-migrated=true
-
-[org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Sundry', 'YaST']
-
-[org/gnome/desktop/app-folders/folders/Utilities]
-translate=true
-categories=['X-GNOME-Utilities']
-apps=['org.gnome.baobab.desktop', 'deja-dup-preferences.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'gnome-dictionary.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gnome-tweak-tool.desktop', 'gucharmap.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
-name='X-GNOME-Utilities.directory'
-
-[org/gnome/desktop/app-folders/folders/Sundry]
-translate=true
-categories=['X-GNOME-Sundry']
-apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop', 'fedora-release-notes.desktop', 'firewall-config.desktop', 'flash-player-properties.desktop', 'gconf-editor.desktop', 'gnome-abrt.desktop', 'gnome-power-statistics.desktop', 'ibus-setup-anthy.desktop', 'ibus-setup.desktop', 'ibus-setup-hangul.desktop', 'ibus-setup-libbopomofo.desktop', 'ibus-setup-libpinyin.desktop', 'ibus-setup-m17n.desktop', 'ibus-setup-typing-booster.desktop', 'im-chooser.desktop', 'itweb-settings.desktop', 'jhbuild.desktop', 'javaws.desktop', 'java-1.7.0-openjdk-jconsole.desktop', 'java-1.7.0-openjdk-policytool.desktop', 'log4j-chainsaw.desktop', 'log4j-logfactor5.desktop', 'nm-connection-editor.desktop', 'orca.desktop', 'setroubleshoot.desktop', 'system-config-date.desktop', 'system-config-firewall.desktop', 'system-config-keyboard.desktop', 'system-config-language.desktop', 'system-config-printer.desktop', 'system-config-users.desktop', 'vino-preferences.desktop']
-name='X-GNOME-Sundry.directory'
-
-[org/gnome/desktop/app-folders/folders/YaST]
-translate=true
-categories=['X-SuSE-YaST']
-name='suse-yast.directory'
-
-[org/gnome/desktop/peripherals/touchpad]
-tap-to-click=true
-
-[org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
-display=['SHP', '0x143e', '0x00000000']
-
-[org/gnome/desktop/peripherals/mouse]
-natural-scroll=true
-
-[org/gnome/desktop/interface]
-gtk-im-module='gtk-im-context-simple'
-icon-theme='Papirus'
-gtk-theme='deepin'
-toolkit-accessibility=false
-
-[org/gnome/desktop/wm/preferences]
-num-workspaces=4
-
-[org/gnome/desktop/wm/keybindings]
-close=['<Super>q']
-switch-to-workspace-1=['<Super>1']
-switch-to-workspace-2=['<Super>2']
-move-to-workspace-2=['<Shift><Super>at']
-move-to-workspace-1=['<Shift><Super>exclam']
-move-to-workspace-4=['<Shift><Super>dollar']
-move-to-workspace-3=['<Shift><Super>numbersign']
-switch-to-workspace-4=['<Super>4']
-switch-to-workspace-3=['<Super>3']
+[org/gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=155
+window-position=(344, 83)
+show-size-column=true
+show-hidden=false
+window-size=(1231, 902)
+sort-directories-first=false
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'

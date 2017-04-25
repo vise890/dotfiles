@@ -60,17 +60,42 @@ default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-geometry='890x550+12+11'
+geometry='960x1042+12+11'
 maximized=false
+
+[org/gnome/nautilus/desktop]
+home-icon-visible=false
+network-icon-visible=false
+trash-icon-visible=false
 
 [org/gnome/photos]
 window-maximized=true
+
+[org/gnome/evince/default]
+window-ratio=(3.5555555555555554, 1.6666666666666667)
+
+[org/gnome/file-roller/listing]
+sort-method='name'
+name-column-width=250
+sort-type='ascending'
+list-mode='as-folder'
+show-path=false
+
+[org/gnome/file-roller/dialogs/extract]
+skip-newer=false
+recreate-folders=true
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
 
 [org/gnome/evolution-data-server]
 network-monitor-gio-name=''
 migrated=true
 
 [org/gnome/desktop/interface]
+clock-show-date=true
 scaling-factor=uint32 2
 gtk-im-module='gtk-im-context-simple'
 icon-theme='Papirus'
@@ -119,6 +144,7 @@ sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gn
 idle-delay=uint32 480
 
 [org/gnome/desktop/wm/preferences]
+action-double-click-titlebar='minimize'
 num-workspaces=4
 
 [org/gnome/desktop/wm/keybindings]
@@ -134,6 +160,7 @@ switch-to-workspace-3=['<Super>3']
 
 [org/gnome/desktop/background]
 picture-uri='file:///home/vise890/Pictures/Wallpapers/himalayas-3840x2160-nepal-mountains-sky-clouds-5513.jpg'
+show-desktop-icons=true
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -185,7 +212,7 @@ default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
 [org/gtk/settings/file-chooser]
 sort-column='name'
 sidebar-width=155
-window-position=(344, 83)
+window-position=(344, 65)
 show-size-column=true
 show-hidden=false
 window-size=(1231, 902)

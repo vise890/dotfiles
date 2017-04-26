@@ -81,8 +81,8 @@ values."
      ;; go
 
      emacs-lisp
-     ;; elixir
-     ;; erlang
+     elixir
+     erlang
      (clojure :variables
                 ;; clojure-enable-fancify-symbols t
                 cljr-warn-on-eval nil)

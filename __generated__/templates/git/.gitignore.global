@@ -1,4 +1,7 @@
-# Ensime specific
+# Ensime
 .ensime
 .ensime_cache/
 .ensime_lucene/
+
+# Elixir
+.mix_tasks

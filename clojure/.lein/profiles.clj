@@ -1,5 +1,6 @@
-{:user {:plugins [[cider/cider-nrepl "0.15.0-SNAPSHOT"]
-                  [refactor-nrepl "2.3.0"]
+{:user {:plugins [[org.clojure/clojure "1.8.0"]
+                  [cider/cider-nrepl "0.15.0-SNAPSHOT"]
+                  [refactor-nrepl "2.3.0-SNAPSHOT"]
 
                   [venantius/ultra "0.5.1"]
 

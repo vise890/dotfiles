@@ -34,7 +34,7 @@ alias pm='pacman'
 
 
 # org / todo.txt
-export ORG_DIR=$HOME/org
+export ORG_DIR=$HOME/Documents/org
 export TODO_DIR=$ORG_DIR/todo
 alias te="$EDITOR $TODO_DIR/todo.txt"
 alias sp="emacs $ORG_DIR/SPARKFILE.org &; disown"

@@ -17,7 +17,7 @@ PATH=$HOME/.local/bin:$PATH
 PATH=$CODEPATH/scripts:$PATH
 
 # user bin dir
-PATH=$HOME/bin:$PATH
+PATH=$CODEPATH/bin:$PATH
 
 # Ruby gems
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"

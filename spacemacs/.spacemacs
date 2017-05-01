@@ -398,7 +398,7 @@ you should place your code here."
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
-  (setq deft-directory "~/org/notes")
+  (setq deft-directory "~/Documents/org/notes")
   (setq deft-extensions '("org" "md" "txt"))
   )
 (custom-set-variables

@@ -42,13 +42,11 @@ values."
      syntax-checking
      spell-checking
 
-     ;; evil-cleverparens
-
      (colors :variables colors-enable-nyan-cat-progress-bar t)
-     vim-empty-lines ; use font for tildes indicating empty lines (in fringe)
+     vim-empty-lines
 
      emoji
-     ;; games
+     games
 
      restclient
      vinegar

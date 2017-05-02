@@ -37,41 +37,42 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     vinegar
 
-     spell-checking
-     syntax-checking
      auto-completion
+     syntax-checking
+     spell-checking
 
      ;; evil-cleverparens
 
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      vim-empty-lines ; use font for tildes indicating empty lines (in fringe)
 
-     ;; emoji
+     emoji
      ;; games
 
-     shell
+     restclient
+     vinegar
+     (shell :variables
+            shell-default-position 'bottom)
+
      (version-control :variables
                       vc-follow-symlinks t)
      (git :variables
           magit-repository-directories '("~/code/")
           git-magit-status-fullscreen t)
 
-     ;; restclient
-
-     ;; docker
+     docker
      ;; terraform
+
+     org
+     markdown
+     deft
+     html
 
      yaml
      csv
 
-     org
-     deft
-     markdown
-     html
-
-     ;; sql
+     sql
 
      java
      ;; (javascript :variables
@@ -89,7 +90,8 @@ values."
      ;; scheme
      ;; racket
 
-     ;; scala
+     (scala :variables
+            scala-use-java-doc-style t)
      (haskell :variables
               haskell-completion-backend 'intero)
      )
@@ -100,7 +102,6 @@ values."
    dotspacemacs-additional-packages '(
                                       ;; dash ; functional helpers
 
-                                      ;;; themes
                                       ;; monokai-theme
                                       ;; seti-theme
                                       ;; soft-stone-theme
@@ -118,7 +119,6 @@ values."
                                       soft-charcoal-theme
                                       soft-morning-theme
                                       zenburn-theme
-
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -223,8 +223,10 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Ubuntu Mono"
+                               :size 36
                                :weight normal
-                               :width normal)
+                               :width normal
+                               :powerline-scale 1.1)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
@@ -334,8 +336,18 @@ values."
    ;; scrolling overrides the default behavior of Emacs which recenters point
    ;; when it reaches the top or bottom of the screen. (default t)
    dotspacemacs-smooth-scrolling t
-   ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
-   ;; derivatives. If set to `relative', also turns on relative line numbers.
+   ;; Control line numbers activation.
+   ;; If set to `t' or `relative' line numbers are turned on in all `prog-mode' and
+   ;; `text-mode' derivatives. If set to `relative', line numbers are relative.
+   ;; This variable can also be set to a property list for finer control:
+   ;; '(:relative nil
+   ;;   :disabled-for-modes dired-mode
+   ;;                       doc-view-mode
+   ;;                       markdown-mode
+   ;;                       org-mode
+   ;;                       pdf-view-mode
+   ;;                       text-mode
+   ;;   :size-limit-kb 1000)
    ;; (default nil)
    dotspacemacs-line-numbers nil
    ;; Code folding method. Possible values are `evil' and `origami'.
@@ -378,9 +390,6 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  ;; fix slow startup: http://spacemacs.org/doc/FAQ.html#orgheadline14
-  ;; (setq tramp-ssh-controlmaster-options
-  ;;     "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
   )
 
 (defun dotspacemacs/user-config ()
@@ -408,7 +417,7 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (deft org-projectile org-present org-pomodoro alert log4e gntp org-download htmlize gnuplot csv-mode mmm-mode markdown-toc markdown-mode gh-md web-mode tagedit slim-mode scss-mode sass-mode pug-mode ob-elixir less-css-mode helm-css-scss haml-mode flycheck-mix erlang emmet-mode company-web web-completion-data alchemist elixir-mode zenburn-theme yaml-mode xterm-color ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org tao-theme spacemacs-theme spaceline soft-stone-theme soft-morning-theme soft-charcoal-theme smeargle shell-pop restart-emacs rainbow-mode rainbow-identifiers rainbow-delimiters quelpa popwin persp-mode pcre2el paradox orgit org-plus-contrib org-bullets open-junk-file oldlace-theme neotree multi-term move-text majapahit-theme magit-gitflow macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag hc-zenburn-theme gruvbox-theme google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ flyspell-correct-helm flycheck-pos-tip flx-ido firebelly-theme fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diff-hl define-word darktooth-theme company-statistics company-emacs-eclim column-enforce-mode color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-identifiers-mode clojure-snippets clj-refactor clean-aindent-mode cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))))
+    (sql-indent restclient-helm ob-restclient ob-http emoji-cheat-sheet-plus dockerfile-mode docker json-mode tablist docker-tramp json-snatcher json-reformat company-restclient restclient know-your-http-well company-emoji zenburn-theme yaml-mode xterm-color ws-butler winum which-key web-mode volatile-highlights uuidgen use-package toc-org tao-theme tagedit spaceline soft-stone-theme soft-morning-theme soft-charcoal-theme smeargle slim-mode shell-pop scss-mode sass-mode restart-emacs rainbow-mode rainbow-identifiers rainbow-delimiters pug-mode popwin persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file oldlace-theme ob-elixir noflet neotree multi-term move-text mmm-mode markdown-toc majapahit-theme magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode intero info+ indent-guide hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag hc-zenburn-theme haskell-snippets gruvbox-theme google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-mix flycheck-haskell flycheck-credo flx-ido firebelly-theme fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help erlang ensime emmet-mode elisp-slime-nav dumb-jump diff-hl deft define-word darktooth-theme csv-mode company-web company-statistics company-ghci company-ghc company-emacs-eclim company-cabal column-enforce-mode color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-identifiers-mode cmm-mode clojure-snippets clj-refactor clean-aindent-mode cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

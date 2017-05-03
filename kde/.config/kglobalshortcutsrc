@@ -26,7 +26,7 @@ _k_friendly_name=Power Management
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=KDE Daemon
+_k_friendly_name=System Settings
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [kmix]
@@ -194,7 +194,7 @@ Window to Screen 4=none,none,Window to Screen 4
 Window to Screen 5=none,none,Window to Screen 5
 Window to Screen 6=none,none,Window to Screen 6
 Window to Screen 7=none,none,Window to Screen 7
-_k_friendly_name=KWin
+_k_friendly_name=System Settings
 view_actual_size=,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
@@ -205,6 +205,12 @@ nextmedia=Media Next,Media Next,Media playback next
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
+
+[org.kde.konsole.desktop]
+NewTab=,none,Open a New Tab
+NewWindow=none,none,Open a New Window
+_k_friendly_name=Launch Konsole
+_launch=Meta+Return,none,Launch Konsole
 
 [plasmashell]
 _k_friendly_name=Plasma

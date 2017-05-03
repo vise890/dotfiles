@@ -22,11 +22,15 @@ binding='<Super>Return'
 command='gnome-terminal'
 name='terminal'
 
+[org/gnome/settings-daemon/plugins/xsettings]
+antialiasing='rgba'
+
 [org/gnome/settings-daemon/peripherals/keyboard]
 numlock-state='off'
 
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'hidetopbar@mathieu.bidon.ca', 'caffeine@patapon.info']
+app-picker-view=uint32 1
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'hidetopbar@mathieu.bidon.ca', 'caffeine@patapon.info', 'TopIcons@phocean.net', 'update-extensions@franglais125.gmail.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop']
 had-bluetooth-devices-setup=true
 
@@ -56,6 +60,7 @@ dynamic-workspaces=false
 workspaces-only-on-primary=false
 
 [org/gnome/nautilus/preferences]
+search-view='list-view'
 default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
 
@@ -95,12 +100,14 @@ network-monitor-gio-name=''
 migrated=true
 
 [org/gnome/desktop/interface]
-clock-show-date=true
+font-name='Fira Sans 11'
 scaling-factor=uint32 2
+toolkit-accessibility=false
 gtk-im-module='gtk-im-context-simple'
 icon-theme='Papirus'
+monospace-font-name='Fira Mono 11'
 gtk-theme='Plano'
-toolkit-accessibility=false
+clock-show-date=true
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-nautilus']
@@ -135,7 +142,7 @@ tap-to-click=true
 display=['SHP', '0x143e', '0x00000000']
 
 [org/gnome/desktop/peripherals/mouse]
-natural-scroll=true
+natural-scroll=false
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -146,6 +153,7 @@ idle-delay=uint32 480
 [org/gnome/desktop/wm/preferences]
 action-double-click-titlebar='minimize'
 num-workspaces=4
+titlebar-font='Fira Sans Semi-Bold 11'
 
 [org/gnome/desktop/wm/keybindings]
 close=['<Super>q']
@@ -159,7 +167,7 @@ switch-to-workspace-4=['<Super>4']
 switch-to-workspace-3=['<Super>3']
 
 [org/gnome/desktop/background]
-picture-uri='file:///home/vise890/Pictures/Wallpapers/himalayas-3840x2160-nepal-mountains-sky-clouds-5513.jpg'
+picture-uri='file:///home/vise890/Pictures/Wallpapers/desert-3840x2160-sand-algodones-dunes-12176~20170322-214019~20170322-214019.jpg'
 show-desktop-icons=true
 color-shading-type='solid'
 primary-color='#000000'

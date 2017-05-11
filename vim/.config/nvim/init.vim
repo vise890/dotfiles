@@ -14,6 +14,7 @@ map <F1> <Nop>
 map Q <nop>
 
 set mousehide                    " hide mouse cursor when typing
+set mouse=a                      " still be able to use mouse
 
 set clipboard=unnamedplus        " use OS clipboard
 

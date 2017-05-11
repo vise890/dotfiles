@@ -28,18 +28,28 @@ antialiasing='rgba'
 [org/gnome/settings-daemon/peripherals/keyboard]
 numlock-state='off'
 
+[org/gnome/shell/keybindings]
+toggle-overview=['<Super>d']
+
 [org/gnome/shell]
-app-picker-view=uint32 1
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'hidetopbar@mathieu.bidon.ca', 'caffeine@patapon.info', 'TopIcons@phocean.net', 'update-extensions@franglais125.gmail.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'caffeine@patapon.info', 'TopIcons@phocean.net']
 had-bluetooth-devices-setup=true
+disable-user-extensions=false
+app-picker-view=uint32 1
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop']
+
+[org/gnome/shell/overrides]
+dynamic-workspaces=false
+workspaces-only-on-primary=false
 
 [org/gnome/shell/extensions/caffeine]
 user-enabled=false
 
 [org/gnome/shell/extensions/dash-to-panel]
+panel-position='BOTTOM'
 show-appmenu=true
-panel-size=36
+panel-size=32
+dot-position='BOTTOM'
 show-activities-button=false
 show-showdesktop-button=true
 
@@ -51,13 +61,6 @@ hot-corner=true
 mouse-sensitive=true
 enable-intellihide=true
 mouse-triggers-overview=false
-
-[org/gnome/shell/keybindings]
-toggle-overview=['<Super>d']
-
-[org/gnome/shell/overrides]
-dynamic-workspaces=false
-workspaces-only-on-primary=false
 
 [org/gnome/nautilus/preferences]
 search-view='list-view'
@@ -72,6 +75,9 @@ maximized=false
 home-icon-visible=false
 network-icon-visible=false
 trash-icon-visible=false
+
+[org/gnome/nautilus/list-view]
+default-zoom-level='larger'
 
 [org/gnome/photos]
 window-maximized=true
@@ -136,6 +142,7 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 
 [org/gnome/desktop/peripherals/touchpad]
+speed=0.29999999999999999
 tap-to-click=true
 
 [org/gnome/desktop/peripherals/touchscreens/04f3:21d5]
@@ -143,6 +150,8 @@ display=['SHP', '0x143e', '0x00000000']
 
 [org/gnome/desktop/peripherals/mouse]
 natural-scroll=false
+speed=0.59999999999999998
+left-handed=false
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -165,6 +174,9 @@ move-to-workspace-4=['<Shift><Super>dollar']
 move-to-workspace-3=['<Shift><Super>numbersign']
 switch-to-workspace-4=['<Super>4']
 switch-to-workspace-3=['<Super>3']
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
 
 [org/gnome/desktop/background]
 picture-uri='file:///home/vise890/Pictures/Wallpapers/desert-3840x2160-sand-algodones-dunes-12176~20170322-214019~20170322-214019.jpg'
@@ -205,7 +217,7 @@ foreground-color='rgb(131,148,150)'
 visible-name='default'
 palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
 scroll-on-output=false
-use-system-font=false
+use-system-font=true
 use-theme-colors=false
 font='Ubuntu Mono 14'
 scrollback-unlimited=true

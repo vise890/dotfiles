@@ -34,5 +34,10 @@
   tabs:
     enableVcsColoring: true
   "trailing-spaces": {}
+  "vim-mode-plus":
+    ignoreCaseForSearch: true
+    incrementalSearch: true
+    useSmartcaseForSearch: true
+    useSmartcaseForSearchCurrentWord: true
   welcome:
     showOnStartup: false

@@ -30,5 +30,9 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
-'atom-text-editor.vim-mode.insert-mode':
-  'j k': 'vim-mode:activate-normal-mode'
+
+'atom-text-editor.vim-mode-plus:not(.normal-mode)':
+  'j k': 'vim-mode-plus:activate-normal-mode'
+
+'atom-text-editor[mini]':
+  'j k': 'core:cancel'

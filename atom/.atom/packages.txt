@@ -1,16 +1,18 @@
+Hydrogen
 autocomplete-haskell
-ex-mode
+busy-signal
 file-icons
 haskell-ghc-mod
-hidpi
+hey-pane
 ide-haskell
 ide-haskell-hasktags
+intentions
 language-haskell
 linter
+linter-ui-default
 project-manager
 sort-lines
 trailing-spaces
-vim-mode
-vim-modeline
-
+vim-mode-plus
+vim-mode-plus-ex-mode
 

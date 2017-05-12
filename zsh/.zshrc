@@ -65,10 +65,3 @@ bindkey '^R' history-incremental-search-backward
 
 # initialize scm breeze
 source "$HOME/.scm_breeze/scm_breeze.sh"
-
-custom_zsh_path="$HOME/.zshrc.d"
-if [ -d "$custom_zsh_path" ]; then
-  for f in $custom_zsh_path/*.sh; do
-    source $f
-  done
-fi

@@ -154,6 +154,7 @@ Theme=Papirus
 
 [KDE]
 LookAndFeelPackage=org.kde.breeze.desktop
+ShowDeleteCommand=false
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=4

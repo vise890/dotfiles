@@ -1,4 +1,7 @@
-call plug#begin('~/.local/share/nvim/plugged')
+let nvim_path='~/.local/share/nvim/plugged'
+call plug#begin(nvim_path)
+" let vim_path='~/.vim/plugged'
+" call plug#begin(vim_path)
 
 Plug 'tpope/vim-sleuth'  " heuristically set buffer options (shiftwidth, expandtab, etc.)
 

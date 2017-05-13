@@ -9,18 +9,25 @@ default:
 	@echo "==> Nothing to be done, use 'make install'"
 
 
-install: stow vim_install oh_my_zsh_install scm_breeze_install
+install: stow nvim_install oh_my_zsh_install scm_breeze_install
 
 clean: vim_clean oh_my_zsh_clean scm_breeze_clean unstow
 
 
-vim_install:
+nvim_install:
 	stow --restow --target=$(TARGET) vim
 	@echo "==> install vim-plug and plugins"
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	nvim -u "vim/.config/nvim/plugs.vim" +PlugInstall +qall!
+	nvim +UpdateRemotePlugins +qall!
+
+vim_install:
+	stow --restow --target=$(TARGET) vim
+	@echo "==> install vim-plug and plugins"
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	vim -u "vim/.config/nvim/plugs.vim" +PlugInstall +qall!
-	nvim +UpdateRemotePlugins +qall! || true # neovim only: don't fail if just vim
 
 vim_clean:
 	stow --delete --target=$(TARGET) vim

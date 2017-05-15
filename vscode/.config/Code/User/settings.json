@@ -6,5 +6,27 @@
             "before": ["j", "k"],
             "after": ["<Esc>"]
         }
-    ]
+    ],
+    "workbench.colorTheme": "Nord",
+    "editor.cursorBlinking": "solid",
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "clojure",
+        "cpp",
+        "csharp",
+        "go",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "latex",
+        "markdown",
+        "php",
+        "plaintext",
+        "python",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ],
+    "workbench.iconTheme": "material-icon-theme"
 }

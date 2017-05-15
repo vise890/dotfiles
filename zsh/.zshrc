@@ -34,10 +34,9 @@ alias pm='pacman'
 
 
 # org / todo.txt
-export ORG_DIR=$HOME/Documents/org
-export TODO_DIR=$ORG_DIR/todo
+export NOTES_DIR=$HOME/Documents/notes
+export TODO_DIR=$HOME/Documents/todo
 alias te="$EDITOR $TODO_DIR/todo.txt"
-alias sp="emacs $ORG_DIR/SPARKFILE.org &; disown"
 
 
 alias ccat="pygmentize -g"

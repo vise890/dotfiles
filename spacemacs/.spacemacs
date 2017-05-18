@@ -195,21 +195,21 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         ;;; daily staples
+                         ;; daily staples
                          majapahit-dark
                          darktooth
                          gruvbox
 
-                         ;;; for those lispy kind of mornings
+                         ;; for those lispy kind of mornings
                          hc-zenburn
                          zenburn
 
-                         ;;; boring
+                         ;; boring
                          sanityinc-solarized-light
                          sanityinc-solarized-dark
                          sanityinc-tomorrow-night
 
-                         ;;; light  / presentation friendly
+                         ;; light  / presentation friendly
                          majapahit-light
                          oldlace
                          sanityinc-tomorrow-day

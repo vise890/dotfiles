@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "editor.cursorBlinking": "solid",
     "vim.useSolidBlockCursor": true,
     "vim.insertModeKeyBindings": [
         {
@@ -8,25 +9,7 @@
         }
     ],
     "workbench.colorTheme": "Nord",
-    "editor.cursorBlinking": "solid",
-    "cSpell.enabledLanguageIds": [
-        "c",
-        "clojure",
-        "cpp",
-        "csharp",
-        "go",
-        "javascript",
-        "javascriptreact",
-        "json",
-        "latex",
-        "markdown",
-        "php",
-        "plaintext",
-        "python",
-        "text",
-        "typescript",
-        "typescriptreact",
-        "yml"
-    ],
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "vs-seti",
+    "editor.fontSize": 16,
+    "window.zoomLevel": 1
 }

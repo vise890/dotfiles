@@ -46,7 +46,6 @@ values."
      syntax-checking
      spell-checking
 
-     themes-megapack
      (colors :variables colors-enable-nyan-cat-progress-bar t)
 
      emoji
@@ -84,16 +83,16 @@ values."
      ;; go
 
      emacs-lisp
-     elixir
-     erlang
+     ;; elixir
+     ;; erlang
      (clojure :variables
               clojure-enable-fancify-symbols t
               cljr-warn-on-eval nil)
      ;; scheme
      ;; racket
 
-     (scala :variables
-            scala-use-java-doc-style t)
+     ;; (scala :variables
+     ;;        scala-use-java-doc-style t)
      (haskell :variables
               haskell-completion-backend 'intero)
      )
@@ -102,27 +101,29 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
-                                      ;; dash ; functional helpers
-
-                                      ;; monokai-theme
-                                      ;; seti-theme
-                                      ;; soft-stone-theme
-                                      ;; tao-theme
-                                      ;; zonokai-theme
-                                      ;; color-theme-sanityinc-solarized
+                                      color-theme-sanityinc-solarized
                                       ;; color-theme-sanityinc-tomorrow
-                                      ;; color-theme-solarized
-                                      ;; darktooth-theme
+                                      color-theme-solarized
+                                      darktooth-theme
                                       ;; firebelly-theme
-                                      ;; gruvbox-theme
-                                      ;; hc-zenburn-theme
-                                      ;; majapahit-theme
+                                      gruvbox-theme
+                                      hc-zenburn-theme
+                                      majapahit-theme
+                                      ;; monokai-theme
+                                      nord-theme
                                       ;; oldlace-theme
+                                      oldlace-theme
+                                      ;; seti-theme
                                       ;; soft-charcoal-theme
                                       ;; soft-morning-theme
-                                      ;; zenburn-theme
+                                      ;; soft-stone-theme
+                                      ;; tao-theme
+                                      zenburn-theme
+                                      ;; zonokai-theme
 
+                                      ;; dash ; functional helpers
                                       groovy-mode
+                                      bnfc
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -197,6 +198,7 @@ values."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          ;; daily staples
+                         nord
                          majapahit-dark
                          gruvbox
                          darktooth
@@ -414,6 +416,7 @@ you should place your code here."
   (setq deft-directory "~/Documents/notes")
   (setq deft-extensions '("org" "md" "txt"))
   )
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -421,11 +424,11 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (zonokai-theme zen-and-art-theme underwater-theme ujelly-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme tronesque-theme toxi-theme tangotango-theme tango-plus-theme tango-2-theme sunny-day-theme sublime-themes subatomic256-theme subatomic-theme spacegray-theme soothe-theme solarized-theme smyx-theme seti-theme reverse-theme railscasts-theme purple-haze-theme professional-theme planet-theme phoenix-dark-pink-theme phoenix-dark-mono-theme pastels-on-dark-theme organic-green-theme omtose-phellack-theme occidental-theme obsidian-theme noctilux-theme niflheim-theme naquadah-theme mustang-theme monokai-theme monochrome-theme molokai-theme moe-theme minimal-theme material-theme madhat2r-theme lush-theme light-soap-theme jbeans-theme jazz-theme ir-black-theme inkpot-theme heroku-theme hemisu-theme gruber-darker-theme grandshell-theme gotham-theme gandalf-theme flatui-theme flatland-theme farmhouse-theme espresso-theme dracula-theme django-theme darkokai-theme darkmine-theme darkburn-theme dakrone-theme cyberpunk-theme clues-theme cherry-blossom-theme busybee-theme bubbleberry-theme birds-of-paradise-plus-theme badwolf-theme apropospriate-theme anti-zenburn-theme ample-zen-theme ample-theme alect-themes afternoon-theme haskell-mode company with-editor bnfc groovy-imports unfill mwim company-quickhelp smartparens yasnippet markdown-mode groovy-mode cider seq evil flycheck magit magit-popup git-commit helm-core sbt-mode helm vi-tilde-fringe typit mmt sudoku pacmacs dash-functional 2048-game sql-indent restclient-helm ob-restclient ob-http emoji-cheat-sheet-plus dockerfile-mode docker json-mode tablist docker-tramp json-snatcher json-reformat company-restclient restclient know-your-http-well company-emoji zenburn-theme yaml-mode xterm-color ws-butler winum which-key web-mode volatile-highlights uuidgen use-package toc-org tao-theme tagedit spaceline soft-stone-theme soft-morning-theme soft-charcoal-theme smeargle slim-mode shell-pop scss-mode sass-mode restart-emacs rainbow-mode rainbow-identifiers rainbow-delimiters pug-mode popwin persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file oldlace-theme ob-elixir noflet neotree multi-term move-text mmm-mode markdown-toc majapahit-theme magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode intero info+ indent-guide hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag hc-zenburn-theme haskell-snippets gruvbox-theme google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-mix flycheck-haskell flycheck-credo flx-ido firebelly-theme fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help erlang ensime emmet-mode elisp-slime-nav dumb-jump diff-hl deft define-word darktooth-theme csv-mode company-web company-statistics company-ghci company-ghc company-emacs-eclim company-cabal column-enforce-mode color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-identifiers-mode cmm-mode clojure-snippets clj-refactor clean-aindent-mode cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+    (darkmine-theme darkburn-theme dakrone-theme cyberpunk-theme clues-theme cherry-blossom-theme busybee-theme bubbleberry-theme birds-of-paradise-plus-theme badwolf-theme apropospriate-theme anti-zenburn-theme ample-zen-theme ample-theme alect-themes afternoon-theme nord-theme bnfc groovy-imports unfill mwim company-quickhelp smartparens yasnippet markdown-mode groovy-mode cider seq evil flycheck magit magit-popup git-commit helm-core sbt-mode helm vi-tilde-fringe typit mmt sudoku pacmacs dash-functional 2048-game sql-indent restclient-helm ob-restclient ob-http emoji-cheat-sheet-plus dockerfile-mode docker json-mode tablist docker-tramp json-snatcher json-reformat company-restclient restclient know-your-http-well company-emoji zenburn-theme yaml-mode xterm-color ws-butler winum which-key web-mode volatile-highlights uuidgen use-package toc-org tao-theme tagedit spaceline soft-stone-theme soft-morning-theme soft-charcoal-theme smeargle slim-mode shell-pop scss-mode sass-mode restart-emacs rainbow-mode rainbow-identifiers rainbow-delimiters pug-mode popwin persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file oldlace-theme ob-elixir noflet neotree multi-term move-text mmm-mode markdown-toc majapahit-theme magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode intero info+ indent-guide hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag hc-zenburn-theme haskell-snippets gruvbox-theme google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-mix flycheck-haskell flycheck-credo flx-ido firebelly-theme fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help erlang ensime emmet-mode elisp-slime-nav dumb-jump diff-hl deft define-word darktooth-theme csv-mode company-web company-statistics company-ghci company-ghc company-emacs-eclim company-cabal column-enforce-mode color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-identifiers-mode cmm-mode clojure-snippets clj-refactor clean-aindent-mode cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
  '(paradox-github-token t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((((class color) (min-colors 89)) (:foreground "#D8DEE9" :background "#2E3440")))))

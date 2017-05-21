@@ -1,6 +1,5 @@
 Hydrogen
 autocomplete-haskell
-busy-signal
 file-icons
 haskell-debug
 haskell-ghc-mod
@@ -8,11 +7,8 @@ ide-haskell
 ide-haskell-cabal
 ide-haskell-hasktags
 ide-haskell-repl
-intentions
 language-haskell
 language-haskell-scoped
-linter
-linter-ui-default
 nord-atom-syntax
 project-manager
 sort-lines

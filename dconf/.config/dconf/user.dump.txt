@@ -32,7 +32,7 @@ numlock-state='off'
 toggle-overview=['<Super>d']
 
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'caffeine@patapon.info', 'TopIcons@phocean.net']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'caffeine@patapon.info', 'TopIcons@phocean.net', 'impatience@gfxmonk.net', 'bettervolume@tudmotu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 had-bluetooth-devices-setup=true
 disable-user-extensions=false
 app-picker-view=uint32 1
@@ -41,6 +41,12 @@ favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Termi
 [org/gnome/shell/overrides]
 dynamic-workspaces=false
 workspaces-only-on-primary=false
+
+[org/gnome/shell/extensions/user-theme]
+name='EvoPop'
+
+[org/gnome/shell/extensions/net/gfxmonk/impatience]
+speed-factor=0.69999999999999996
 
 [org/gnome/shell/extensions/caffeine]
 user-enabled=false

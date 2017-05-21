@@ -26,6 +26,10 @@
       "language-java"
       "styleguide"
     ]
+    themes: [
+      "one-dark-ui"
+      "nord-atom-syntax"
+    ]
   editor:
     fontFamily: "Ubuntu Mono"
     fontSize: 18

@@ -13,6 +13,7 @@ language-haskell
 language-haskell-scoped
 linter
 linter-ui-default
+nord-atom-syntax
 project-manager
 sort-lines
 trailing-spaces

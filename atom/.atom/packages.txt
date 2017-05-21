@@ -2,12 +2,15 @@ Hydrogen
 autocomplete-haskell
 busy-signal
 file-icons
+haskell-debug
 haskell-ghc-mod
-hey-pane
 ide-haskell
+ide-haskell-cabal
 ide-haskell-hasktags
+ide-haskell-repl
 intentions
 language-haskell
+language-haskell-scoped
 linter
 linter-ui-default
 project-manager

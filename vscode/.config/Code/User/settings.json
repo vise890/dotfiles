@@ -1,5 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "window.menuBarVisibility": "toggle",
+
     "editor.cursorBlinking": "solid",
     "vim.useSolidBlockCursor": true,
     "vim.insertModeKeyBindings": [
@@ -8,8 +10,12 @@
             "after": ["<Esc>"]
         }
     ],
+
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "vs-seti",
+
     "editor.fontSize": 16,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 0.8,
+    "workbench.activityBar.visible": false,
+    "haskell.ghcMod.executablePath": "stack"
 }

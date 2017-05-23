@@ -1,6 +1,9 @@
 Hydrogen
+ariake-dark-syntax
+atom-clock
 autocomplete-haskell
 file-icons
+gruvbox-plus-syntax
 haskell-debug
 haskell-ghc-mod
 ide-haskell
@@ -15,4 +18,3 @@ sort-lines
 trailing-spaces
 vim-mode-plus
 vim-mode-plus-ex-mode
-

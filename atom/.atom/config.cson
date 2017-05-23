@@ -26,9 +26,10 @@
       "styleguide"
       "Hydrogen"
     ]
+    projectHome: "~/code"
     themes: [
       "one-dark-ui"
-      "nord-atom-syntax"
+      "ariake-dark-syntax"
     ]
   editor:
     fontFamily: "Ubuntu Mono"

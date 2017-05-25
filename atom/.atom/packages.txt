@@ -1,6 +1,5 @@
 Hydrogen
 ariake-dark-syntax
-atom-clock
 autocomplete-haskell
 file-icons
 gruvbox-plus-syntax

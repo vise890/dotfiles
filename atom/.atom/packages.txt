@@ -1,5 +1,6 @@
 ariake-dark-syntax
 autocomplete-haskell
+busy-signal
 ex-mode
 file-icons
 gruvbox-plus-syntax
@@ -9,11 +10,19 @@ ide-haskell
 ide-haskell-cabal
 ide-haskell-hasktags
 ide-haskell-repl
+intentions
 language-haskell
 language-haskell-scoped
+language-markdown
+linter
+linter-markdown
+linter-ui-default
+markdown-preview-plus
+markdown-scroll-sync
 nord-atom-syntax
 project-manager
 sort-lines
+tidy-markdown
 trailing-spaces
 vim-mode-plus
 

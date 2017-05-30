@@ -36,6 +36,8 @@
     fontSize: 18
     invisibles: {}
     scrollPastEnd: true
+  "linter-ui-default":
+    showPanel: true
   tabs:
     enableVcsColoring: true
   "trailing-spaces": {}

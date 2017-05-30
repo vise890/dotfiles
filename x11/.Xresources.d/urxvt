@@ -8,7 +8,7 @@ URxvt.saveLines:            5000
 URxvt.internalBorder:       3
 URxvt.lineSpace:            0
 
-URxvt*font: xft:Ubuntu Mono:size=13
+URxvt*font: xft:Fira Mono:size=12
 
 URxvt.urlLauncher:          firefox
 

@@ -1,3 +1,4 @@
 merge dotfiles and auto_arch
 make dotfiles linkable into /etc/
 make clean also deletes all the contents of .gitignores in their paths
+(A) check fontconfig script, possibly use your own

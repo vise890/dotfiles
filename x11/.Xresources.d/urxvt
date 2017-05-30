@@ -23,5 +23,3 @@ URxvt.intensityStyles: false
 URxvt.cursorBlink:     true
 URxvt.cursorColor:     BASE00
 URxvt.cursorUnderline: false
-
-

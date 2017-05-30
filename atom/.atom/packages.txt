@@ -1,6 +1,6 @@
-Hydrogen
 ariake-dark-syntax
 autocomplete-haskell
+ex-mode
 file-icons
 gruvbox-plus-syntax
 haskell-debug
@@ -16,4 +16,4 @@ project-manager
 sort-lines
 trailing-spaces
 vim-mode-plus
-vim-mode-plus-ex-mode
+

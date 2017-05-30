@@ -9,7 +9,7 @@ URxvt.internalBorder:  3
 URxvt.lineSpace:       0
 URxvt.letterSpace:     -1
 
-URxvt*font:            xft:Fira Mono:size=12
+URxvt*font:            xft:Fira Mono:size=12,xft:Droid Sans Fallback:12
 
 ! Clickable URLs
 URxvt.perl-ext-common: default,matcher

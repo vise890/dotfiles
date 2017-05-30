@@ -37,7 +37,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     better-defaults
+     ;; better-defaults
 
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
@@ -48,10 +48,10 @@ values."
 
      (colors :variables colors-enable-nyan-cat-progress-bar t)
 
-     emoji
-     games
+     ;; emoji
+     ;; games
 
-     restclient
+     ;; restclient
      vinegar
      (shell :variables
             shell-default-position 'bottom)
@@ -62,12 +62,12 @@ values."
           magit-repository-directories '("~/code/")
           git-magit-status-fullscreen t)
 
-     docker
+     ;; docker
 
      org
      markdown
      deft
-     html
+     ;; html
 
      yaml
      csv
@@ -223,8 +223,8 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Ubuntu Mono"
-                               :size 36
+   dotspacemacs-default-font '("Fira Mono"
+                               :size 28
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)

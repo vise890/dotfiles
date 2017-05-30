@@ -38,6 +38,7 @@ Plug 'nvie/vim-flake8'              , { 'for': 'python' }
 Plug 'elzr/vim-json'                , { 'for': 'json' }
 Plug 'guns/vim-clojure-static'
 Plug 'stephpy/vim-yaml'
+Plug 'cespare/vim-toml'
 
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-markdown'

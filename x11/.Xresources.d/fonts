@@ -1,8 +1,8 @@
 ! vim: set filetype=xdefaults :
 
-Xft.hinting: true
-Xft.hintstyle: hintfull
-Xft.antialias: true
+Xft.autohint: 0
 Xft.lcdfilter: lcddefault
-Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
 Xft.rgba: rgb

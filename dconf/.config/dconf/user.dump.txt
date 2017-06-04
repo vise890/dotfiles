@@ -36,7 +36,7 @@ enabled-extensions=['dash-to-panel@jderose9.github.com', 'caffeine@patapon.info'
 had-bluetooth-devices-setup=true
 disable-user-extensions=false
 app-picker-view=uint32 1
-favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'emacs.desktop', 'org.gnome.Terminal.desktop']
 
 [org/gnome/shell/overrides]
 dynamic-workspaces=false

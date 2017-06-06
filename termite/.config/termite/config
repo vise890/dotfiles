@@ -1,4 +1,4 @@
-# vim: set filetype=toml :
+# vim: set filetype=dosini :
 
 [options]
 font = Fira Mono 12

@@ -4,7 +4,7 @@ export CODEPATH="$HOME/code"
 PATH=$HOME/.config/yarn/global/node_modules/.bin:$HOME/.npm/bin:$PATH
 
 # Go's stuff
-export GOPATH=$HOME/go
+export GOPATH=$CODEPATH/go
 PATH=$GOPATH/bin:$PATH
 
 # rusts / cargo

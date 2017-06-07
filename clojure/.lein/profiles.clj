@@ -1,10 +1,10 @@
 {:user {:plugins [[org.clojure/clojure "1.8.0"]
                   [cider/cider-nrepl "0.15.0-SNAPSHOT"]
-                  [refactor-nrepl "2.3.0"]
+                  [refactor-nrepl "2.3.1"]
 
                   [venantius/ultra "0.5.1"]
 
-                  [jonase/eastwood "0.2.3"]
+                  [jonase/eastwood "0.2.4"]
                   [lein-kibit "0.1.5"]
 
                   [lein-bikeshed "0.4.1"]

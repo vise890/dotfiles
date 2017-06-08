@@ -7,12 +7,10 @@ alias vplugs="vim $HOME/.config/nvim/plugs.vim && vim +PlugUpgrade +PlugClean! +
 
 
 zshrc="$HOME/.zshrc"
-zprofile="$HOME/.zprofile"
-zaliases="$HOME/.zaliases"
-function zrl { source $zshrc && source $zprofile && source $zaliases && rehash }
+function zrl { source "$zshrc" }
 alias zshrc="$EDITOR $zshrc && zrl"
-alias zprofile="$EDITOR $zprofile && zrl"
-alias zaliases="$EDITOR $zaliases && zrl"
+alias zprofile="$EDITOR $HOME/.zprofile && zrl"
+alias zaliases="$EDITOR $HOME/.zaliases && zrl"
 
 
 alias pa='pacaur'

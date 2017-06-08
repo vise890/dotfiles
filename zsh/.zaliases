@@ -1,0 +1,29 @@
+#!/bin/zsh
+
+alias vim="$EDITOR"
+alias v="$EDITOR"
+alias vimrc="vim $HOME/.config/nvim/init.vim"
+alias vplugs="vim $HOME/.config/nvim/plugs.vim && vim +PlugUpgrade +PlugClean! +PlugUpdate! +PlugInstall! +qall!"
+
+
+zshrc="$HOME/.zshrc"
+zprofile="$HOME/.zprofile"
+zaliases="$HOME/.zaliases"
+function zrl { source $zshrc && source $zprofile && source $zaliases && rehash }
+alias zshrc="$EDITOR $zshrc && zrl"
+alias zprofile="$EDITOR $zprofile && zrl"
+alias zaliases="$EDITOR $zaliases && zrl"
+
+
+alias pa='pacaur'
+alias pm='pacman'
+
+
+# org / todo.txt
+export NOTES_DIR=$HOME/Documents/notes
+export TODO_DIR=$HOME/Documents/todo
+alias te="$EDITOR $TODO_DIR/todo.txt"
+
+alias ccat="pygmentize -g"
+alias bp='bpython'
+

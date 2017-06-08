@@ -11,38 +11,12 @@ else
 fi
 
 export COMPLETION_WAITING_DOTS="true"
-
 setopt correct
 
 
 export EDITOR='nvim'
-alias vim="$EDITOR"
-alias v="$EDITOR"
-alias vimrc="vim $HOME/.config/nvim/init.vim"
-alias vplugs="vim $HOME/.config/nvim/plugs.vim && vim +PlugUpgrade +PlugClean! +PlugUpdate! +PlugInstall! +qall!"
 
-
-zshrc="$HOME/.zshrc"
-zprofile="$HOME/.zprofile"
-function zrl { source $zshrc && source $zprofile && rehash }
-alias zshrc="$EDITOR $zshrc && zrl"
-alias zprofile="$EDITOR $zprofile && zrl"
-
-
-alias pa='pacaur'
-alias pm='pacman'
-
-
-# org / todo.txt
-export NOTES_DIR=$HOME/Documents/notes
-export TODO_DIR=$HOME/Documents/todo
-alias te="$EDITOR $TODO_DIR/todo.txt"
-
-
-alias ccat="pygmentize -g"
-
-alias bp='bpython'
-
+source $HOME/.zaliases
 
 # $PATH & friends
 source $HOME/.zprofile

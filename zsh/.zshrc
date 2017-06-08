@@ -1,29 +1,56 @@
 #!/bin/zsh
-
-[ -f /etc/profile ] && source /etc/profile
-
 export ZSH=$HOME/.oh-my-zsh
-
-if [ $(whoami) = 'root' ]; then
-  export ZSH_THEME="gianu"
-else
-  export ZSH_THEME="robbyrussell"
-fi
-
-export COMPLETION_WAITING_DOTS="true"
-setopt correct
-
 
 export EDITOR='nvim'
 
 source $HOME/.zaliases
 
 # $PATH & friends
+[ -f /etc/profile ] && source /etc/profile
 source $HOME/.zprofile
 
 
 # plugins can be found in ~/.oh-my-zsh/plugins/
-plugins=(autojump colored-man docker kubectl last-working-dir vi-mode mix)
+plugins=(
+
+  # git
+  # zsh-navigation-tools
+  archlinux
+  autojump
+  bgnotify
+  branch
+  cargo
+  colored-man-pages
+  dirhistory # navigation with Alt-Left Alt-Right
+  docker
+  docker-compose
+  extract
+  fancy-ctrl-z # switch back to vim with ctrl-z
+  httpie
+  kubectl
+  last-working-dir
+  lein
+  npm
+  pip
+  rust
+  stack
+  terraform
+  tig
+  vault
+  vi-mode
+
+)
+
+
+
+if [ $(whoami) = 'root' ]; then
+  export ZSH_THEME="gianu"
+else
+  export ZSH_THEME="robbyrussell"
+fi
+export COMPLETION_WAITING_DOTS="true"
+setopt correct
+
 source "$ZSH/oh-my-zsh.sh"
 
 

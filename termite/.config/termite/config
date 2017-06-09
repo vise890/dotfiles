@@ -2,6 +2,7 @@
 
 [options]
 font = Fira Mono 12
+scrollback_lines = 100000
 
 [colors]
 # BASE03    #002b36

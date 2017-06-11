@@ -17,11 +17,9 @@ plugins=(
   # zsh-navigation-tools
   archlinux
   autojump
-  bgnotify
-  branch
+  # bgnotify
   cargo
   colored-man-pages
-  dirhistory # navigation with Alt-Left Alt-Right
   docker
   docker-compose
   extract

@@ -21,6 +21,7 @@ markdown-preview-plus
 markdown-scroll-sync
 nord-atom-syntax
 project-manager
+rainbow-delimiters
 sort-lines
 tidy-markdown
 trailing-spaces

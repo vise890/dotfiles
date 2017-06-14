@@ -62,7 +62,7 @@ values."
           magit-repository-directories '("~/code/")
           git-magit-status-fullscreen t)
 
-     ;; docker
+     docker
 
      org
      markdown

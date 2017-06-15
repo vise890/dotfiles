@@ -29,15 +29,15 @@
     projectHome: "~/code"
     themes: [
       "one-dark-ui"
-      "ariake-dark-syntax"
+      "nord-atom-syntax"
     ]
   editor:
-    fontFamily: "Ubuntu Mono"
-    fontSize: 18
+    fontFamily: "Fira Mono"
+    fontSize: 17
     invisibles: {}
     scrollPastEnd: true
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
+  "pretty-json": {}
   tabs:
     enableVcsColoring: true
   "trailing-spaces": {}

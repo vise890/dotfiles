@@ -3,7 +3,7 @@
                   [refactor-nrepl "2.3.1"]
 
                   [venantius/ultra "0.5.1"]
-                  [spyscope "0.1.5"] ; #spy/t #spy/p #spy/d
+                  [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
                   [aprint "0.1.3"] ; awesome pprint
 
                   [lein-hiera "0.9.5"]
@@ -22,7 +22,4 @@
         :dependencies [[slamhound "1.5.5"]
 
                        [alembic "0.3.2"]
-                       [org.clojure/tools.nrepl "0.2.13"]]
-
-        :injections [(require 'aprint.core)
-                     (require 'spycope.core)]}}
+                       [org.clojure/tools.nrepl "0.2.13"]] }}

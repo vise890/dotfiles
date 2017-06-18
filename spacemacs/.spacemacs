@@ -51,8 +51,11 @@ values."
      ;; emoji
      ;; games
 
-     ;; restclient
      vinegar
+     ;; evil-cleverparens
+     evil-commentary
+
+     ;; restclient
      (shell :variables
             shell-default-position 'bottom)
 

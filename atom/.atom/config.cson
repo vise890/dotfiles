@@ -25,6 +25,8 @@
       "language-java"
       "styleguide"
       "Hydrogen"
+      "language-gfm"
+      "github"
     ]
     projectHome: "~/code"
     themes: [

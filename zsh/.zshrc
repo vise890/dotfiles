@@ -13,15 +13,13 @@ source $HOME/.zprofile
 # plugins can be found in ~/.oh-my-zsh/plugins/
 plugins=(
 
+  # bgnotify
   # git
   # zsh-navigation-tools
   archlinux
   autojump
-  bgnotify
-  branch
   cargo
   colored-man-pages
-  dirhistory # navigation with Alt-Left Alt-Right
   docker
   docker-compose
   extract

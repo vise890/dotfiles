@@ -42,7 +42,9 @@ values."
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-snippets-in-popup t
-                      auto-completion-enable-sort-by-usage t)
+                      auto-completion-enable-sort-by-usage t
+                      haskell-completion-backend 'intero)
+
      syntax-checking
      spell-checking
 
@@ -92,6 +94,8 @@ values."
               cljr-warn-on-eval nil)
      ;; scheme
      ;; racket
+     haskell
+
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -415,6 +419,8 @@ you should place your code here."
   (setq deft-extensions '("org" "md" "txt"))
 
   (setq scroll-margin 6)
+
+  (setq x-gtk-use-system-tooltips nil)
   )
 
 (custom-set-variables

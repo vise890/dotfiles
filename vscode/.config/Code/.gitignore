@@ -1,3 +1,10 @@
 Preferences
 storage.json
 User/workspaceStorage
+Backups/
+Cache/
+CachedData/
+Cookies
+Cookies-journal
+GPUCache/
+Local Storage/

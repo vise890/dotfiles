@@ -4,6 +4,7 @@
 
     "editor.cursorBlinking": "solid",
     "vim.useSolidBlockCursor": true,
+    "vim.enableNeovim": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
@@ -12,7 +13,7 @@
     ],
 
     "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "vs-seti",
+    "workbench.iconTheme": "vscode-great-icons",
 
     "editor.fontSize": 16,
     "window.zoomLevel": 0.8,

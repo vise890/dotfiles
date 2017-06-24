@@ -1,8 +1,11 @@
 ariake-dark-syntax
+atom-clock
 autocomplete-haskell
 busy-signal
 ex-mode
 file-icons
+fold-functions
+git-diff-details
 gruvbox-plus-syntax
 haskell-debug
 haskell-ghc-mod
@@ -11,6 +14,7 @@ ide-haskell-cabal
 ide-haskell-hasktags
 ide-haskell-repl
 intentions
+language-docker
 language-haskell
 language-haskell-scoped
 language-markdown
@@ -20,6 +24,7 @@ linter-ui-default
 markdown-preview-plus
 markdown-scroll-sync
 nord-atom-syntax
+pretty-json
 project-manager
 rainbow-delimiters
 sort-lines

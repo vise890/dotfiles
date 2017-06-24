@@ -39,6 +39,7 @@ Plug 'elzr/vim-json'                , { 'for': 'json' }
 Plug 'guns/vim-clojure-static'
 Plug 'stephpy/vim-yaml'
 Plug 'cespare/vim-toml'
+Plug 'ekalinin/Dockerfile.vim'
 
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-markdown'

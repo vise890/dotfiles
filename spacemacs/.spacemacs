@@ -421,6 +421,14 @@ you should place your code here."
   (setq scroll-margin 6)
 
   (setq x-gtk-use-system-tooltips nil)
+
+  (setq global-auto-revert-mode t)
+
+  ;; place temp files out of the way
+  (setq backup-directory-alist
+        `((".*" . ,temporary-file-directory)))
+  (setq auto-save-file-name-transforms
+        `((".*" ,temporary-file-directory t)))
   )
 
 (custom-set-variables

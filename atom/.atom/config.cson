@@ -1,4 +1,7 @@
 "*":
+  "atom-clock":
+    showClockIcon: true
+    showTooltip: true
   core:
     autoHideMenuBar: true
     disabledPackages: [
@@ -38,6 +41,13 @@
     fontSize: 17
     invisibles: {}
     scrollPastEnd: true
+  "ide-haskell":
+    autoHideOutput: true
+    onSavePrettify: true
+    stylishHaskellPath: "hindent"
+  "ide-haskell-repl":
+    autoReloadRepeat: true
+    defaultRepl: "stack"
   "linter-ui-default": {}
   "pretty-json": {}
   tabs:

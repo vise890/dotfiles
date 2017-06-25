@@ -409,18 +409,17 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq-default evil-escape-key-sequence "jk")
 
+  ;; UI
+  (setq scroll-margin 6)
+
+  (setq x-gtk-use-system-tooltips nil)
+
   (setq nyan-animate-nyancat nil)
   (setq nyan-wavy-trail nil)
 
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
-  (setq deft-directory "~/Documents/notes")
-  (setq deft-extensions '("org" "md" "txt"))
-
-  (setq scroll-margin 6)
-
-  (setq x-gtk-use-system-tooltips nil)
 
   (setq global-auto-revert-mode t)
 
@@ -429,6 +428,21 @@ you should place your code here."
         `((".*" . ,temporary-file-directory)))
   (setq auto-save-file-name-transforms
         `((".*" ,temporary-file-directory t)))
+
+
+  (setq deft-directory "~/Documents/notes")
+  (setq deft-extensions '("org" "md" "txt"))
+
+
+  ;; Haskell refactoring...
+  (add-to-load-path "~/.stack/snapshots/x86_64-linux-ncurses6/lts-8.20/8.0.2/share/x86_64-linux-ghc-8.0.2/HaRe-0.8.4.0/elisp")
+
+  (require 'hare)
+  (autoload 'hare-init "hare" nil t)
+  (add-hook 'haskell-mode-hook (lambda () (ghc-init) (hare-init)))
+
+
+
   )
 
 (custom-set-variables

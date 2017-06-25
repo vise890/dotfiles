@@ -1,6 +1,20 @@
 // Place your settings in this file to overwrite the default settings
 {
     "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0.8,
+
+    "workbench.activityBar.visible": true,
+
+    "files.autoSave": "off",
+
+    "editor.fontFamily": "Fira Mono",
+    "editor.fontSize": 16,
+
+    "editor.tabSize": 2,
+
+
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "vscode-great-icons",
 
     "editor.cursorBlinking": "solid",
     "vim.useSolidBlockCursor": true,
@@ -12,11 +26,6 @@
         }
     ],
 
-    "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "vscode-great-icons",
-
-    "editor.fontSize": 16,
-    "window.zoomLevel": 0.8,
-    "workbench.activityBar.visible": false,
-    "haskell.ghcMod.executablePath": "stack"
+    "haskell.ghcMod.executablePath": "stack",
+    "vim.disableAnnoyingNeovimMessage": true
 }

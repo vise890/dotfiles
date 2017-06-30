@@ -5,6 +5,7 @@ busy-signal
 ex-mode
 file-icons
 fold-functions
+fold-lines
 git-diff-details
 gruvbox-plus-syntax
 haskell-debug

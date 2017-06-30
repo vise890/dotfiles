@@ -81,15 +81,15 @@ let g:airline_right_sep = ''
 map <C-n> :NERDTreeToggle<CR>
 
 " AG: search with silver searcher
-nnoremap <leader>a :Ag
+" NOTE: keep the whitespace at the end so you don't have to input it!
+nnoremap <leader>a :Ag 
 
 " NEOCOMPLETE: autocompletion
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
 let g:deoplete#enable_auto_delimiter = 1
 " <TAB>: completion
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-set completeopt-=preview          " don't open preview window all over the place
+" set completeopt-=preview          " don't open preview window all over the place
 
 " PYTHON:
 let g:flake_show_in_gutter = 1

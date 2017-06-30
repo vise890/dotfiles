@@ -28,7 +28,7 @@ Plug 'bronson/vim-trailing-whitespace' " highlight and fix whitespace
 Plug 'tpope/vim-surround'       " fiddle with surrounding quotes/parens/tags/etc.
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-scripts/SudoEdit.vim' " read/write files with sudo
-Plug 'Shougo/deoplete.nvim'     " auto-completion
+Plug 'Shougo/deoplete.nvim'         , { 'do': ':UpdateRemotePlugins' } " auto-completion
 
 " LANGS:
 "

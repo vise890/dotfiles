@@ -44,11 +44,13 @@ values."
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t
                       haskell-completion-backend 'intero)
+     dash
 
      syntax-checking
      spell-checking
 
      (colors :variables colors-enable-nyan-cat-progress-bar t)
+     ;; vim-empty-lines
 
      ;; emoji
      ;; games
@@ -68,11 +70,13 @@ values."
           git-magit-status-fullscreen t)
 
      docker
+     terraform
 
      org
      markdown
      deft
      ;; html
+     pdf-tools
 
      yaml
      csv
@@ -84,7 +88,8 @@ values."
      ;;             tern-command '("node" "~/.npm/bin/tern"))
 
      ;; python
-     ;; go
+     go
+     rust
 
      emacs-lisp
      ;; elixir
@@ -94,6 +99,7 @@ values."
               cljr-warn-on-eval nil)
      ;; scheme
      ;; racket
+
      haskell
 
      )
@@ -434,28 +440,23 @@ you should place your code here."
   (setq deft-extensions '("org" "md" "txt"))
 
 
+  (setq cider-repl-display-help-banner nil)
+
   ;; Haskell refactoring...
   (add-to-load-path "~/.stack/snapshots/x86_64-linux-ncurses6/lts-8.20/8.0.2/share/x86_64-linux-ghc-8.0.2/HaRe-0.8.4.0/elisp")
-
   (require 'hare)
   (autoload 'hare-init "hare" nil t)
   (add-hook 'haskell-mode-hook (lambda () (ghc-init) (hare-init)))
 
-
-
   )
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(evil-want-Y-yank-to-eol t)
  '(package-selected-packages
    (quote
-    (evil-commentary color-theme projectile diminish ghc paredit clojure-mode avy packed eclim company with-editor async alert log4e f hydra dash s haml-mode web-completion-data haskell-mode atom-one-dark-theme darkmine-theme darkburn-theme dakrone-theme cyberpunk-theme clues-theme cherry-blossom-theme busybee-theme bubbleberry-theme birds-of-paradise-plus-theme badwolf-theme apropospriate-theme anti-zenburn-theme ample-zen-theme ample-theme alect-themes afternoon-theme nord-theme bnfc groovy-imports unfill mwim company-quickhelp smartparens yasnippet markdown-mode groovy-mode cider seq evil flycheck magit magit-popup git-commit helm-core sbt-mode helm vi-tilde-fringe typit mmt sudoku pacmacs dash-functional 2048-game sql-indent restclient-helm ob-restclient ob-http emoji-cheat-sheet-plus dockerfile-mode docker json-mode tablist docker-tramp json-snatcher json-reformat company-restclient restclient know-your-http-well company-emoji zenburn-theme yaml-mode xterm-color ws-butler winum which-key web-mode volatile-highlights uuidgen use-package toc-org tao-theme tagedit spaceline soft-stone-theme soft-morning-theme soft-charcoal-theme smeargle slim-mode shell-pop scss-mode sass-mode restart-emacs rainbow-mode rainbow-identifiers rainbow-delimiters pug-mode popwin persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file oldlace-theme ob-elixir noflet neotree multi-term move-text mmm-mode markdown-toc majapahit-theme magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode intero info+ indent-guide hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag hc-zenburn-theme haskell-snippets gruvbox-theme google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-mix flycheck-haskell flycheck-credo flx-ido firebelly-theme fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help erlang ensime emmet-mode elisp-slime-nav dumb-jump diff-hl deft define-word darktooth-theme csv-mode company-web company-statistics company-ghci company-ghc company-emacs-eclim company-cabal column-enforce-mode color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-identifiers-mode cmm-mode clojure-snippets clj-refactor clean-aindent-mode cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
- '(paradox-github-token t))
-
+    (zeal-at-point toml-mode terraform-mode hcl-mode racer pdf-tools helm-dash go-guru go-eldoc flycheck-rust company-go go-mode cargo rust-mode vi-tilde-fringe zenburn-theme yaml-mode xterm-color ws-butler winum which-key volatile-highlights uuidgen use-package toc-org tao-theme sql-indent spaceline soft-stone-theme soft-morning-theme soft-charcoal-theme smeargle shell-pop restart-emacs rainbow-mode rainbow-identifiers rainbow-delimiters popwin persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file oldlace-theme nord-theme neotree multi-term move-text mmm-mode markdown-toc majapahit-theme magit-gitflow macrostep lorem-ipsum linum-relative link-hint intero info+ indent-guide hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag hc-zenburn-theme haskell-snippets gruvbox-theme groovy-mode google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-commentary evil-args evil-anzu eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump dockerfile-mode docker diff-hl deft define-word darktooth-theme csv-mode company-statistics company-quickhelp company-ghci company-ghc company-emacs-eclim company-cabal column-enforce-mode color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-identifiers-mode cmm-mode clojure-snippets clj-refactor clean-aindent-mode cider-eval-sexp-fu bnfc auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile atom-one-dark-theme aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

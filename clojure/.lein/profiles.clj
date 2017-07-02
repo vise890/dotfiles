@@ -1,6 +1,6 @@
 {:user {:plugins [[org.clojure/clojure "1.8.0"]
                   [cider/cider-nrepl "0.15.0-SNAPSHOT"]
-                  [refactor-nrepl "2.3.1"]
+                  [refactor-nrepl "2.4.0-SNAPSHOT"]
 
                   [venantius/ultra "0.5.1"]
                   [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d

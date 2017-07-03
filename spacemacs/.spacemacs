@@ -44,7 +44,6 @@ values."
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t
                       haskell-completion-backend 'intero)
-     dash
 
      syntax-checking
      spell-checking
@@ -76,10 +75,10 @@ values."
      markdown
      deft
      ;; html
-     pdf-tools
+     ;; pdf-tools
 
      yaml
-     csv
+     ;; csv
 
      sql
 
@@ -88,8 +87,8 @@ values."
      ;;             tern-command '("node" "~/.npm/bin/tern"))
 
      ;; python
-     go
-     rust
+     ;; go
+     ;; rust
 
      emacs-lisp
      ;; elixir

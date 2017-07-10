@@ -73,7 +73,8 @@ values."
 
      org
      markdown
-     deft
+     (deft :variables deft-directory "~/Documents/notes"
+                      deft-extensions '("org" "md" "txt"))
      ;; html
      ;; pdf-tools
 
@@ -95,6 +96,7 @@ values."
      ;; erlang
      (clojure :variables
               clojure-enable-fancify-symbols t
+              cider-repl-display-help-banner nil
               cljr-warn-on-eval nil)
      ;; scheme
      ;; racket
@@ -435,11 +437,6 @@ you should place your code here."
         `((".*" ,temporary-file-directory t)))
 
 
-  (setq deft-directory "~/Documents/notes")
-  (setq deft-extensions '("org" "md" "txt"))
-
-
-  (setq cider-repl-display-help-banner nil)
 
   ;; Haskell refactoring...
   (add-to-load-path "~/.stack/snapshots/x86_64-linux-ncurses6/lts-8.20/8.0.2/share/x86_64-linux-ghc-8.0.2/HaRe-0.8.4.0/elisp")

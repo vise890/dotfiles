@@ -1,5 +1,5 @@
 [global]
-    font = Fira Mono 13
+    font = Fira Mono 18
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -147,9 +147,29 @@
     # Paths to default icons.
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
+# [solarized_colors]
+# "#002b36"  # base03
+# "#073642"  # base02
+# "#586e75"  # base01
+# "#657b83"  # base00
+# "#839496"  # baseZ
+# "#93a1a1"  # base1
+# "#eee8d5"  # base2
+# "#fdf6e3"  # base3
+# "#b58900"  # yellow
+# "#cb4b16"  # orange
+# "#dc322f"  # red
+# "#d33682"  # magenta
+# "6c71c4"   # violet
+# "#268bd2"  # blue
+# "#2aa198"  # cyan
+# "#859900"  # green
+
+
+
 [frame]
     width = 3
-    color = "#aaaaaa"
+    color = "#002b36"  # base03
 
 [shortcuts]
 
@@ -175,18 +195,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#002b36"  # base03
+    foreground = "#657b83"  # base00
     timeout = 10
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
+    background = "#657b83"  # base00
+    foreground = "#002b36"  # base03
     timeout = 10
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
+    background = "#cb4b16"  # orange
+    foreground = "#002b36"  # base03
     timeout = 0
 
 

@@ -15,7 +15,9 @@
                   [lein-cljfmt "0.5.6"] ; lein cljfmt fix
 
                   ;; NOTE: lein ancient upgrade-profiles to upgrade this file
-                  [lein-ancient "0.6.10"]]
+                  [lein-ancient "0.6.10"]
+
+                  [lein-marginalia "0.9.0"] ]
 
         :aliases {"slamhound" ["run" "-m" "slam.hound"]}
 

@@ -32,7 +32,7 @@ numlock-state='off'
 toggle-overview=['<Super>d']
 
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'caffeine@patapon.info', 'TopIcons@phocean.net', 'impatience@gfxmonk.net', 'bettervolume@tudmotu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'caffeine@patapon.info', 'impatience@gfxmonk.net', 'bettervolume@tudmotu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 had-bluetooth-devices-setup=true
 disable-user-extensions=false
 app-picker-view=uint32 1
@@ -80,7 +80,7 @@ maximized=false
 [org/gnome/nautilus/desktop]
 home-icon-visible=false
 network-icon-visible=false
-trash-icon-visible=false
+trash-icon-visible=true
 
 [org/gnome/nautilus/list-view]
 default-zoom-level='larger'
@@ -107,17 +107,23 @@ sidebar-width=200
 window-height=480
 window-width=600
 
+[org/gnome/calendar]
+active-view='week'
+window-maximized=true
+
 [org/gnome/evolution-data-server]
 network-monitor-gio-name=''
 migrated=true
 
 [org/gnome/desktop/interface]
-font-name='Fira Sans 11'
+font-name='Fira Sans 12'
+document-font-name='Sans 12'
 scaling-factor=uint32 2
-toolkit-accessibility=false
 gtk-im-module='gtk-im-context-simple'
+toolkit-accessibility=false
+cursor-theme='Adwaita'
 icon-theme='Papirus'
-monospace-font-name='Fira Mono 11'
+monospace-font-name='Fira Mono 12'
 gtk-theme='Plano'
 clock-show-date=true
 
@@ -159,13 +165,14 @@ natural-scroll=false
 speed=0.59999999999999998
 left-handed=false
 
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
-[org/gnome/desktop/session]
-idle-delay=uint32 480
-
 [org/gnome/desktop/wm/preferences]
+resize-with-right-button=true
 action-double-click-titlebar='minimize'
 num-workspaces=4
 titlebar-font='Fira Sans Semi-Bold 11'
@@ -180,6 +187,9 @@ move-to-workspace-4=['<Shift><Super>dollar']
 move-to-workspace-3=['<Shift><Super>numbersign']
 switch-to-workspace-4=['<Super>4']
 switch-to-workspace-3=['<Super>3']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 480
 
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false

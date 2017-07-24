@@ -1,4 +1,3 @@
-ariake-dark-syntax
 atom-clock
 autocomplete-haskell
 busy-signal
@@ -7,7 +6,6 @@ file-icons
 fold-functions
 fold-lines
 git-diff-details
-gruvbox-plus-syntax
 haskell-debug
 haskell-ghc-mod
 ide-haskell
@@ -31,4 +29,3 @@ rainbow-delimiters
 sort-lines
 trailing-spaces
 vim-mode-plus
-

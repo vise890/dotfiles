@@ -112,28 +112,21 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
-                                      color-theme-sanityinc-solarized
                                       ;; color-theme-sanityinc-tomorrow
-                                      color-theme-solarized
-                                      darktooth-theme
-                                      ;; firebelly-theme
-                                      gruvbox-theme
-                                      hc-zenburn-theme
-                                      majapahit-theme
                                       ;; monokai-theme
-                                      nord-theme
-                                      ;; oldlace-theme
-                                      oldlace-theme
-                                      ;; seti-theme
-                                      ;; soft-charcoal-theme
-                                      ;; soft-morning-theme
-                                      ;; soft-stone-theme
                                       ;; tao-theme
+                                      ;; color-theme-sanityinc-solarized
+                                      ;; color-theme-solarized
+                                      ;; darktooth-theme
+                                      ;; gruvbox-theme
+                                      ;; hc-zenburn-theme
+                                      majapahit-theme
+                                      nord-theme
+                                      oldlace-theme
                                       zenburn-theme
-                                      ;; zonokai-theme
 
                                       ;; dash ; functional helpers
-                                      groovy-mode
+                                      ;; groovy-mode
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -226,20 +219,16 @@ values."
                          majapahit-light
                          oldlace
                          sanityinc-tomorrow-day
-                         soft-morning
-                         soft-stone
-                         tao-yang
 
                          ;; dark
                          solarized
-                         soft-charcoal
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Fira Mono"
-                               :size 28
+                               :size 34
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)

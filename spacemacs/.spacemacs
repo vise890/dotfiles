@@ -68,8 +68,8 @@ values."
           magit-repository-directories '("~/code/")
           git-magit-status-fullscreen t)
 
-     docker
-     terraform
+     ;; docker
+     ;; terraform
 
      org
      markdown
@@ -78,12 +78,12 @@ values."
      ;; html
      ;; pdf-tools
 
-     yaml
+     ;; yaml
      ;; csv
 
-     sql
+     ;; sql
 
-     java
+     ;; java
      ;; (javascript :variables
      ;;             tern-command '("node" "~/.npm/bin/tern"))
 
@@ -100,8 +100,8 @@ values."
      ;; scheme
      ;; racket
 
-     haskell
-     rust
+     ;; haskell
+     ;; rust
      ;; ocaml
      ;; fsharp
      ;; elm

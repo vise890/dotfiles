@@ -112,18 +112,18 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
-                                      ;; color-theme-sanityinc-tomorrow
-                                      ;; monokai-theme
-                                      ;; tao-theme
                                       ;; color-theme-sanityinc-solarized
+                                      ;; color-theme-sanityinc-tomorrow
                                       ;; color-theme-solarized
                                       ;; darktooth-theme
                                       ;; gruvbox-theme
-                                      ;; hc-zenburn-theme
+                                      ;; monokai-theme
+                                      ;; nord-theme
+                                      ;; tao-theme
+                                      ;; zenburn-theme
+                                      hc-zenburn-theme
                                       majapahit-theme
-                                      nord-theme
                                       oldlace-theme
-                                      zenburn-theme
 
                                       ;; dash ; functional helpers
                                       ;; groovy-mode

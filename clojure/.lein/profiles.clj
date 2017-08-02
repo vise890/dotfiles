@@ -1,5 +1,5 @@
 {:user {:plugins [[org.clojure/clojure "1.8.0"]
-                  [cider/cider-nrepl "0.15.0-SNAPSHOT"]
+                  [cider/cider-nrepl "0.15.0"]
                   [refactor-nrepl "2.4.0-SNAPSHOT"]
 
                   [venantius/ultra "0.5.1"]
@@ -12,7 +12,7 @@
                   [lein-kibit "0.1.5"]
                   [lein-bikeshed "0.4.1"]
 
-                  [lein-cljfmt "0.5.6"] ; lein cljfmt fix
+                  [lein-cljfmt "0.5.7"] ; lein cljfmt fix
 
                   ;; NOTE: lein ancient upgrade-profiles to upgrade this file
                   [lein-ancient "0.6.10"]

@@ -421,16 +421,7 @@ you should place your code here."
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
-
   (setq global-auto-revert-mode t)
-
-  ;; place temp files out of the way
-  (setq backup-directory-alist
-        `((".*" . ,temporary-file-directory)))
-  (setq auto-save-file-name-transforms
-        `((".*" ,temporary-file-directory t)))
-
-
 
   ;; Haskell refactoring...
   (add-to-load-path "~/.stack/snapshots/x86_64-linux-ncurses6/lts-8.20/8.0.2/share/x86_64-linux-ghc-8.0.2/HaRe-0.8.4.0/elisp")

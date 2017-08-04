@@ -83,9 +83,9 @@ values."
 
      ;; sql
 
-     ;; java
-     ;; (javascript :variables
-     ;;             tern-command '("node" "~/.npm/bin/tern"))
+     java
+     (javascript :variables
+                 tern-command '("node" "~/.npm/bin/tern"))
 
      ;; python
      ;; go

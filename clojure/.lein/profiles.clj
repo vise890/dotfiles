@@ -4,7 +4,6 @@
 
                   [venantius/ultra "0.5.1"]
                   [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
-                  [aprint "0.1.3"] ; awesome pprint
 
                   [lein-hiera "0.9.5"]
 

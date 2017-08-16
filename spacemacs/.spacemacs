@@ -75,10 +75,10 @@ values."
      markdown
      (deft :variables deft-directory "~/Documents/notes"
                       deft-extensions '("org" "md" "txt"))
-     ;; html
+     html
      ;; pdf-tools
 
-     ;; yaml
+     yaml
      ;; csv
 
      ;; sql

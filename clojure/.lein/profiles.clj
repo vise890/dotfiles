@@ -4,6 +4,7 @@
 
                   ;[venantius/ultra "0.5.1"]
                   [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
+                  [com.billpiel/sayid "0.0.15"]
 
                   ;; [org.clojure/tools.analyzer "0.6.9"]
 
@@ -20,6 +21,7 @@
                   ;; NOTE: lein ancient upgrade-profiles to upgrade this file
                   ;; [lein-ancient "0.6.10"]
 
+                  [lein-ancient "0.6.10"]
                   ;; [lein-marginalia "0.9.0"]
                   ]
 

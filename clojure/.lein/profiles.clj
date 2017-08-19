@@ -5,7 +5,11 @@
                   ;[venantius/ultra "0.5.1"]
                   [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
 
-                  [lein-hiera "0.9.5"]
+                  ;; [org.clojure/tools.analyzer "0.6.9"]
+
+                  ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
+
+                  ;; [lein-hiera "0.9.5"]
 
                   ;; [jonase/eastwood "0.2.4"]
                   ;; [lein-kibit "0.1.5"]

@@ -1,8 +1,8 @@
-{:user {:plugins [[org.clojure/clojure "1.8.0"]
+{:user {:plugins [;; [org.clojure/clojure "1.8.0"]
                   [cider/cider-nrepl "0.15.1-SNAPSHOT"]
                   [refactor-nrepl "2.4.0-SNAPSHOT"]
 
-                  [venantius/ultra "0.5.1"]
+                  ;[venantius/ultra "0.5.1"]
                   [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
 
                   [lein-hiera "0.9.5"]
@@ -19,5 +19,5 @@
                   ;; [lein-marginalia "0.9.0"]
                   ]
 
-        :dependencies [[alembic "0.3.2"]
+        :dependencies [[alembic "0.3.2" :exclusions [org.tcrawley/dynapath]]
                        [org.clojure/tools.nrepl "0.2.13"]] }}

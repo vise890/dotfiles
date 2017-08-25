@@ -32,11 +32,11 @@ numlock-state='off'
 toggle-overview=['<Super>d']
 
 [org/gnome/shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'caffeine@patapon.info', 'impatience@gfxmonk.net', 'bettervolume@tudmotu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 had-bluetooth-devices-setup=true
 disable-user-extensions=false
 app-picker-view=uint32 1
-favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'emacs.desktop', 'org.gnome.Terminal.desktop']
+favorite-apps=['firefox.desktop', 'firefox-nightly.desktop', 'org.gnome.Nautilus.desktop', 'emacs.desktop', 'org.gnome.Terminal.desktop']
 
 [org/gnome/shell/overrides]
 dynamic-workspaces=false
@@ -68,6 +68,9 @@ mouse-sensitive=true
 enable-intellihide=true
 mouse-triggers-overview=false
 
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
 [org/gnome/nautilus/preferences]
 search-view='list-view'
 default-folder-viewer='list-view'
@@ -80,7 +83,7 @@ maximized=false
 [org/gnome/nautilus/desktop]
 home-icon-visible=false
 network-icon-visible=false
-trash-icon-visible=true
+trash-icon-visible=false
 
 [org/gnome/nautilus/list-view]
 default-zoom-level='larger'
@@ -194,13 +197,19 @@ idle-delay=uint32 480
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false
 
+[org/gnome/desktop/datetime]
+automatic-timezone=true
+
 [org/gnome/desktop/background]
-picture-uri='file:///home/vise890/Pictures/Wallpapers/desert-3840x2160-sand-algodones-dunes-12176~20170322-214019~20170322-214019.jpg'
+picture-uri='file:///home/vise890/Pictures/Wallpapers/ios-11-3840x2160-4k-5k-beach-ocean-13655%20(copy).jpg'
 show-desktop-icons=true
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
 secondary-color='#000000'
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us')]
 
 [org/gnome/epiphany/state]
 window-position=(0, 0)

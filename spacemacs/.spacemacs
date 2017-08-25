@@ -97,9 +97,12 @@ This function should only modify configuration layer settings."
      ;; elixir
      ;; erlang
      (clojure :variables
-              clojure-enable-fancify-symbols t
+              cider-auto-select-error-buffer nil
               cider-repl-display-help-banner nil
-              cljr-warn-on-eval nil)
+              cider-repl-use-pretty-printing t
+              cljr-warn-on-eval nil
+              clojure-enable-fancify-symbols t
+              nrepl-hide-special-buffers t)
      ;; scheme
      ;; racket
 

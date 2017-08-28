@@ -93,9 +93,12 @@ This function should only modify configuration layer settings."
          go-use-gometalinter t
          go-use-test-args "-race")
 
-     emacs-lisp
      ;; elixir
      ;; erlang
+
+     ;; scheme
+     ;; racket
+     emacs-lisp
      (clojure :variables
               cider-auto-select-error-buffer nil
               cider-repl-display-help-banner nil
@@ -104,14 +107,9 @@ This function should only modify configuration layer settings."
               cljr-warn-on-eval nil
               clojure-enable-fancify-symbols t
               nrepl-hide-special-buffers t)
-     ;; scheme
-     ;; racket
 
      ;; haskell
      ;; rust
-     ;; ocaml
-     ;; fsharp
-     ;; elm
 
      )
    ;; List of additional packages that will be installed without being

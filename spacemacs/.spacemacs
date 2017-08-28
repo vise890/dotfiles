@@ -67,7 +67,7 @@ This function should only modify configuration layer settings."
           magit-repository-directories '("~/code/")
           git-magit-status-fullscreen t)
 
-     ;; docker
+     docker
      ;; terraform
 
      org
@@ -100,6 +100,7 @@ This function should only modify configuration layer settings."
               cider-auto-select-error-buffer nil
               cider-repl-display-help-banner nil
               cider-repl-use-pretty-printing t
+              cljr-project-clean-prompt nil
               cljr-warn-on-eval nil
               clojure-enable-fancify-symbols t
               nrepl-hide-special-buffers t)
@@ -130,6 +131,7 @@ This function should only modify configuration layer settings."
                                       hc-zenburn-theme
                                       majapahit-theme
                                       oldlace-theme
+                                      purple-haze-theme
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()

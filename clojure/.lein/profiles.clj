@@ -1,9 +1,7 @@
-{:user {:plugins [;; [org.clojure/clojure "1.8.0"]
-                  [cider/cider-nrepl "0.15.1-SNAPSHOT"]
+{:user {:plugins [[cider/cider-nrepl "0.15.1-SNAPSHOT"]
                   [refactor-nrepl "2.4.0-SNAPSHOT"]
-                  [com.billpiel/sayid "0.0.15"]
 
-                  ;; [lein-cljfmt "0.5.7"] ; lein cljfmt fix
+                  [lein-cljfmt "0.5.7"] ; lein cljfmt fix
 
                   ;; [venantius/ultra "0.5.1"]
                   ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
@@ -21,5 +19,12 @@
                   ;; [lein-marginalia "0.9.0"]
                   ]
 
-        :dependencies [[alembic "0.3.2" :exclusions [org.tcrawley/dynapath]]
-                       [org.clojure/tools.nrepl "0.2.13"]] }}
+        ;; :aliases {"slamhound" ["run" "-m" "slam.hound"]}
+
+        :dependencies [[org.clojure/tools.nrepl "0.2.13"]
+                       ;;[org.clojure/tools.analyzer "0.6.9"]
+                       [alembic "0.3.2"
+                        :exclusions [org.tcrawley/dynapath]]
+
+                       ;; [slamhound "1.5.5"]
+                       ] }}

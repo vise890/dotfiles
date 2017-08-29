@@ -4,10 +4,10 @@
                   [com.billpiel/sayid "0.0.15"]
                   ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
 
-                  [venantius/ultra "0.5.1"]
-                  [lein-eftest "0.3.1"]
+                  ;; [venantius/ultra "0.5.1"]
+                  ;; [lein-eftest "0.3.1"]
 
-                  [lein-cljfmt "0.5.7"] ; lein cljfmt fix
+                  ;; [lein-cljfmt "0.5.7"] ; lein cljfmt fix
 
                   ;; [lein-hiera "0.9.5"]
 

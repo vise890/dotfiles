@@ -5,7 +5,7 @@
                   ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
 
                   ;; [venantius/ultra "0.5.1"]
-                  ;; [lein-eftest "0.3.1"]
+                  [lein-eftest "0.3.1"]
 
                   ;; [lein-cljfmt "0.5.7"] ; lein cljfmt fix
 

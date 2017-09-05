@@ -93,8 +93,8 @@ This function should only modify configuration layer settings."
          go-use-gometalinter t
          go-use-test-args "-race")
 
-     ;; elixir
-     ;; erlang
+     erlang
+     elixir
 
      ;; scheme
      ;; racket

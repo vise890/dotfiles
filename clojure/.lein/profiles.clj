@@ -25,9 +25,9 @@
         :aliases {"slamhound" ["run" "-m" "slam.hound"]}
 
         :dependencies [[org.clojure/tools.nrepl "0.2.13"]
-                       ;;[org.clojure/tools.analyzer "0.6.9"]
+                       ;; [org.clojure/tools.analyzer "0.6.9"]
                        [alembic "0.3.2"
                         :exclusions [org.tcrawley/dynapath]]
 
-                       [slamhound "1.5.5"]
-                       ] }}
+                       ;; [slamhound "1.5.5"]
+                       ]}}

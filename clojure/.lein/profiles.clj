@@ -1,33 +1,24 @@
-{:user {:plugins [[cider/cider-nrepl "0.15.1-SNAPSHOT"]
-                  [refactor-nrepl "2.4.0-SNAPSHOT"]
-
-                  [com.billpiel/sayid "0.0.15"]
-                  ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
-
-                  ;; [venantius/ultra "0.5.1"]
-                  [lein-eftest "0.3.1"]
-
-                  ;; [lein-cljfmt "0.5.7"] ; lein cljfmt fix
-
-                  ;; [lein-hiera "0.9.5"]
-
-                  ;; [jonase/eastwood "0.2.4"]
-                  ;; [lein-kibit "0.1.5"]
-                  ;; [lein-bikeshed "0.4.1"]
-
-
-                  ;; NOTE: lein ancient upgrade-profiles to upgrade this file
-                  ;; [lein-ancient "0.6.10"]
-
-                  ;; [lein-marginalia "0.9.0"]
-                  ]
-
-        :aliases {"slamhound" ["run" "-m" "slam.hound"]}
-
+{:user {:plugins      [[cider/cider-nrepl "0.15.1"]
+                       [refactor-nrepl "2.4.0-SNAPSHOT"]
+                       ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
+                       [com.billpiel/sayid "0.0.15"]]
         :dependencies [[org.clojure/tools.nrepl "0.2.13"]
-                       ;; [org.clojure/tools.analyzer "0.6.9"]
-                       [alembic "0.3.2"
-                        :exclusions [org.tcrawley/dynapath]]
+                       [alembic "0.3.2" :exclusions [org.tcrawley/dynapath]]]}
 
-                       ;; [slamhound "1.5.5"]
-                       ]}}
+ :misc {:plugins [[lein-marginalia "0.9.0"]
+                  [lein-hiera "0.9.5"]
+                  [org.clojure/tools.analyzer "0.6.9"]]}
+
+ :bikeshedding {:plugins [[jonase/eastwood "0.2.4"]
+                          [lein-kibit "0.1.5"]
+                          ;; NOTE: lein ancient upgrade-profiles to upgrade this file
+                          [lein-ancient "0.6.10"]
+                          [lein-cljfmt "0.5.7"] ;; lein cljfmt fix
+                          [lein-bikeshed "0.4.1"]]
+
+                :dependencies [[slamhound "1.5.5"]]
+                :aliases      {"slamhound" ["run" "-m" "slam.hound"]}}
+
+ :fancy-testing {:plugins [[venantius/ultra "0.5.1"]
+                           [lein-eftest "0.3.1"]
+                           [lein-cloverage "1.0.9"]]}}

@@ -69,6 +69,7 @@ This function should only modify configuration layer settings."
 
      docker
      ;; terraform
+     groovy
 
      org
      markdown
@@ -86,7 +87,8 @@ This function should only modify configuration layer settings."
      (javascript :variables
                  tern-command '("node" "~/.npm/bin/tern"))
 
-     ;; python
+     (python :variables
+             python-enable-yapf-format-on-save t)
      (go :variables
          go-tab-width 4
          gofmt-command "goimports"

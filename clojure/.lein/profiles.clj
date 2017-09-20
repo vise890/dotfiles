@@ -8,11 +8,15 @@
  :misc {:plugins [[lein-marginalia "0.9.0"]
                   [lein-hiera "0.9.5"]
                   [lein-cljfmt "0.5.7"] ;; lein cljfmt fix
+                  [lein-zprint "0.3.2"]
+                  [lein-pprint "1.1.2"]
                   ;; NOTE: lein ancient upgrade-profiles to upgrade this file
-                  [lein-ancient "0.6.10"]]}
+                  [lein-ancient "0.6.12"]]
+        :zprint  {:old? false}}
 
  :lint {:plugins [
                   [jonase/eastwood "0.2.4"]
+                  ;; lein kibit --replace --interactive
                   [lein-kibit "0.1.5"]
                   [lein-bikeshed "0.4.1"]
                   [venantius/yagni "0.1.4"]]

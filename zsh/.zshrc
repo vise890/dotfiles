@@ -14,27 +14,27 @@ source $HOME/.zprofile
 plugins=(
 
   # bgnotify
+  # cargo
+  # fancy-ctrl-z # switch back to vim with ctrl-z
   # git
+  # rust
+  # stack
+  # terraform
+  # vault
   # zsh-navigation-tools
   archlinux
   autojump
-  cargo
   colored-man-pages
   docker
   docker-compose
   extract
-  fancy-ctrl-z # switch back to vim with ctrl-z
   httpie
   kubectl
   last-working-dir
   lein
   npm
   pip
-  rust
-  stack
-  terraform
   tig
-  vault
   vi-mode
 
 )

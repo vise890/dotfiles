@@ -1,4 +1,4 @@
-{:user {:plugins      [[cider/cider-nrepl "0.15.1"]
+{:user {:plugins      [[cider/cider-nrepl "0.16.0-SNAPSHOT"]
                        [refactor-nrepl "2.4.0-SNAPSHOT"]
                        ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
                        [com.billpiel/sayid "0.0.15"]]

@@ -1,6 +1,7 @@
 {:user {:plugins      [[cider/cider-nrepl "0.16.0-SNAPSHOT"]
                        [refactor-nrepl "2.4.0-SNAPSHOT"]
                        ;; [spyscope "0.1.6"] ; #spy/t #spy/p #spy/d
+                       [lein-pprint "1.1.2"]
                        [com.billpiel/sayid "0.0.15"]]
         :dependencies [[org.clojure/tools.nrepl "0.2.13"]
                        [alembic "0.3.2" :exclusions [org.tcrawley/dynapath]]]}
@@ -9,13 +10,11 @@
                   [lein-hiera "0.9.5"]
                   [lein-cljfmt "0.5.7"] ;; lein cljfmt fix
                   [lein-zprint "0.3.2"]
-                  [lein-pprint "1.1.2"]
                   ;; NOTE: lein ancient upgrade-profiles to upgrade this file
                   [lein-ancient "0.6.12"]]
         :zprint  {:old? false}}
 
- :lint {:plugins [
-                  [jonase/eastwood "0.2.4"]
+ :lint {:plugins [[jonase/eastwood "0.2.4"]
                   ;; lein kibit --replace --interactive
                   [lein-kibit "0.1.5"]
                   [lein-bikeshed "0.4.1"]

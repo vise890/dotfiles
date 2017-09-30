@@ -1,1 +1,1 @@
-moved to [gitlab.com/vise890/dotfiles](gitlab.com/vise890/dotfiles)
+moved to [gitlab.com/vise890/dotfiles](https://gitlab.com/vise890/dotfiles)

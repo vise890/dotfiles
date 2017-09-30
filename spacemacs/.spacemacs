@@ -48,7 +48,6 @@ This function should only modify configuration layer settings."
      spell-checking
 
      (colors :variables colors-enable-nyan-cat-progress-bar t)
-     vim-empty-lines
 
      ;; emoji
      ;; games

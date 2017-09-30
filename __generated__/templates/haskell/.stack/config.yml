@@ -1,3 +1,0 @@
-templates:
-  author-email: $user_email
-  author-name: $user_full_name

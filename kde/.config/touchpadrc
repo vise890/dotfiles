@@ -1,7 +1,0 @@
-[parameters]
-CircScrollDelta=5.73
-MaxTapMove=3.9
-OneFingerTapButton=LeftButton
-Tapping=false
-ThreeFingerTapButton=MiddleButton
-TwoFingerTapButton=RightButton

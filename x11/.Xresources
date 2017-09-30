@@ -1,4 +1,0 @@
-#include ".Xresources.d/dpi"
-#include ".Xresources.d/fonts"
-#include ".Xresources.d/colours"
-#include ".Xresources.d/urxvt"

@@ -1,31 +1,29 @@
 // Place your settings in this file to overwrite the default settings
 {
     "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0.8,
-
+    "window.zoomLevel": 1,
     "workbench.activityBar.visible": true,
-
     "files.autoSave": "off",
-
     "editor.fontFamily": "Fira Mono",
     "editor.fontSize": 16,
-
     "editor.tabSize": 2,
-
-
     "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "vscode-great-icons",
-
+    "workbench.iconTheme": "seti",
     "editor.cursorBlinking": "solid",
     "vim.useSolidBlockCursor": true,
     "vim.enableNeovim": true,
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
-
     "haskell.ghcMod.executablePath": "stack",
-    "vim.disableAnnoyingNeovimMessage": true
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.formatOnSave": true
 }

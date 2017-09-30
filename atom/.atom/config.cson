@@ -49,6 +49,8 @@
   tabs:
     enableVcsColoring: true
   "trailing-spaces": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     ignoreCaseForSearch: true
     incrementalSearch: true
